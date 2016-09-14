@@ -3,8 +3,15 @@
 
 Route::group(['namespace' => '\Auth'], function ($router) {
 
-    $router->post('login', 'LoginController@login');
-    $router->post('register', 'RegisterController@register');
+    $router->group(['middleware' => ['guest:api']], function($router) {
+
+        $router->post('login', 'LoginController@login');
+        $router->post('register', 'RegisterController@register');
+        $router->post('forgot-password', 'ForgotPasswordController@reset');
+
+    });
+
+
 
     $router->group(['middleware' => ['auth:api']], function($router) {
 
