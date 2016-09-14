@@ -7,11 +7,12 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
+use Spatie\Permission\Traits\HasRoles;
 use Zix\Core\Entities\UserInfo;
 
 class User extends Authenticatable implements HasMedia
 {
-    use Notifiable, HasApiTokens, HasMediaTrait;
+    use Notifiable, HasApiTokens, HasMediaTrait, HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -33,6 +34,6 @@ class User extends Authenticatable implements HasMedia
 
     public function info()
     {
-        return $this->hasOne('Zix\Core\Entities\UserInfo');
+        return $this->hasOne(UserInfo::class);
     }
 }

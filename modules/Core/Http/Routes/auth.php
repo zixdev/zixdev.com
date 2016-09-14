@@ -18,7 +18,7 @@ Route::group(['namespace' => '\Auth'], function ($router) {
         $router->get('user', 'UserController@user');
         $router->post('user', 'UserController@updateUser');
 
-        $router->get('user/info', 'UserController@info');
+        $router->get('user/info', 'UserController@info')->middleware('role:admin,view_details');;
         $router->post('user/info', 'UserController@updateInfo');
 
     });
