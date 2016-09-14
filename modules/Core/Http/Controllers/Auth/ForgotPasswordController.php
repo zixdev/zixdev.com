@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Zix\Core\Support\Traits\ApiResponses;
 
+/**
+ * Class ForgotPasswordController
+ * @package Zix\Core\Http\Controllers\Auth
+ */
 class ForgotPasswordController extends Controller
 {
     /*
@@ -23,6 +27,12 @@ class ForgotPasswordController extends Controller
 
     use SendsPasswordResetEmails, ApiResponses;
 
+    /**
+     * Send a reset link to the given user.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function reset(Request $request)
     {
         $this->validate($request, ['email' => 'required|email']);
@@ -36,15 +46,12 @@ class ForgotPasswordController extends Controller
 
         if ($response === Password::RESET_LINK_SENT) {
             return $this->respondWithData(trans($response));
-            return back()->with('status', trans($response));
         }
 
         // If an error was returned by the password broker, we will get this message
         // translated so we can notify a user of the problem. We'll redirect back
         // to where the users came from so they can attempt this process again.
         return $this->respondWithData(trans($response));
-        return back()->withErrors(
-            ['email' => trans($response)]
-        );
+
     }
 }

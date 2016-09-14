@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/ForgotPasswordController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="ForgotPasswordController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/ForgotPasswordController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5198285">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5080386">
+              <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -93,8 +91,8 @@
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/UserController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/ForgotPasswordController.php" />
         <option value="$PROJECT_DIR$/config/mail.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/ForgotPasswordController.php" />
       </list>
     </option>
   </component>
@@ -873,28 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38370848">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1472738807000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Display the form to request a password reset link. ..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Send a reset link to the given user. ..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Get the Closure which is used to build the password reset notification. ..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Get the broker to be used during password reset. ..." />
-            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26045015">
@@ -1170,10 +1146,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26045015">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <marker date="1472738807000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Display the form to request a password reset link. ..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Send a reset link to the given user. ..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Get the Closure which is used to build the password reset notification. ..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder=" Get the broker to be used during password reset. ..." />
+            <marker date="1472738807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/ForgotPasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5198285">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5080386">
+          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
           <folding />
         </state>
       </provider>
