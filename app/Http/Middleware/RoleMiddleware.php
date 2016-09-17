@@ -10,6 +10,7 @@ use Zix\Core\Support\Traits\ApiResponses;
 class RoleMiddleware
 {
     use ApiResponses;
+
     /**
      * Handle an incoming request.
      *
@@ -21,12 +22,16 @@ class RoleMiddleware
      */
     public function handle($request, Closure $next, $role = false, $permission = false)
     {
-        if ($role && ! $request->user()->hasRole($role)) {
-            return $this->respondBadRequest('You Don\'t Access To Role : '. $role);
+        if (!$request->user()) {
+            return $this->respondBadRequest('Unauthorized');
         }
 
-        if ($permission && ! $request->user()->can($permission)) {
-            return $this->respondBadRequest('You Don\'t Access To Permission : '. $permission);
+        if ($role && !$request->user()->hasRole($role)) {
+            return $this->respondBadRequest('You Don\'t Access To Role : ' . $role);
+        }
+
+        if ($permission && !$request->user()->can($permission)) {
+            return $this->respondBadRequest('You Don\'t Access To Permission : ' . $permission);
         }
 
         return $next($request);

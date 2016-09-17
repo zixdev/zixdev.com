@@ -12,7 +12,7 @@ use Zix\Core\Support\Traits\ApiResponses;
  * Class LoginController
  * @package Zix\Core\Http\Controllers\Auth
  */
-class LoginController extends Controller
+class LoginController
 {
     /*
     |--------------------------------------------------------------------------

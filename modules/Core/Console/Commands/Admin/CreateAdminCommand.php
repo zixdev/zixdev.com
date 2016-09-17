@@ -49,7 +49,7 @@ class CreateAdminCommand extends BaseCommand
         $user->assignRole('admin');
         $user->givePermissionTo('full_access');
 
-        $this->info('Congrats '. $username . ' You successfully created and admin account !');
+        $this->info('Congrats '. $username . ' You successfully created an admin account !');
     }
 
 }
