@@ -1,12 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Zix\Core\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Facades\Password;
+use Zix\Core\Http\Requests\User\ResetPasswordRequest;
+use Zix\Core\Support\Traits\ApiResponses;
 
 class ResetPasswordController extends Controller
 {
+    protected $user;
     /*
     |--------------------------------------------------------------------------
     | Password Reset Controller
@@ -18,15 +22,54 @@ class ResetPasswordController extends Controller
     |
     */
 
-    use ResetsPasswords;
+    use ResetsPasswords, ApiResponses;
 
     /**
-     * Create a new controller instance.
+     * Reset the given user's password.
      *
+     * @param  ResetPasswordRequest $request
+     * @return \Illuminate\Http\Response
+     */
+    public function reset(ResetPasswordRequest $request)
+    {
+        // Here we will attempt to reset the user's password. If it is successful we
+        // will update the password on an actual user model and persist it to the
+        // database. Otherwise we will parse the error and return the response.
+        $response = $this->broker()->reset(
+            $request->input(), function ($user, $password) {
+                $this->resetPassword($user, $password);
+            }
+        );
+
+
+        // If the password was successfully reset, we return success response message.
+        if ($response == Password::PASSWORD_RESET) {
+            //  clean user tokens
+            $this->user->tokens()->delete();
+
+            return $this->respondDataCreated([
+                'token' => $this->user->createToken($request->header('User-Agent'))->accessToken,
+                'user' => $this->user,
+                'message' => trans($response)
+            ]);
+        }
+
+        return  $this->respondBadRequest(trans($response));
+    }
+
+    /**
+     * Reset the given user's password.
+     *
+     * @param  \Illuminate\Contracts\Auth\CanResetPassword $user
+     * @param  string $password
      * @return void
      */
-    public function __construct()
+    protected function resetPassword($user, $password)
     {
-        $this->middleware('guest');
+        $this->user = $user;
+        return $user->forceFill([
+            'password' => bcrypt($password)
+        ])->save();;
     }
+
 }

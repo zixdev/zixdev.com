@@ -8,6 +8,7 @@ Route::group(['namespace' => '\Auth'], function ($router) {
         $router->post('login', 'LoginController@login');
         $router->post('register', 'RegisterController@register');
         $router->post('forgot-password', 'ForgotPasswordController@reset');
+        $router->post('reset-password', 'ResetPasswordController@reset');
 
     });
 

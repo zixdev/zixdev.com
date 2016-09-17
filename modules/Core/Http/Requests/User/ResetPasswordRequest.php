@@ -4,7 +4,7 @@ namespace Zix\Core\Http\Requests\User;
 
 use App\Http\Requests\Request;
 
-class Create extends Request
+class ResetPasswordRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,7 @@ class Create extends Request
     public function rules()
     {
         return [
-            'username'      => 'required|unique:users|max:255|min:3',
-            'email'         => 'required|unique:users|email|max:255|min:3',
+            'email'         => 'required|email',
             'password'      => 'required|confirmed|max:255|min:6',
         ];
     }
