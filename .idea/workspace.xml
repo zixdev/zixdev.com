@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" afterPath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/LoginController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/LoginController.php">
+      <file leaf-file-name="auth.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4051447">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.60771704">
+              <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -99,9 +91,9 @@
         <option value="$PROJECT_DIR$/modules/Core/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Requests/User/Login.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Http/FormRequest.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
       </list>
     </option>
   </component>
@@ -1256,21 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34726688">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1474110167291" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1474110167291" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1474110167291" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1474110167291" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1474110167291" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1474110167291" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.90139335">
@@ -1323,8 +1300,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4051447">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.4340836">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+          <folding>
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder=" Class LoginController ..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder=" @param Login $request ..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder=" When User Logout We Will Log him out and destroy the token. ..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder=" @param $request ..." />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1474115850733" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60771704">
+          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
           <folding />
         </state>
       </provider>

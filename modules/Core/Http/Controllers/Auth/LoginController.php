@@ -2,8 +2,8 @@
 
 namespace Zix\Core\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Zix\Core\Http\Requests\User\Login;
 use Zix\Core\Support\Traits\ApiResponses;
@@ -63,6 +63,16 @@ class LoginController
         }
 
         return $this->respondUnauthorized(trans('auth.failed'));
+    }
+
+    /**
+     * When User Logout We Will Log him out and destroy the token.
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function logout(Request $request)
+    {
+        return $this->respondWithData($request->user()->tokens()->where('name', $request->header('User-Agent'))->delete());
     }
 
     /**
