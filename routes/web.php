@@ -21,8 +21,7 @@ Route::get('/', function () {
 //
 Route::get('test', function() {
 
-    $user = App\User::first();
-    event(new UserRegistered($user));
+    return Site::getSite();
 //    $user->notify(new \Zix\Core\Notifications\User\ActivateYourAccount($user));
 
 });

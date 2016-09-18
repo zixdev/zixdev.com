@@ -18,6 +18,8 @@ class CoreServiceProvider extends ServiceProvider
         $this->app->register(EventListenersProvider::class);
 
         $this->registerLibraries();
+
+
     }
 
     /**

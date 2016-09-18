@@ -226,6 +226,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Module'    => Zix\Core\Libraries\Modules\ModuleFacade::class,
+        'Site'    => Zix\Core\Libraries\Sites\SiteFacade::class,
 
     ],
 
