@@ -27,6 +27,7 @@ class UserRequestCreate extends Request
             'username'      => 'required|unique:users|max:255|min:3',
             'email'         => 'required|unique:users|email|max:255|min:3',
             'password'      => 'required|confirmed|max:255|min:6',
+            'accept_terms'  => 'required|accepted'
         ];
     }
 }

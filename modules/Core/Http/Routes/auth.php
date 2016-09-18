@@ -13,8 +13,8 @@ Route::group(['namespace' => '\Auth'], function ($router) {
     });
 
 
+    $router->get('logout', 'LoginController@logout');
     $router->group(['middleware' => ['auth:api']], function($router) {
-        $router->get('logout', 'LoginController@logout');
 
         $router->get('user', 'UserController@user');
         $router->post('user', 'UserController@updateUser');

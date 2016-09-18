@@ -49,6 +49,9 @@ class LoginController
         if ($user = Auth::user()) {
             $this->clearLoginAttempts($request);
 
+            // remove the old token.
+            $user->tokens()->where('name', $request->header('User-Agent'))->delete();
+
             return $this->respondDataCreated([
                 'token' => $user->createToken($request->header('User-Agent'))->accessToken,
                 'user' => $user

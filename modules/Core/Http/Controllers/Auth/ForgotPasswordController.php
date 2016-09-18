@@ -51,7 +51,7 @@ class ForgotPasswordController extends Controller
         // If an error was returned by the password broker, we will get this message
         // translated so we can notify a user of the problem. We'll redirect back
         // to where the users came from so they can attempt this process again.
-        return $this->respondWithData(trans($response));
+        return $this->respondBadRequest(trans($response));
 
     }
 }
