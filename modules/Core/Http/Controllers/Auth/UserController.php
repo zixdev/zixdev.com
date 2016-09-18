@@ -2,6 +2,7 @@
 
 namespace Zix\Core\Http\Controllers\Auth;
 
+use App\User;
 use Illuminate\Http\Request;
 use Zix\Core\Http\Requests\User\UserUpdateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateInfoRequest;
@@ -72,6 +73,27 @@ class UserController {
         ]);
     }
 
+
+    public function activateAccount(Request $request)
+    {
+        $user = User::where('active_code', $request->get('active_code'))->where('active', false)->first();
+        if($user) {
+            $user->active_code = null;
+            $user->active = true;
+            $user->save();
+
+            // remove the old token.
+            $user->tokens()->where('name', $request->header('User-Agent'))->delete();
+
+            return $this->respondWithData([
+                'token' => $user->createToken($request->header('User-Agent'))->accessToken,
+                'user'  => $user,
+                'message' => 'Your account was successfully activated'
+            ]);
+        }
+
+        return $this->respondNotFound('<b>Oops</b> looks like something went wrong .<br> Please check your link or try again later !');
+    }
 
 	
 }

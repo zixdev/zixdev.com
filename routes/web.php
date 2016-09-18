@@ -11,17 +11,21 @@
 |
 */
 //
+
+
+use Zix\Core\Events\User\UserRegistered;
+
 Route::get('/', function () {
     return view('welcome');
 });
 //
-//Route::get('test', function() {
-//    return dd(Module::all());
-//    return dd(Module::get('Core')->path());
-//    return dd(Module::get('Cart')->config());
-//
-//
-//});
+Route::get('test', function() {
+
+    $user = App\User::first();
+    event(new UserRegistered($user));
+//    $user->notify(new \Zix\Core\Notifications\User\ActivateYourAccount($user));
+
+});
 //
 Auth::routes();
 //

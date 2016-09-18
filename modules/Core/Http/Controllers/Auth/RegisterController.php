@@ -5,6 +5,7 @@ namespace Zix\Core\Http\Controllers\Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
+use Zix\Core\Events\User\UserRegistered;
 use Zix\Core\Http\Requests\User\UserCreateRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
@@ -51,10 +52,12 @@ class RegisterController extends Controller
         $user = $this->user->create([
             'username'      => $request->get('username'),
             'email'         => $request->get('email'),
-            'password'      => bcrypt($request->get('password'))
+            'password'      => bcrypt($request->get('password')),
+            'active_code'   => str_random(60)
         ]);
 
         // fire event user created.
+        event(new UserRegistered($user));
 
         return $this->respondDataCreated([
             'token' => $user->createToken($request->header('User-Agent'))->accessToken,

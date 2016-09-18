@@ -43,7 +43,8 @@ class CreateAdminCommand extends BaseCommand
         $user = User::create([
             'username'      => $username,
             'email'         => $email,
-            'password'      => bcrypt($password)
+            'password'      => bcrypt($password),
+            'active'        => true
         ]);
 
         $user->assignRole('admin');
