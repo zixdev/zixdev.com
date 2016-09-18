@@ -3,10 +3,10 @@
 namespace Zix\Core\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Support\Facades\Password;
-use Zix\Core\Http\Requests\User\ResetPasswordRequest;
 use Zix\Core\Support\Traits\ApiResponses;
+use Illuminate\Foundation\Auth\ResetsPasswords;
+use Zix\Core\Http\Requests\User\UserResetPasswordRequest;
 
 class ResetPasswordController extends Controller
 {
@@ -27,10 +27,10 @@ class ResetPasswordController extends Controller
     /**
      * Reset the given user's password.
      *
-     * @param  ResetPasswordRequest $request
+     * @param  UserResetPasswordRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function reset(ResetPasswordRequest $request)
+    public function reset(UserResetPasswordRequest $request)
     {
         // Here we will attempt to reset the user's password. If it is successful we
         // will update the password on an actual user model and persist it to the

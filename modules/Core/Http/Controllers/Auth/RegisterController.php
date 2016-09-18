@@ -5,7 +5,7 @@ namespace Zix\Core\Http\Controllers\Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
-use Zix\Core\Http\Requests\User\UserRequestCreate;
+use Zix\Core\Http\Requests\User\UserCreateRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
@@ -42,10 +42,10 @@ class RegisterController extends Controller
     }
 
     /**
-     * @param UserRequestCreate $request
+     * @param UserCreateRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function register(UserRequestCreate $request)
+    public function register(UserCreateRequest $request)
     {
 
         $user = $this->user->create([

@@ -5,7 +5,7 @@ namespace Zix\Core\Http\Controllers\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Zix\Core\Http\Requests\User\Login;
+use Zix\Core\Http\Requests\User\UserLoginRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
@@ -28,10 +28,10 @@ class LoginController
     use ApiResponses, AuthenticatesUsers;
 
     /**
-     * @param Login $request
+     * @param UserLoginRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function login(Login $request)
+    public function login(UserLoginRequest $request)
     {
         // If the class is using the Throttles Login trait, we can automatically throttle
         // the login attempts for this application. We'll key this by the username and
@@ -75,6 +75,9 @@ class LoginController
      */
     public function logout(Request $request)
     {
+        if(! $request->user()) {
+            return $this->respondWithData(true);
+        }
         return $this->respondWithData($request->user()->tokens()->where('name', $request->header('User-Agent'))->delete());
     }
 

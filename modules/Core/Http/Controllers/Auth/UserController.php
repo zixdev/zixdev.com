@@ -3,8 +3,8 @@
 namespace Zix\Core\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
-use Zix\Core\Http\Requests\User\Update;
-use Zix\Core\Http\Requests\User\UpdateInfo;
+use Zix\Core\Http\Requests\User\UserUpdateRequest;
+use Zix\Core\Http\Requests\User\UserUpdateInfoRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
 class UserController {
@@ -40,10 +40,10 @@ class UserController {
 
     /**
      * Update the specified resource in storage.
-     * @param Update $request
+     * @param UserUpdateRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function updateUser(Update $request)
+    public function updateUser(UserUpdateRequest $request)
     {
         $request->user()->update($request->only([
             'email', 'username'
@@ -56,10 +56,10 @@ class UserController {
 
     /**
      * Update the specified resource in storage.
-     * @param Update|UpdateInfo $request
+     * @param UserUpdateInfoRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function updateInfo(UpdateInfo $request)
+    public function updateInfo(UserUpdateInfoRequest $request)
     {
         if($request->user()->info) {
             $request->user()->info->update($request->input());

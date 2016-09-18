@@ -4,7 +4,7 @@ namespace Zix\Core\Http\Requests\User;
 
 use App\Http\Requests\Request;
 
-class Update extends Request
+class UserUpdateRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.

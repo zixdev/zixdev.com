@@ -4,7 +4,7 @@ namespace Zix\Core\Http\Requests\User;
 
 use App\Http\Requests\Request;
 
-class Login extends Request
+class UserLoginRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
