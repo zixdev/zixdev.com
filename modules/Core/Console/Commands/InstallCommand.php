@@ -49,6 +49,7 @@ class InstallCommand extends BaseCommand
         $this->call('passport:install');
 
         // seed database
+        $this->call('zix:db-seed');
 
         // create admin account
         $this->call('zix:create-admin-full-access-role');

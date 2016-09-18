@@ -5,6 +5,7 @@ namespace Zix\Core\Providers;
 use Illuminate\Support\ServiceProvider;
 use Zix\Core\Console\Commands\Admin\CreateAdminCommand;
 use Zix\Core\Console\Commands\Admin\CreateAdminFullAccessRoleCommand;
+use Zix\Core\Console\Commands\DatabaseSeedCommand;
 use Zix\Core\Console\Commands\InstallCommand;
 use Zix\Core\Console\Commands\MakeController;
 use Zix\Core\Console\Commands\MakeEvent;
@@ -58,6 +59,7 @@ class ConsoleServiceProvider extends ServiceProvider
         MigrateRollbackCommand::class,
         MigrateResetCommand::class,
         InstallCommand::class,
+        DatabaseSeedCommand::class,
 
         // App Create commands
         CreateAdminCommand::class,

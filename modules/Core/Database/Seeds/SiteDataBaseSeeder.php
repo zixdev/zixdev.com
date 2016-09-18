@@ -13,18 +13,16 @@ class SiteDataBaseSeeder extends Seeder
      */
     public function run()
     {
-        $site = Site::create([
-            'name'		=> 'Zix Development',
-            'slug'		=> 'zix-development',
-            'ui'		=> 'default',
-            'url'		=> 'http://localhost:8000/',
-            'ssl'		=> ''
+        $site_url = env('API_DEFAULT_SITE_CLIENT_URL', 'https://zixdev.com');
+
+        Site::create([
+            'name'		                => env('API_DEFAULT_SITE_CLIENT', 'Zix Development'),
+            'slug'		                => str_slug(env('API_DEFAULT_SITE_CLIENT', 'Zix Development')),
+            'url'		                => $site_url,
+            'site_public_code'          => md5($site_url),
+            'site_private_code'         => bcrypt($site_url),
+            'ssl'		                => ''
         ]);
 
-//        $site->seo()->create([
-//            'title'         => 'Zix Development',
-//            'description'   => 'The future of web development',
-//            'keywords'      => 'Technology, Development, Web, Marketing'
-//        ]);
     }
 }

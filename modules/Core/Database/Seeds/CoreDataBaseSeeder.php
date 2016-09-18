@@ -1,8 +1,9 @@
 <?php
 
-namespace Zix\Core\Database\Seeders;
+namespace Zix\Core\Database\Seeds;
 
 use Illuminate\Database\Seeder;
+use Zix\Core\Database\Seeders\SiteDataBaseSeeder;
 
 class CoreDataBaseSeeder extends Seeder
 {

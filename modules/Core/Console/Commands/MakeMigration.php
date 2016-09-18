@@ -2,12 +2,9 @@
 
 namespace Zix\Core\Console\Commands;
 
-use Illuminate\Support\Str;
 use Zix\Core\Console\Generators\Traits\StubGeneratorTrait;
 use Illuminate\Database\Console\Migrations\BaseCommand;
-use Illuminate\Database\Migrations\MigrationCreator;
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\Support\Composer;
+
 
 /**
  * Class MakeMigration
