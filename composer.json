@@ -10,7 +10,8 @@
         "laravel/passport": "^0.2.3",
         "spatie/laravel-medialibrary": "^4.8",
         "spatie/laravel-permission": "^1.5",
-        "pusher/pusher-php-server": "^2.6"
+        "pusher/pusher-php-server": "^2.6",
+        "mpociot/laravel-apidoc-generator": "^1.6"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -53,5 +54,8 @@
         "preferred-install": "dist"
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "packagist": { "url": "https://packagist.org", "type": "composer" }
+    }
 }

@@ -173,11 +173,15 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Laravel\Passport\PassportServiceProvider::class,
+
         // Spatie Libraries.
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
 
         Zix\Core\Libraries\Modules\ModuleServiceProvider::class,
+
+        // API Documentation.
+        Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
 
     ],
 
