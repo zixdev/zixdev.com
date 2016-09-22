@@ -1,0 +1,14 @@
+image: alpine:latest
+## this task runner should be runned only when pushing to production .
+pages:
+  stage: deploy
+  script:
+    - echo 'Updating Documentation Logo ...'
+    - cp public/assets/images/logo.png  documentation/images
+  artifacts:
+    paths:
+    - documentation
+
+  only:
+  - master
+
