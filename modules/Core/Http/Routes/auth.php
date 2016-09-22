@@ -5,7 +5,7 @@ Route::group(['namespace' => '\Auth', 'resource' => 'Auth'], function ($router) 
 
     $router->group(['middleware' => ['guest:api']], function($router) {
 
-        $router->post('login', 'LoginController@login');
+        $router->post('login', 'LoginController@login')->name('Auth');
         $router->post('register', 'RegisterController@register');
         $router->post('forgot-password', 'ForgotPasswordController@reset');
         $router->post('reset-password', 'ResetPasswordController@reset');
@@ -14,7 +14,7 @@ Route::group(['namespace' => '\Auth', 'resource' => 'Auth'], function ($router) 
 
 
     $router->get('logout', 'LoginController@logout');
-    $router->post('user/account/activate', 'UserController@activateAccount');
+    $router->post('user/account/activate', 'RegisterController@activateAccount');
 
     $router->group(['middleware' => ['auth:api']], function($router) {
 

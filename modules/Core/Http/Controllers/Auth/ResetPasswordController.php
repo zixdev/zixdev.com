@@ -8,8 +8,16 @@ use Zix\Core\Support\Traits\ApiResponses;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 use Zix\Core\Http\Requests\User\UserResetPasswordRequest;
 
+/**
+ * Class ResetPasswordController
+ * @package Zix\Core\Http\Controllers\Auth
+ * @resource Authentication
+ */
 class ResetPasswordController extends Controller
 {
+    /**
+     * @var
+     */
     protected $user;
     /*
     |--------------------------------------------------------------------------
@@ -25,8 +33,18 @@ class ResetPasswordController extends Controller
     use ResetsPasswords, ApiResponses;
 
     /**
-     * Reset the given user's password.
+     * Reset User Password.
+     * ###1) resetting user password:
+     * - Here we will attempt to reset the user's password.
+     * - If it is successful we will update the password on an actual user model and persist it to the database.
+     * - Otherwise we will parse the error and return the response.
      *
+     *
+     * ###2) return success if the password been reset.
+     * - If the password was successfully reset, we return success response message.
+     * - Clean user tokens (to not allow other applications to log in with the old tokens).
+     * - Create new token for the user and log him in
+     * - Return response with the user token and him details.
      * @param  UserResetPasswordRequest $request
      * @return \Illuminate\Http\Response
      */

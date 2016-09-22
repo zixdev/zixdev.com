@@ -50,6 +50,7 @@ this.apiServie.{{strtolower($parsedRoute['methods'][0])}}("{{$parsedRoute['uri']
 ```
 @endif
 
+
 ### HTTP Request
 @foreach($parsedRoute['methods'] as $method)
 `{{$method}} {{$parsedRoute['uri']}}`

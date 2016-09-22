@@ -6,11 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
+use Zix\Core\Http\Requests\User\UserForgotPasswordRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
  * Class ForgotPasswordController
  * @package Zix\Core\Http\Controllers\Auth
+ * @resource Authentication
  */
 class ForgotPasswordController extends Controller
 {
@@ -28,18 +30,23 @@ class ForgotPasswordController extends Controller
     use SendsPasswordResetEmails, ApiResponses;
 
     /**
-     * Send a reset link to the given user.
+     * Send Reset Password Email.
+     * ###1) Send reset password link:
+     * - We will send the password reset link to this user.
+     * - Once we have attempted to send the link.
+     * - we will examine the response then see the message we need to show to the user.
+     * - Finally, we'll send out a proper response.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * ###2) In case error and the email not found :
+     * - If an error was returned by the password broker
+     * - We will get this message translated so we can notify a user of the problem.
+     * - We'll we'll send out and error message.
+     *
+     * @param UserForgotPasswordRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function reset(Request $request)
+    public function reset(UserForgotPasswordRequest $request)
     {
-        $this->validate($request, ['email' => 'required|email']);
-
-        // We will send the password reset link to this user. Once we have attempted
-        // to send the link, we will examine the response then see the message we
-        // need to show to the user. Finally, we'll send out a proper response.
         $response = $this->broker()->sendResetLink(
             $request->only('email'), $this->resetNotifier()
         );
@@ -48,10 +55,6 @@ class ForgotPasswordController extends Controller
             return $this->respondWithData(trans($response));
         }
 
-        // If an error was returned by the password broker, we will get this message
-        // translated so we can notify a user of the problem. We'll redirect back
-        // to where the users came from so they can attempt this process again.
         return $this->respondBadRequest(trans($response));
-
     }
 }

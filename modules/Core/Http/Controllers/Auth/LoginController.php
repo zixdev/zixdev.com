@@ -11,6 +11,7 @@ use Zix\Core\Support\Traits\ApiResponses;
 /**
  * Class LoginController
  * @package Zix\Core\Http\Controllers\Auth
+ * @resource Authentication
  */
 class LoginController
 {
@@ -28,7 +29,20 @@ class LoginController
     use ApiResponses, AuthenticatesUsers;
 
     /**
-     * Handle a login request to the application.
+     * Login user.
+     * ###1) when first submit the form
+     * - If the class is using the Throttles Login trait, we can automatically throttle
+     * - the login attempts for this application. We'll key this by the username and
+     * - the IP address of the client making these requests into this application.
+     *
+     * ###2) Send the response after the user was authenticated.
+     * - Create new token for the user with the User-Agent (browser type)
+     * - Return response with the user token and him details.
+     *
+     * ###3) Send the response after the user was unauthenticated.
+     * - If the login attempt was unsuccessful we will increment the number of attempts
+     * - to login and redirect the user back to the login form. Of course, when this
+     * - user surpasses their maximum number of attempts they will get locked out.
      * @param UserLoginRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -70,6 +84,7 @@ class LoginController
     }
 
     /**
+     * Logout User.
      * When User Logout We Will Log him out and destroy the token.
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse

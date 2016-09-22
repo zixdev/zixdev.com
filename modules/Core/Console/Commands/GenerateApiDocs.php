@@ -43,7 +43,7 @@ class GenerateApiDocs extends BaseCommand
 //		$this->call('api:generate --routePrefix=api/* --actAsUserId=1');
 		$this->call('api:generate', [
 			'--routePrefix'		=> 'api/*',
-//			'--header'		=> 'Bearer jwt_token',
+			'--header'		=> 'Authorization: Bearer jwt_token',
 			'--actAsUserId'	=> 1,
 		]);
 	}

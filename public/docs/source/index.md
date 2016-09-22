@@ -4,8 +4,6 @@ title: API Reference
 language_tabs:
 - bash
 - javascript
-- angular
-
 
 
 includes:
@@ -22,9 +20,23 @@ Welcome to the generated API reference.
 [Get Postman Collection](http://localhost/docs/collection.json)
 <!-- END_INFO -->
 
-#general $group
+#Authentication
 <!-- START_c3fa189a6c95ca36ad6ac4791a873d23 -->
-## Handle a login request to the application.
+## Login user.
+
+###1) when first submit the form
+- If the class is using the Throttles Login trait, we can automatically throttle
+- the login attempts for this application. We'll key this by the username and
+- the IP address of the client making these requests into this application.
+
+###2) Send the response after the user was authenticated.
+- Create new token for the user with the User-Agent (browser type)
+- Return response with the user token and him details.
+
+###3) Send the response after the user was unauthenticated.
+- If the login attempt was unsuccessful we will increment the number of attempts
+- to login and redirect the user back to the login form. Of course, when this
+- user surpasses their maximum number of attempts they will get locked out.
 
 > Example request:
 
@@ -57,6 +69,7 @@ this.apiServie.post("api/login", data)
 ```
 
 
+
 ### HTTP Request
 `POST api/login`
 
@@ -69,7 +82,10 @@ Parameter | Type | Status | Description
 
 <!-- END_c3fa189a6c95ca36ad6ac4791a873d23 -->
 <!-- START_d7b7952e7fdddc07c978c9bdaf757acf -->
-## Handle a registration request for the application.
+## Register new user.
+
+When the submit a register form we will be creating new account for him,
+also we will be sending to him and email with link to activate him account.
 
 > Example request:
 
@@ -106,6 +122,7 @@ this.apiServie.post("api/register", data)
 ```
 
 
+
 ### HTTP Request
 `POST api/register`
 
@@ -120,17 +137,33 @@ Parameter | Type | Status | Description
 
 <!-- END_d7b7952e7fdddc07c978c9bdaf757acf -->
 <!-- START_78c4b7d6388c81c68bc37ec872d44f65 -->
-## Send a reset link to the given user.
+## Send Reset Password Email.
+
+###1) Send reset password link:
+- We will send the password reset link to this user.
+- Once we have attempted to send the link.
+- we will examine the response then see the message we need to show to the user.
+- Finally, we'll send out a proper response.
+
+###2) In case error and the email not found :
+- If an error was returned by the password broker
+- We will get this message translated so we can notify a user of the problem.
+- We'll we'll send out and error message.
 
 > Example request:
 
 ```bash
 curl "http://localhost/api/forgot-password" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "email"="cordell06@example.net" \
+
 ```
 
 ```javascript
 // Angular 2
+let data = {
+        "email": "cordell06@example.net"
+};
 
 this.apiServie.post("api/forgot-password", data)
     .subscribe(
@@ -146,13 +179,31 @@ this.apiServie.post("api/forgot-password", data)
 ```
 
 
+
 ### HTTP Request
 `POST api/forgot-password`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    email | email |  required  | 
 
 <!-- END_78c4b7d6388c81c68bc37ec872d44f65 -->
 <!-- START_6d3061d375666b8cf6babe163b36f250 -->
-## Reset the given user&#039;s password.
+## Reset User Password.
+
+###1) resetting user password:
+- Here we will attempt to reset the user's password.
+- If it is successful we will update the password on an actual user model and persist it to the database.
+- Otherwise we will parse the error and return the response.
+
+
+###2) return success if the password been reset.
+- If the password was successfully reset, we return success response message.
+- Clean user tokens (to not allow other applications to log in with the old tokens).
+- Create new token for the user and log him in
+- Return response with the user token and him details.
 
 > Example request:
 
@@ -185,6 +236,7 @@ this.apiServie.post("api/reset-password", data)
 ```
 
 
+
 ### HTTP Request
 `POST api/reset-password`
 
@@ -197,7 +249,9 @@ Parameter | Type | Status | Description
 
 <!-- END_6d3061d375666b8cf6babe163b36f250 -->
 <!-- START_7e6ee60aafd6de54298e0e276a7451fe -->
-## When User Logout We Will Log him out and destroy the token.
+## Logout User.
+
+When User Logout We Will Log him out and destroy the token.
 
 > Example request:
 
@@ -231,6 +285,7 @@ this.apiServie.get("api/logout", data)
 }
 ```
 
+
 ### HTTP Request
 `GET api/logout`
 
@@ -239,17 +294,22 @@ this.apiServie.get("api/logout", data)
 
 <!-- END_7e6ee60aafd6de54298e0e276a7451fe -->
 <!-- START_8d78d43a0817865525e3740dbf866578 -->
-## api/user/account/activate
+## Activate User&#039;s account.
 
 > Example request:
 
 ```bash
 curl "http://localhost/api/user/account/activate" \
--H "Accept: application/json"
+-H "Accept: application/json" \
+    -d "active_code"="vero" \
+
 ```
 
 ```javascript
 // Angular 2
+let data = {
+        "active_code": "vero"
+};
 
 this.apiServie.post("api/user/account/activate", data)
     .subscribe(
@@ -265,11 +325,18 @@ this.apiServie.post("api/user/account/activate", data)
 ```
 
 
+
 ### HTTP Request
 `POST api/user/account/activate`
 
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    active_code | string |  required  | Minimum: `60` Maximum: `60`
 
 <!-- END_8d78d43a0817865525e3740dbf866578 -->
+#Authenticated User
 <!-- START_2ea88ff35aa222f5582e50f39a2b35fd -->
 ## Display a listing of the resource.
 
@@ -315,6 +382,7 @@ this.apiServie.get("api/user", data)
 }
 ```
 
+
 ### HTTP Request
 `GET api/user`
 
@@ -354,6 +422,7 @@ this.apiServie.post("api/user", data)
     );
 
 ```
+
 
 
 ### HTTP Request
@@ -428,6 +497,7 @@ this.apiServie.get("api/user/info", data)
 }
 ```
 
+
 ### HTTP Request
 `GET api/user/info`
 
@@ -483,6 +553,7 @@ this.apiServie.post("api/user/info", data)
     );
 
 ```
+
 
 
 ### HTTP Request

@@ -5,7 +5,6 @@ language_tabs:
 - javascript
 
 
-
 includes:
 
 search: true
