@@ -43,6 +43,7 @@ class RegisterController extends Controller
     }
 
     /**
+     * Handle a registration request for the application.
      * @param UserCreateRequest $request
      * @return \Illuminate\Http\JsonResponse
      */

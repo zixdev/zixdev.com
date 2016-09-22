@@ -1,7 +1,7 @@
 <?php
 
 
-Route::group(['namespace' => '\Auth'], function ($router) {
+Route::group(['namespace' => '\Auth', 'resource' => 'Auth'], function ($router) {
 
     $router->group(['middleware' => ['guest:api']], function($router) {
 

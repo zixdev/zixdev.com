@@ -4,13 +4,16 @@ title: API Reference
 language_tabs:
 - bash
 - javascript
+- angular
+
+
 
 includes:
 
 search: true
 
 toc_footers:
-- <a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a>
+- <a href='http://zixdev.com'>Documentation Powered by Zix Development</a>
 ---
 <!-- START_INFO -->
 # Info
@@ -19,9 +22,9 @@ Welcome to the generated API reference.
 [Get Postman Collection](http://localhost/docs/collection.json)
 <!-- END_INFO -->
 
-#general
+#general $group
 <!-- START_c3fa189a6c95ca36ad6ac4791a873d23 -->
-## api/login
+## Handle a login request to the application.
 
 > Example request:
 
@@ -34,23 +37,23 @@ curl "http://localhost/api/login" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/login",
-    "method": "POST",
-    "data": {
+// Angular 2
+let data = {
         "email": "uzieme@example.org",
         "password": "rerum"
-},
-        "headers": {
-    "accept": "application/json"
-    }
-}
+};
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.post("api/login", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 
@@ -66,7 +69,7 @@ Parameter | Type | Status | Description
 
 <!-- END_c3fa189a6c95ca36ad6ac4791a873d23 -->
 <!-- START_d7b7952e7fdddc07c978c9bdaf757acf -->
-## api/register
+## Handle a registration request for the application.
 
 > Example request:
 
@@ -81,25 +84,25 @@ curl "http://localhost/api/register" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/register",
-    "method": "POST",
-    "data": {
+// Angular 2
+let data = {
         "username": "et",
         "email": "milo77@example.org",
         "password": "et",
         "accept_terms": true
-},
-        "headers": {
-    "accept": "application/json"
-    }
-}
+};
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.post("api/register", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 
@@ -127,19 +130,19 @@ curl "http://localhost/api/forgot-password" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/forgot-password",
-    "method": "POST",
-        "headers": {
-    "accept": "application/json"
-    }
-}
+// Angular 2
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.post("api/forgot-password", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 
@@ -162,23 +165,23 @@ curl "http://localhost/api/reset-password" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/reset-password",
-    "method": "POST",
-    "data": {
+// Angular 2
+let data = {
         "email": "maximillia06@example.com",
         "password": "provident"
-},
-        "headers": {
-    "accept": "application/json"
-    }
-}
+};
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.post("api/reset-password", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 
@@ -204,26 +207,26 @@ curl "http://localhost/api/logout" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/logout",
-    "method": "GET",
-        "headers": {
-    "accept": "application/json"
-    }
-}
+// Angular 2
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.get("api/logout", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 > Example response:
 
 ```json
 {
-    "data": true,
+    "data": 0,
     "status_code": 200
 }
 ```
@@ -246,19 +249,19 @@ curl "http://localhost/api/user/account/activate" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/user/account/activate",
-    "method": "POST",
-        "headers": {
-    "accept": "application/json"
-    }
-}
+// Angular 2
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.post("api/user/account/activate", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 
@@ -278,19 +281,19 @@ curl "http://localhost/api/user" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/user",
-    "method": "GET",
-        "headers": {
-    "accept": "application/json"
-    }
-}
+// Angular 2
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.get("api/user", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 > Example response:
@@ -298,7 +301,15 @@ console.log(response);
 ```json
 {
     "data": {
-        "user": null
+        "user": {
+            "id": 1,
+            "username": "admin@admin.com",
+            "email": "admin@admin.com",
+            "active": 1,
+            "active_code": null,
+            "created_at": "2016-09-18 15:00:03",
+            "updated_at": "2016-09-22 15:22:31"
+        }
     },
     "status_code": 200
 }
@@ -325,23 +336,23 @@ curl "http://localhost/api/user" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/user",
-    "method": "POST",
-    "data": {
+// Angular 2
+let data = {
         "username": "unde",
         "email": "felipa52@example.org"
-},
-        "headers": {
-    "accept": "application/json"
-    }
-}
+};
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.post("api/user", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 
@@ -367,25 +378,54 @@ curl "http://localhost/api/user/info" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/user/info",
-    "method": "GET",
-        "headers": {
-    "accept": "application/json"
-    }
-}
+// Angular 2
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.get("api/user/info", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 > Example response:
 
 ```json
-null
+{
+    "data": {
+        "user": {
+            "id": 1,
+            "username": "admin@admin.com",
+            "email": "admin@admin.com",
+            "active": 1,
+            "active_code": null,
+            "created_at": "2016-09-18 15:00:03",
+            "updated_at": "2016-09-22 15:22:31",
+            "info": {
+                "id": 1,
+                "user_id": 1,
+                "first_name": null,
+                "last_name": null,
+                "phone_number": null,
+                "mobile_number": null,
+                "address_line_1": null,
+                "address_line_2": null,
+                "subrub": null,
+                "post_code": null,
+                "state": null,
+                "country": null,
+                "created_at": "2016-09-22 15:13:02",
+                "updated_at": "2016-09-22 15:13:02"
+            }
+        }
+    },
+    "status_code": 200
+}
 ```
 
 ### HTTP Request
@@ -417,12 +457,8 @@ curl "http://localhost/api/user/info" \
 ```
 
 ```javascript
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://localhost/api/user/info",
-    "method": "POST",
-    "data": {
+// Angular 2
+let data = {
         "first_name": "et",
         "last_name": "et",
         "phone_number": "et",
@@ -433,15 +469,19 @@ var settings = {
         "post_code": "et",
         "state": "et",
         "country": "et"
-},
-        "headers": {
-    "accept": "application/json"
-    }
-}
+};
 
-$.ajax(settings).done(function (response) {
-console.log(response);
-});
+this.apiServie.post("api/user/info", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
 ```
 
 

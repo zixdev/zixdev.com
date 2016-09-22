@@ -28,6 +28,7 @@ class LoginController
     use ApiResponses, AuthenticatesUsers;
 
     /**
+     * Handle a login request to the application.
      * @param UserLoginRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
