@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Zix Development</title>
 
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Raleway:100,400,300,600' rel='stylesheet' type='text/css'>
@@ -76,14 +76,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel API v1.1
+                    Zix Development <br>
+                    <small>API v1</small>
                 </div>
 
                 <div class="links">
-                    <a href="/docs">Documentation</a>
-                    <a href="/news">News</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://github.com/zixdev">GitHub</a>
+                    <a href="{{url('documentation')}}">Documentation</a>
+                    <a href="https://zixdev.com/news">News</a>
+                    <a href="https://zixdev.com/">About Us</a>
+                    <a href="https://zixdev.com/news">Contact Us</a>
                 </div>
             </div>
         </div>
