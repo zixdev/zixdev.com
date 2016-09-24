@@ -27,5 +27,10 @@ class Site
         return 'Site Not Found';
     }
 
+    public function getTheme()
+    {
+        
+    }
+
 
 }
