@@ -12,6 +12,27 @@
 */
 //
 
+Route::get('tmp', function() {
+   return phpinfo();
+});
+Route::get('admin/add/site', function() {
+    return view('tmp-admin.add-site');
+});
+
+Route::post('admin/add/site', function() {
+    $file = request()->file('ui');
+    $path = $file->move(storage_path('tmp/ui/zips'), $file->getClientOriginalName());
+    $zip = new ZipArchive;
+    $zip->open($path);
+    $zip->extractTo(storage_path('tmp/ui/tmp'));
+
+    return \Site::get(request()->get('site'))->addSiteUiScripts(storage_path('tmp/ui/tmp/public'), request()->get('version'));
+
+
+
+    return dd($zipper);
+    return view('tmp-admin.add-site');
+});
 
 //
 Route::get('test', function () {
