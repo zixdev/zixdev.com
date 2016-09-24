@@ -13,29 +13,37 @@
 //
 
 
-
-Route::get('/', function () {
-    return view('master');
-});
-
-Route::get('/{name}.js', function($name) {
-    return site()->getThemeScripts($name);
-});
-Route::get('/{name}.{build}.js', function($name, $build) {
-    return site()->getThemeScripts($name, $build);
-});
-Route::get('/{name}.{build}.{type}.js', function($name, $build, $type) {
-    return site()->getThemeScripts($name, $build, $type);
-});
-
-
 //
-Route::get('test', function() {
+Route::get('test', function () {
+//    return site()->scripts();
+    // disable all old versions.
+    site()->versions()->disable();
 
-    return Site::getSite();
+
+    $version = '1.0.4';
+
+    $scripts = new \Illuminate\Support\Collection();
+    $files = \File::files(public_path('assets/default'));
+
+    foreach ($files as $file) {
+        $name = \File::basename($file);
+        $contents = \File::get($file);
+        if (!str_contains($name, 'gz') && (str_contains($name, 'main') || str_contains($name, 'styles') || str_contains($name, 'inline'))) {
+            $scripts->push($name);
+        }
+
+
+        Storage::put('scripts/' . site()->ui . '/' . $version . '/' . $name, $contents, 'public');
+    }
+    // create new site version.
+
+    return site()->versions()->create([
+        'scripts' => $scripts,
+        'version' => $version
+    ]);
 
 });
-//
-Auth::routes();
-//
-Route::get('/home', 'HomeController@index');
+////
+//Auth::routes();
+////
+//Route::get('/home', 'HomeController@index');

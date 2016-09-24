@@ -12,6 +12,7 @@
   ],
   "aliases":{},
   "files": [
-    "helpers.php"
+    "helpers.php",
+    "site_routes.php"
   ]
 }

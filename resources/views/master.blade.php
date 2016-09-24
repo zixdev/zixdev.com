@@ -14,8 +14,11 @@
 </head>
 <body>
 <app-root>Loading...</app-root>
-<script type="text/javascript" src="/inline.js"></script>
-<script type="text/javascript" src="/styles.2760357f8ff401c6d3e7.bundle.js"></script>
-<script type="text/javascript" src="/main.439ee98a8d9ea1086929.bundle.js"></script>
+
+
+@foreach(site()->scripts() as $script )
+    <script type="text/javascript" src="/{{$script}}"></script>
+@endforeach
+
 </body>
 </html>

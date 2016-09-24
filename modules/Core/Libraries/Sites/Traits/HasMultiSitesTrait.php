@@ -1,6 +1,6 @@
 <?php namespace Zix\Core\Libraries\Sites\Traits;
 
-use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
 
 trait HasMultiSitesTrait
 {
@@ -12,8 +12,9 @@ trait HasMultiSitesTrait
 
     public function getThemeScripts($name, $build = null, $type = null)
     {
-        /** @var TYPE_NAME $name */
-        $file = public_path('assets/' . $this->ui . '/' .$name);
+        $version = site()->versions()->enabled()->latest()->first()->version;
+
+        $file = 'scripts/' . $this->ui . '/' . $version . '/' .$name;
 
         if($build) {
             $file .= '.' . $build;
@@ -23,7 +24,14 @@ trait HasMultiSitesTrait
             $file .= '.' . $type;
         }
 
-        return (string) require $file . '.js';
+        $file .= '.js';
+
+        return Storage::get($file);
+    }
+
+    public function scripts()
+    {
+        return json_decode(site()->versions()->enabled()->latest()->first()->scripts);
     }
 
 }

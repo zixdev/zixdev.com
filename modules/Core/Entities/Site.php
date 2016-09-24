@@ -9,4 +9,12 @@ class Site extends Model
 {
     use HasMultiSitesTrait;
 
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function versions()
+    {
+        return $this->hasMany(SiteVersion::class);
+    }
 }
