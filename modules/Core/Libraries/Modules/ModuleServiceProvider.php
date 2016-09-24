@@ -1,8 +1,9 @@
 <?php namespace Zix\Core\Libraries\Modules;
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\ServiceProvider;
-use Zix\Core\Libraries\Modules\Contracts\PackagerInterface;
 use Zix\Core\Libraries\Modules\Helpers\Packager;
+use Zix\Core\Libraries\Modules\Contracts\PackagerInterface;
 
 /**
  * Class ModuleServiceProvider
@@ -19,10 +20,9 @@ class ModuleServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->singleton('modules', function($app) {
+        $this->app->singleton('modules', function ($app) {
             return new Module($app['files']);
         });
-
 
 
         $this->registerModulesProviders();
@@ -35,9 +35,10 @@ class ModuleServiceProvider extends ServiceProvider
      */
     public function registerModulesProviders()
     {
-        $this->app['modules']->all()->map(function($package) {
-            if($package->enabled()) {
+        $this->app['modules']->all()->map(function ($package) {
+            if ($package->enabled()) {
                 $this->registerProviders($package->providers());
+                $this->requiredFiles($package->config()->files, $package->name());
             }
         });
     }
@@ -56,8 +57,15 @@ class ModuleServiceProvider extends ServiceProvider
      */
     public function registerProviders(array $providers)
     {
-        foreach($providers as $provider) {
+        foreach ($providers as $provider) {
             $this->app->register($provider);
+        }
+    }
+
+    public function requiredFiles(array $files, $module)
+    {
+        foreach ($files as $file) {
+            File::getRequire(base_path('modules/' . $module . '/' .$file));
         }
     }
 }

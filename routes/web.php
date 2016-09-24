@@ -13,16 +13,14 @@
 //
 
 
-use Zix\Core\Events\User\UserRegistered;
 
 Route::get('/', function () {
-    return view('welcome');
+    return dd(site()->ui);
 });
 //
 Route::get('test', function() {
 
     return Site::getSite();
-//    $user->notify(new \Zix\Core\Notifications\User\ActivateYourAccount($user));
 
 });
 //

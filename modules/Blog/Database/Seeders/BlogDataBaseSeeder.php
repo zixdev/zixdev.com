@@ -1,4 +1,4 @@
-<?php namespace Zix\Blog\Database\Seeds;
+<?php namespace Zix\Blog\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 

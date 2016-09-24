@@ -23,6 +23,7 @@ class CreateSitesTable extends Migration
             $table->string('site_private_code')->unique();
 
             $table->string('url')->unique();
+            $table->string('ui')->unique();
             $table->string('ssl')->unique();
 
             $table->boolean('status')->default(true);

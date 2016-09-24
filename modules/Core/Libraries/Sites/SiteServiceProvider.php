@@ -13,8 +13,8 @@ class SiteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->singleton('sites', function($app) {
-            return new Site(request()->header('SitePublicCode'));
+        $this->app->singleton('sites', function() {
+            return new Site();
         });
 
     }

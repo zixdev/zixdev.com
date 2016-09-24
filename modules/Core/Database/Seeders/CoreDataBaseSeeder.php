@@ -1,6 +1,6 @@
 <?php
 
-namespace Zix\Core\Database\Seeds;
+namespace Zix\Core\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Zix\Core\Database\Seeders\SiteDataBaseSeeder;

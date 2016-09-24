@@ -1,4 +1,4 @@
-<?php namespace Zix\Cart\Database\Seeds;
+<?php namespace Zix\Cart\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
