@@ -35,7 +35,7 @@ class MigrateResetCommand extends BaseCommand
     public function handle()
     {
 
-        $this->call('zix:migrate-rollback');
+        $this->call('zix:migrate-clean');
 
 
 

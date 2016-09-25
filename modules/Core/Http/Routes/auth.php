@@ -1,11 +1,11 @@
 <?php
 
 
-Route::group(['namespace' => '\Auth', 'resource' => 'Auth'], function ($router) {
+Route::group(['namespace' => '\Auth'], function ($router) {
 
     $router->group(['middleware' => ['guest:api']], function($router) {
 
-        $router->post('login', 'LoginController@login')->name('Auth');
+        $router->post('login', 'LoginController@login');
         $router->post('register', 'RegisterController@register');
         $router->post('forgot-password', 'ForgotPasswordController@reset');
         $router->post('reset-password', 'ResetPasswordController@reset');

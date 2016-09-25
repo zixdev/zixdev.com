@@ -17,14 +17,13 @@ class CreateSitesTable extends Migration
             $table->increments('id');
 
             $table->string('name')->unique();
-            $table->string('slug')->unique();
 
-            $table->string('site_public_code')->unique();
-            $table->string('site_private_code')->unique();
+            $table->string('public_code')->unique()->nullable();
+            $table->string('private_code')->unique()->nullable();
 
             $table->string('url')->unique();
             $table->string('ui')->unique();
-            $table->string('ssl')->unique();
+            $table->string('ssl')->unique()->nullable();
 
             $table->boolean('status')->default(true);
             $table->timestamps();

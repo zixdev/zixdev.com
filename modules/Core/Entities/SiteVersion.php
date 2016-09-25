@@ -3,6 +3,7 @@
 namespace Zix\Core\Entities;
 
 use Illuminate\Database\Eloquent\Model;
+use Zix\Core\Helpers\Traits\Model\SmartModelTrait;
 
 /**
  * Class SiteVersion
@@ -10,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class SiteVersion extends Model
 {
+    use SmartModelTrait;
     /**
      * @var array
      */
@@ -21,49 +23,5 @@ class SiteVersion extends Model
     public function site()
     {
         return $this->belongsTo(Site::class);
-    }
-
-    /**
-     * Scope a query to only include enabled rows.
-     *
-     * @param $query
-     * @return \Illuminate\Database\Eloquent\Builder
-     */
-    public function scopeEnabled($query)
-    {
-        return $query->where('status', true);
-    }
-
-    /**
-     * Scope a query to only include disabled rows.
-     *
-     * @param $query
-     * @return \Illuminate\Database\Eloquent\Builder
-     */
-    public function scopeDisabled($query)
-    {
-        return $query->where('status', false);
-    }
-
-    /**
-     * Scope a query to disable row.
-     *
-     * @param $query
-     * @return \Illuminate\Database\Eloquent\Builder
-     */
-    public function scopeDisable($query)
-    {
-        return $query->update(['status' => false]);
-    }
-
-    /**
-     * Scope a query to enable row.
-     *
-     * @param $query
-     * @return \Illuminate\Database\Eloquent\Builder
-     */
-    public function scopeEnable($query)
-    {
-        return $query->update(['status' => true]);
     }
 }

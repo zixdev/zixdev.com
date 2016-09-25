@@ -25,7 +25,8 @@ class UserController {
     public function user(Request $request)
     {
         return $this->respondWithData([
-            'user' => $request->user()
+            'user' => $request->user(),
+            'permissions'  => $request->user()->permissions()->pluck('name')
         ]);
     }
 

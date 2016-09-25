@@ -8,6 +8,7 @@
  */
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, X-XSRF-TOKEN, SitePublicCode");
+header("Access-Control-Allow-Methods: PUT");
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader

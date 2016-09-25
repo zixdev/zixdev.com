@@ -39,6 +39,7 @@ class CreateAdminFullAccessRoleCommand extends BaseCommand
 
 		Role::create(['name' => 'admin']);
 		Permission::create(['name' => 'full_access']);
+		Permission::create(['name' => 'view_admin']);
 
 		$this->info('Administration Roles Created Successfully. ');
 	}

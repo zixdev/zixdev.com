@@ -109,9 +109,10 @@ class Migrator
     public function reset()
     {
         $migrations = $this->getMigrations(true);
-
-        $this->requireFiles($migrations);
-
+        $path = $this->getPath();
+        foreach ($migrations as $file) {
+            $this->app['files']->requireOnce($path.'/'.$file.'.php');
+        }
         $migrated = [];
 
         foreach ($migrations as $migration) {

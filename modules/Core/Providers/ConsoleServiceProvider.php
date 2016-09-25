@@ -24,6 +24,7 @@ use Zix\Core\Console\Commands\MakeProvider;
 use Zix\Core\Console\Commands\MakeRequest;
 use Zix\Core\Console\Commands\MakeSeeder;
 use Zix\Core\Console\Commands\MakeTest;
+use Zix\Core\Console\Commands\MigrateCleanCommand;
 use Zix\Core\Console\Commands\MigrateCommand;
 use Zix\Core\Console\Commands\MigrateResetCommand;
 use Zix\Core\Console\Commands\MigrateRollbackCommand;
@@ -58,6 +59,7 @@ class ConsoleServiceProvider extends ServiceProvider
         MakeTest::class,
         MigrateCommand::class,
         MigrateRollbackCommand::class,
+        MigrateCleanCommand::class,
         MigrateResetCommand::class,
         InstallCommand::class,
         DatabaseSeedCommand::class,
