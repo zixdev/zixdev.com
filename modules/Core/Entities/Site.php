@@ -10,7 +10,7 @@ class Site extends Model
 {
     use HasMultiSitesTrait, SmartModelTrait;
 
-    protected $fillable = ['name', 'url', 'ui'];
+    protected $fillable = ['name', 'url', 'ui', 'status'];
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
