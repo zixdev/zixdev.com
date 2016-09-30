@@ -2,9 +2,10 @@
 
 
 Route::get('/', function () {
-    if(site()->versions()->enabled()->count())
-        return view('master');
-    return 'Ui Not Found, Please Install new one';
+    return view('welcome');
+//    if(site()->versions()->enabled()->count())
+//        return view('master');
+//    return 'Ui Not Found, Please Install new one';
 });
 
 Route::get('/{name}.js', function($name) {
