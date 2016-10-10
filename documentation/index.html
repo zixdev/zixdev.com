@@ -1,0 +1,1152 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://zixdev.com'>Documentation Powered by Zix Development</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://localhost/documentation/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>Authentication</h1>
+<!-- START_c3fa189a6c95ca36ad6ac4791a873d23 -->
+<h2>Login user.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/login" \
+-H "Accept: application/json" \
+    -d "email"="uzieme@example.org" \
+    -d "password"="rerum" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "email": "uzieme@example.org",
+        "password": "rerum"
+};
+
+this.apiServie.post("api/login", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/login</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_c3fa189a6c95ca36ad6ac4791a873d23 -->
+<!-- START_d7b7952e7fdddc07c978c9bdaf757acf -->
+<h2>Register new user.</h2>
+<p>When the submit a register form we will be creating new account for him,
+also we will be sending to him and email with link to activate him account.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/register" \
+-H "Accept: application/json" \
+    -d "username"="et" \
+    -d "email"="milo77@example.org" \
+    -d "password"="et" \
+    -d "accept_terms"="1" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "username": "et",
+        "email": "milo77@example.org",
+        "password": "et",
+        "accept_terms": true
+};
+
+this.apiServie.post("api/register", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/register</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>6</code></td>
+</tr>
+<tr>
+<td>accept_terms</td>
+<td>boolean</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_d7b7952e7fdddc07c978c9bdaf757acf -->
+<!-- START_78c4b7d6388c81c68bc37ec872d44f65 -->
+<h2>Send Reset Password Email.</h2>
+<h3>1) Send reset password link:</h3>
+<ul>
+<li>We will send the password reset link to this user.</li>
+<li>Once we have attempted to send the link.</li>
+<li>we will examine the response then see the message we need to show to the user.</li>
+<li>Finally, we'll send out a proper response.</li>
+</ul>
+<h3>2) In case error and the email not found :</h3>
+<ul>
+<li>If an error was returned by the password broker</li>
+<li>We will get this message translated so we can notify a user of the problem.</li>
+<li>We'll we'll send out and error message.</li>
+</ul>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forgot-password" \
+-H "Accept: application/json" \
+    -d "email"="cordell06@example.net" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "email": "cordell06@example.net"
+};
+
+this.apiServie.post("api/forgot-password", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/forgot-password</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_78c4b7d6388c81c68bc37ec872d44f65 -->
+<!-- START_6d3061d375666b8cf6babe163b36f250 -->
+<h2>Reset User Password.</h2>
+<h3>1) resetting user password:</h3>
+<ul>
+<li>Here we will attempt to reset the user's password.</li>
+<li>If it is successful we will update the password on an actual user model and persist it to the database.</li>
+<li>Otherwise we will parse the error and return the response.</li>
+</ul>
+<h3>2) return success if the password been reset.</h3>
+<ul>
+<li>If the password was successfully reset, we return success response message.</li>
+<li>Clean user tokens (to not allow other applications to log in with the old tokens).</li>
+<li>Create new token for the user and log him in</li>
+<li>Return response with the user token and him details.</li>
+</ul>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/reset-password" \
+-H "Accept: application/json" \
+    -d "email"="maximillia06@example.com" \
+    -d "password"="provident" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "email": "maximillia06@example.com",
+        "password": "provident"
+};
+
+this.apiServie.post("api/reset-password", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/reset-password</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>6</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_6d3061d375666b8cf6babe163b36f250 -->
+<!-- START_7e6ee60aafd6de54298e0e276a7451fe -->
+<h2>Logout User.</h2>
+<p>When User Logout We Will Log him out and destroy the token.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/logout" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/logout", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": 0,
+    "status_code": 200
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/logout</code></p>
+<p><code>HEAD api/logout</code></p>
+<!-- END_7e6ee60aafd6de54298e0e276a7451fe -->
+<!-- START_8d78d43a0817865525e3740dbf866578 -->
+<h2>Activate User&#039;s account.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/account/activate" \
+-H "Accept: application/json" \
+    -d "active_code"="vero" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "active_code": "vero"
+};
+
+this.apiServie.post("api/user/account/activate", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/account/activate</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>active_code</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>60</code> Maximum: <code>60</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_8d78d43a0817865525e3740dbf866578 -->
+<h1>Authenticated User</h1>
+<!-- START_2ea88ff35aa222f5582e50f39a2b35fd -->
+<h2>Display a listing of the resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/user", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": {
+        "user": {
+            "id": 1,
+            "username": "chraider",
+            "email": "badi1wow@gmail.com",
+            "active": 1,
+            "active_code": null,
+            "created_at": "2016-09-30 08:11:34",
+            "updated_at": "2016-09-30 08:11:34"
+        },
+        "permissions": [
+            "full_access",
+            "view_admin"
+        ]
+    },
+    "status_code": 200
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/user</code></p>
+<p><code>HEAD api/user</code></p>
+<!-- END_2ea88ff35aa222f5582e50f39a2b35fd -->
+<!-- START_f0654d3f2fc63c11f5723f233cc53c83 -->
+<h2>Update the specified resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user" \
+-H "Accept: application/json" \
+    -d "username"="unde" \
+    -d "email"="felipa52@example.org" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "username": "unde",
+        "email": "felipa52@example.org"
+};
+
+this.apiServie.post("api/user", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_f0654d3f2fc63c11f5723f233cc53c83 -->
+<!-- START_e24fea9a36c83d9f84bd323b6b9d94db -->
+<h2>Display a listing of the resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/info" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/user/info", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": {
+        "user": {
+            "id": 1,
+            "username": "chraider",
+            "email": "badi1wow@gmail.com",
+            "active": 1,
+            "active_code": null,
+            "created_at": "2016-09-30 08:11:34",
+            "updated_at": "2016-09-30 08:11:34",
+            "info": null
+        }
+    },
+    "status_code": 200
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/user/info</code></p>
+<p><code>HEAD api/user/info</code></p>
+<!-- END_e24fea9a36c83d9f84bd323b6b9d94db -->
+<!-- START_1cf9d677dadd7b751523d1b871857f9c -->
+<h2>Update the specified resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/info" \
+-H "Accept: application/json" \
+    -d "first_name"="et" \
+    -d "last_name"="et" \
+    -d "phone_number"="et" \
+    -d "mobile_number"="et" \
+    -d "address_line_1"="et" \
+    -d "address_line_2"="et" \
+    -d "subrub"="et" \
+    -d "post_code"="et" \
+    -d "state"="et" \
+    -d "country"="et" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "first_name": "et",
+        "last_name": "et",
+        "phone_number": "et",
+        "mobile_number": "et",
+        "address_line_1": "et",
+        "address_line_2": "et",
+        "subrub": "et",
+        "post_code": "et",
+        "state": "et",
+        "country": "et"
+};
+
+this.apiServie.post("api/user/info", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/info</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first_name</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>phone_number</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>mobile_number</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>address_line_1</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>address_line_2</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>subrub</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>post_code</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>state</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>country</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_1cf9d677dadd7b751523d1b871857f9c -->
+<h1>general</h1>
+<!-- START_5900363c9d9cf8069f0abf41866a659f -->
+<h2>Store a newly created resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/media" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.post("api/media", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/media</code></p>
+<!-- END_5900363c9d9cf8069f0abf41866a659f -->
+<!-- START_40678f04b4e400fabecec3d2fbc5060f -->
+<h2>Get Site Versions.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/versions" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites/{id}/versions", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{id}/versions</code></p>
+<p><code>HEAD api/sites/{id}/versions</code></p>
+<!-- END_40678f04b4e400fabecec3d2fbc5060f -->
+<!-- START_e11e41acfb8431af3bd59f2341a7669f -->
+<h2>Show the form for creating a new resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/versions/create" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites/{id}/versions/create", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{id}/versions/create</code></p>
+<p><code>HEAD api/sites/{id}/versions/create</code></p>
+<!-- END_e11e41acfb8431af3bd59f2341a7669f -->
+<!-- START_15cfcdb334b901a76203fe07e909f8de -->
+<h2>Store a newly created resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/versions" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.post("api/sites/{id}/versions", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/sites/{id}/versions</code></p>
+<!-- END_15cfcdb334b901a76203fe07e909f8de -->
+<!-- START_15390f9a9a8a1b379c2bf54e0fdd4016 -->
+<h2>Display the specified resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/versions/{version}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites/{id}/versions/{version}", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{id}/versions/{version}</code></p>
+<p><code>HEAD api/sites/{id}/versions/{version}</code></p>
+<!-- END_15390f9a9a8a1b379c2bf54e0fdd4016 -->
+<!-- START_c70a9dbff7199185962a6ae75d8341aa -->
+<h2>Show the form for editing the specified resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/versions/{version}/edit" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites/{id}/versions/{version}/edit", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{id}/versions/{version}/edit</code></p>
+<p><code>HEAD api/sites/{id}/versions/{version}/edit</code></p>
+<!-- END_c70a9dbff7199185962a6ae75d8341aa -->
+<!-- START_cff6263e9d23ff2667d105d2e51e6b5f -->
+<h2>Update the specified resource in storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/versions/{version}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.put("api/sites/{id}/versions/{version}", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/sites/{id}/versions/{version}</code></p>
+<p><code>PATCH api/sites/{id}/versions/{version}</code></p>
+<!-- END_cff6263e9d23ff2667d105d2e51e6b5f -->
+<!-- START_7fd590211ab23ff6acba6362f83e2941 -->
+<h2>Remove the specified resource from storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/versions/{version}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.delete("api/sites/{id}/versions/{version}", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/sites/{id}/versions/{version}</code></p>
+<!-- END_7fd590211ab23ff6acba6362f83e2941 -->
+<h1>Multi Site</h1>
+<!-- START_6bde012eab6506f2b473003076ee19f4 -->
+<h2>Get All Sites.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": [
+        {
+            "id": 1,
+            "name": "Zix Development",
+            "public_code": "70490311fe7c84acda8886406a6d884b",
+            "private_code": "$2y$10$DmBRPgg0vBNHcsW0HIJ.Q.er\/vde0VMdnpYSvoGXstPjW1MHclXQ.",
+            "url": "http:\/\/localhost:8000",
+            "ui": "default",
+            "ssl": "",
+            "status": 1,
+            "created_at": "2016-09-30 08:11:21",
+            "updated_at": "2016-10-10 16:01:02",
+            "deleted_at": null
+        },
+        {
+            "id": 2,
+            "name": "Zix Development v2",
+            "public_code": null,
+            "private_code": null,
+            "url": "http:\/\/localhost:8080",
+            "ui": "zixdev",
+            "ssl": null,
+            "status": 1,
+            "created_at": "2016-10-02 13:53:50",
+            "updated_at": "2016-10-10 19:14:29",
+            "deleted_at": null
+        }
+    ],
+    "status_code": 200
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites</code></p>
+<p><code>HEAD api/sites</code></p>
+<!-- END_6bde012eab6506f2b473003076ee19f4 -->
+<!-- START_c7cd12d95cd3eaaf3af48dc5fcae9d79 -->
+<h2>Show the form for creating a new resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/create" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites/create", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/create</code></p>
+<p><code>HEAD api/sites/create</code></p>
+<!-- END_c7cd12d95cd3eaaf3af48dc5fcae9d79 -->
+<!-- START_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
+<h2>Create New Site.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites" \
+-H "Accept: application/json" \
+    -d "name"="et" \
+    -d "url"="et" \
+    -d "ui"="et" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "name": "et",
+        "url": "et",
+        "ui": "et"
+};
+
+this.apiServie.post("api/sites", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/sites</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>ui</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
+<!-- START_94c94fc597738cd4377b55266da9ff28 -->
+<h2>Get Site By Id.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{site}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites/{site}", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{site}</code></p>
+<p><code>HEAD api/sites/{site}</code></p>
+<!-- END_94c94fc597738cd4377b55266da9ff28 -->
+<!-- START_2a638f3cb43c3741d9eec0133103bf86 -->
+<h2>Show the form for editing the specified resource.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{site}/edit" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.get("api/sites/{site}/edit", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{site}/edit</code></p>
+<p><code>HEAD api/sites/{site}/edit</code></p>
+<!-- END_2a638f3cb43c3741d9eec0133103bf86 -->
+<!-- START_773c9bdb2e712908dcb18a7159ba29ec -->
+<h2>Update Site.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{site}" \
+-H "Accept: application/json" \
+    -d "name"="dolores" \
+    -d "url"="dolores" \
+    -d "ui"="dolores" \
+</code></pre>
+<pre><code class="language-javascript">// Angular 2
+let data = {
+        "name": "dolores",
+        "url": "dolores",
+        "ui": "dolores"
+};
+
+this.apiServie.put("api/sites/{site}", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/sites/{site}</code></p>
+<p><code>PATCH api/sites/{site}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>ui</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_773c9bdb2e712908dcb18a7159ba29ec -->
+<!-- START_5d642e3a724d019171d9753fe202f9b6 -->
+<h2>Remove the specified resource from storage.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{site}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Angular 2
+
+this.apiServie.delete("api/sites/{site}", data)
+    .subscribe(
+        response =&gt; {
+            console.info(response.json());
+        },
+
+        error =&gt; {
+            console.warn(error);
+        }
+    );
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/sites/{site}</code></p>
+<!-- END_5d642e3a724d019171d9753fe202f9b6 -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>
