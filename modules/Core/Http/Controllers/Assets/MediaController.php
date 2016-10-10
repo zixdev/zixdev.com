@@ -1,40 +1,22 @@
 <?php
 
-namespace Zix\Core\Http\Controllers\Site;
+namespace Zix\Core\Http\Controllers\Assets;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
-use ZipArchive;
-use Zix\Core\Entities\Site;
 use Zix\Core\Support\Traits\ApiResponses;
 use Illuminate\Support\Facades\Storage;
 
-class SiteVersionController
+class MediaController
 {
-    use ApiResponses;
+	use ApiResponses;
     /**
-     * @var Site
-     */
-    private $site;
-
-    /**
-     * SiteController constructor.
-     * @param Site $site
-     */
-    public function __construct(Site $site)
-    {
-        $this->site = $site;
-    }
-
-    /**
-     * Get Site Versions.
+     * Display a listing of the resource.
      *
-     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        return $this->respondWithData($this->site->findOrFail($id)->versions);
+        //
     }
 
     /**
@@ -51,32 +33,15 @@ class SiteVersionController
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(Request $request)
     {
         if($request->hasFile('media')) {
-            // get version $version = '1.0.4';
-            $version = '1.0.4';
-            // validate it's a zip file
-            // store the zip file
-
-            // extract the zip file
-            $zip = new ZipArchive;
-            $zip->open($request->file('media'));
-            $zip->extractTo(storage_path('tmp/ui/tmp'));
-            // create the site ui
-            return \Site::get($id)->addSiteUiScripts(storage_path('tmp/ui/tmp/public'), $version);
-
-
-            // store it to db
-
-
-            // activate it.
-            return $this->respondDataCreated('New UI');
+            return Storage::put('avatars/', $request->file('media'));
         }
-        return $request->all();
+
+        return $this->respondDataCreated('we recived your image');
     }
 
     /**

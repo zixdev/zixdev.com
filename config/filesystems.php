@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'cloud' => 's3',
+    'cloud' => 'local', // s3
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => 'your-key',
-            'secret' => 'your-secret',
+            'key' => 'AKIAJHZPLECTG55O3X4A',
+            'secret' => '/unu5RnxodkAq+haz5UJKNKFvnowswIRZI4c72G3',
             'region' => 'your-region',
             'bucket' => 'your-bucket',
         ],

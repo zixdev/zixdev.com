@@ -3,6 +3,7 @@
 namespace Zix\Core\Entities;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Zix\Core\Helpers\Traits\Model\SmartModelTrait;
 
 /**
@@ -11,7 +12,7 @@ use Zix\Core\Helpers\Traits\Model\SmartModelTrait;
  */
 class SiteVersion extends Model
 {
-    use SmartModelTrait;
+    use SmartModelTrait, HasMediaTrait;
     /**
      * @var array
      */
