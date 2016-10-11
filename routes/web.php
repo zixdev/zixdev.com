@@ -34,35 +34,8 @@ Route::post('admin/add/site', function() {
     return view('tmp-admin.add-site');
 });
 
-//
 Route::get('test', function () {
-//    return site()->scripts();
-    // disable all old versions.
-    site()->versions()->disable();
-
-
-    $version = '1.0.4';
-
-    $scripts = new \Illuminate\Support\Collection();
-    $files = \File::files(public_path('assets/default'));
-
-    foreach ($files as $file) {
-        $name = \File::basename($file);
-        $contents = \File::get($file);
-        if (!str_contains($name, 'gz') && (str_contains($name, 'main') || str_contains($name, 'styles') || str_contains($name, 'inline'))) {
-            $scripts->push($name);
-        }
-
-
-        Storage::put('scripts/' . site()->ui . '/' . $version . '/' . $name, $contents, 'public');
-    }
-    // create new site version.
-
-    return site()->versions()->create([
-        'scripts' => $scripts,
-        'version' => $version
-    ]);
-
+    return get_human_file_size(\File::size(storage_path('app/scripts/default/0.0.2/')));
 });
 ////
 //Auth::routes();

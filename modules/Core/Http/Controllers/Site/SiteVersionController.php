@@ -6,9 +6,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use ZipArchive;
 use Zix\Core\Entities\Site;
+use Zix\Core\Http\Requests\Site\SiteUploadVersionRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 use Illuminate\Support\Facades\Storage;
 
+/**
+ * Class SiteVersionController
+ * @package Zix\Core\Http\Controllers\Site
+ * @resource Site Versions
+ */
 class SiteVersionController
 {
     use ApiResponses;
@@ -34,7 +40,7 @@ class SiteVersionController
      */
     public function index($id)
     {
-        return $this->respondWithData($this->site->findOrFail($id)->versions);
+        return $this->respondWithData($this->site->findOrFail($id)->versions()->latest()->get());
     }
 
     /**
@@ -48,35 +54,21 @@ class SiteVersionController
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Upload new version.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param  SiteUploadVersionRequest $request
      * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(SiteUploadVersionRequest $request, $id)
     {
-        if($request->hasFile('media')) {
-            // get version $version = '1.0.4';
-            $version = '1.0.4';
-            // validate it's a zip file
-            // store the zip file
+        $zip = new ZipArchive;
+        $zip->open($request->file('ui'));
+        $zip->extractTo(storage_path('tmp/ui/tmp'));
 
-            // extract the zip file
-            $zip = new ZipArchive;
-            $zip->open($request->file('media'));
-            $zip->extractTo(storage_path('tmp/ui/tmp'));
-            // create the site ui
-            return \Site::get($id)->addSiteUiScripts(storage_path('tmp/ui/tmp/public'), $version);
+        // create the site ui
+        return \Site::get($id)->addSiteUiScripts(storage_path('tmp/ui/tmp/public'));
 
-
-            // store it to db
-
-
-            // activate it.
-            return $this->respondDataCreated('New UI');
-        }
-        return $request->all();
     }
 
     /**

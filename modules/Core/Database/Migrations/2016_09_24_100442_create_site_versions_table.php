@@ -21,6 +21,7 @@ class CreateSiteVersionsTable extends Migration
 
             $table->string('scripts');
             $table->string('version', 30);
+            $table->string('size', 30);
             $table->boolean('status')->default(true);
 
             $table->timestamps();

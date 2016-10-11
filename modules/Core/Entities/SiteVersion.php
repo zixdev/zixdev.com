@@ -16,7 +16,7 @@ class SiteVersion extends Model
     /**
      * @var array
      */
-    protected $fillable = ['scripts', 'version'];
+    protected $fillable = ['scripts', 'size', 'version'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
