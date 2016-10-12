@@ -1,5 +1,7 @@
 <?php namespace Zix\Core\Libraries\Sites;
 
+use Exception;
+use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Zix\Core\Entities\Site as SiteModel;
 class Site
@@ -37,6 +39,20 @@ class Site
     {
         $this->site = SiteModel::find($id);
         return $this;
+    }
+
+    /**
+     * @param Request $request
+     * @param Exception $e
+     * @return string
+     */
+    public function handleMissingRoute(Request $request, Exception $e)
+    {
+        // check if the routes looking for admin panel
+
+        if(site()->versions()->count())
+            return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.master');
+        return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.install-ui');
     }
 
     public function addSiteUiScripts($ui_path)

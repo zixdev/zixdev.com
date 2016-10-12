@@ -1,12 +1,6 @@
 <?php
 
-
-Route::get('/', function () {
-    if(site()->versions()->count())
-        return view('master');
-    return 'Ui Not Found, Please Install new one';
-});
-
+// related js
 Route::get('/{name}.js', function($name) {
     return site()->getThemeScripts($name);
 });
