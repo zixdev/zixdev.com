@@ -10,7 +10,7 @@ trait HasMultiSitesTrait
         return $this->name;
     }
 
-    public function getThemeScripts($name, $build = null, $type = null)
+    public function getThemeScripts($name, $build = null, $type = null, $ext = '.js')
     {
         $version = site()->versions()->enabled()->latest()->first()->version;
 
@@ -24,7 +24,7 @@ trait HasMultiSitesTrait
             $file .= '.' . $type;
         }
 
-        $file .= '.js';
+        $file .= $ext;
 
         return Storage::get($file);
     }

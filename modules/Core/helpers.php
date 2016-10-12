@@ -9,12 +9,15 @@
 if (! function_exists('site')) {
     /**
      * Get the current Site for the application.
-     * @param null $name
+     * @param null $id
      * @return
      */
-    function site($name = null)
+    function site($id = null)
     {
-        return Site::current();
+        if($id) {
+            return \Site::get($id);
+        }
+        return \Site::current();
     }
 }
 
@@ -31,7 +34,13 @@ if (! function_exists('increment_version')) {
         $b = explode('.', $inc);
 
         for($i = 0; $i < count($a); $i++) {
-            $a[$i] += $b[$i];
+            if($a[$i] == 9 || $a[$i] > 9) {
+                $d = ($i - 1);
+                $a[$d] += 1;
+                $a[$i] = 0;
+            } else {
+                $a[$i] += $b[$i];
+            }
         }
         return implode($a, '.');
     }
