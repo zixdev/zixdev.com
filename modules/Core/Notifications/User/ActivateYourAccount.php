@@ -56,13 +56,10 @@ class ActivateYourAccount extends Notification
      */
     public function toMail($notifiable)
     {
-        // Todo get The app URL && the activate code
-        $url = 'http://localhost:4200/auth/account/activate/'. $this->user->active_code;
-
         return (new MailMessage)
             ->greeting('Hello, ' . $this->user->username)
             ->line('To get started, click the link below to confirm your account.')
-            ->action('Confirm Your Account ', $url)
+            ->action('Confirm Your Account ', url('auth/account/activate/'. $this->user->active_code))
 
             ->line('Thank you for using our application!');
 

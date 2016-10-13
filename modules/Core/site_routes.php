@@ -13,3 +13,14 @@ Route::get('/{name}.{build}.{type}.js', function($name, $build, $type) {
 Route::get('/{name}.{build}.{type}.map', function($name, $build, $type) {
     return site()->getThemeScripts($name, $build, $type, '.map');
 });
+
+
+Route::group(['domain' => '{account}.zixapi.com'], function () {
+    Route::get('/{slug?}', function ($account, $slug = null) {
+        return [
+            'url'       => url('/'),
+            'domain'    => $account,
+            'slug'      => $slug
+        ];
+    });
+});
