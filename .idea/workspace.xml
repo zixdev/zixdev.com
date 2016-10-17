@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminFullAccessRoleCommand.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php" afterPath="$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" afterPath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php" afterPath="$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" afterPath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Entities/SiteUi.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/SiteUi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/SiteUiTrait.php" afterPath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/SiteUiTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteVersionController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteVersionController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
@@ -32,8 +33,8 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5401929">
-              <caret line="186" column="6" selection-start-line="186" selection-start-column="6" selection-end-line="186" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.45659164">
+              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,8 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Site/SiteUpdateRequest.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Site/SiteCreateRequest.php" />
         <option value="$PROJECT_DIR$/modules/Core/Libraries/Modules/Helpers/Migrator.php" />
         <option value="$PROJECT_DIR$/modules/Core/Console/Commands/MigrateCleanCommand.php" />
         <option value="$PROJECT_DIR$/modules/Core/Console/Commands/MigrateRollbackCommand.php" />
@@ -94,16 +93,18 @@
         <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/HasMultiSitesTrait.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Seeders/SiteDataBaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
         <option value="$PROJECT_DIR$/modules/Core/Entities/SiteUi.php" />
         <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/SiteUiTrait.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" />
         <option value="$PROJECT_DIR$/modules/Core/Entities/Site.php" />
         <option value="$PROJECT_DIR$/resources/views/zexus/master.blade.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteVersionController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminFullAccessRoleCommand.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
       </list>
     </option>
@@ -203,100 +204,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zexus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -345,7 +252,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sites" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,111 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Migrations" />
+              <option name="myItemId" value="Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -494,6 +301,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -681,7 +544,7 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1115,38 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7738478">
-          <caret line="33" column="5" selection-start-line="8" selection-start-column="22" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <marker date="1474210612836" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1474210612836" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1474210612836" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
-            <marker date="1474210612836" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
-            <marker date="1474210612836" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
-            <marker date="1474210612836" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42015004">
-          <caret line="38" column="43" selection-start-line="34" selection-start-column="8" selection-end-line="38" selection-end-column="43" />
-          <folding>
-            <marker date="1476721736477" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
-            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
-            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
-            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Providers/CoreServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1159,39 +990,6 @@
             <marker date="1474211425476" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1474211425476" expanded="true" signature="-1:-1" placeholder=" Register All Core Libraries ..." />
             <marker date="1474211425476" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41800642">
-          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-          <folding>
-            <marker date="1476723382472" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder=" Class ConsoleServiceProvider ..." />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder=" The available command shortname. ..." />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder=" Bootstrap the application services. ..." />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder=" Register the application services. ..." />
-            <marker date="1476723382472" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminFullAccessRoleCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.114683814">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="40" />
-          <folding>
-            <marker date="1474806587538" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1474806587538" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1474806587538" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
-            <marker date="1474806587538" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
-            <marker date="1474806587538" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
-            <marker date="1474806587538" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1221,23 +1019,6 @@
             <marker date="1474816346481" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1474816346481" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
             <marker date="1474816346481" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5209003">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-          <folding>
-            <marker date="1476724078983" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1476724078983" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476724078983" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
-            <marker date="1476724078983" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
-            <marker date="1476724078983" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
-            <marker date="1476724078983" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476724078983" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476724078983" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1294,26 +1075,6 @@
             <marker date="1476724341305" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1476724341305" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1476724341305" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31832796">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <marker date="1476725291153" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder=" Site constructor. ..." />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder=" @param Request $request ..." />
-            <marker date="1476725291153" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1438,10 +1199,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6237942">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <marker date="1476727103646" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476727103646" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476727103646" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
+            <marker date="1476727103646" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
+            <marker date="1476727103646" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
+            <marker date="1476727103646" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08681672">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder=" Class ConsoleServiceProvider ..." />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder=" The available command shortname. ..." />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder=" Bootstrap the application services. ..." />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder=" Register the application services. ..." />
+            <marker date="1476727363292" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36334404">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <marker date="1476728503462" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder=" Site constructor. ..." />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder=" @param Request $request ..." />
+            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23151125">
+          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+          <folding>
+            <marker date="1476728228145" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder=" Create admin roles ..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder=" create admin account ..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728228145" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5401929">
-          <caret line="186" column="6" selection-start-line="186" selection-start-column="6" selection-end-line="186" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.45659164">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding />
         </state>
       </provider>

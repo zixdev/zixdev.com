@@ -52,8 +52,7 @@ class InstallCommand extends BaseCommand
         $this->call('zix:db-seed');
 
         // create admin account
-        $this->call('zix:create-admin-full-access-role');
-        $this->call('zix:create-admin-account');
+        $this->call('zix:install-admin');
 
         // set the first site up
 

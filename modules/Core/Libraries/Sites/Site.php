@@ -23,7 +23,7 @@ class Site
     public function current()
     {
         // if no site header in the request get the site by url
-        if($site = SiteModel::where('url', url('/'))->first())
+        if($site = SiteModel::where('url', url('/').'/')->Orwhere('url', url('/'))->first())
         {
             return $site;
         }
