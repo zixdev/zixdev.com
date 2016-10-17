@@ -18,12 +18,9 @@ class CreateSitesTable extends Migration
 
             $table->string('name')->unique();
 
-            $table->string('public_code')->unique()->nullable();
-            $table->string('private_code')->unique()->nullable();
 
             $table->string('url')->unique();
             $table->string('ui')->unique();
-            $table->string('ssl')->unique()->nullable();
 
             $table->boolean('status')->default(true);
             $table->timestamps();

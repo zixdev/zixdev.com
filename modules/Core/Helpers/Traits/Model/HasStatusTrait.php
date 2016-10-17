@@ -1,6 +1,6 @@
 <?php namespace Zix\Core\Helpers\Traits\Model;
 
-trait SmartModelTrait
+trait HasStatusTrait
 {
     /**
      * Scope a query to only include enabled rows.

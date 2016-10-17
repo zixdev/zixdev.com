@@ -6,13 +6,12 @@ trait HasMultiSitesTrait
 {
     public function getTheme()
     {
-
         return $this->name;
     }
 
     public function getThemeScripts($name, $build = null, $type = null, $ext = '.js')
     {
-        $version = site()->versions()->enabled()->latest()->first()->version;
+        $version = site()->uis()->enabled()->latest()->first()->version;
 
         $file = 'scripts/' . $this->ui . '/' . $version . '/' .$name;
 
@@ -31,7 +30,7 @@ trait HasMultiSitesTrait
 
     public function scripts()
     {
-        return json_decode(site()->versions()->enabled()->latest()->first()->scripts);
+        return json_decode(site()->uis()->enabled()->latest()->first()->scripts);
     }
 
 }

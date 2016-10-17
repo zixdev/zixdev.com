@@ -3,16 +3,12 @@
 namespace Zix\Core\Entities;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Zix\Core\Helpers\Traits\Model\SmartModelTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
-/**
- * Class SiteVersion
- * @package Zix\Core\Entities
- */
-class SiteVersion extends Model
+class SiteUi extends Model
 {
-    use SmartModelTrait, HasMediaTrait;
+    use HasStatusTrait, HasMediaTrait, SoftDeletes;
     /**
      * @var array
      */

@@ -10,6 +10,10 @@ use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 use Spatie\Permission\Traits\HasRoles;
 use Zix\Core\Entities\UserInfo;
 
+/**
+ * Class User
+ * @package App
+ */
 class User extends Authenticatable implements HasMedia
 {
     use Notifiable, HasApiTokens, HasMediaTrait, HasRoles;
@@ -20,7 +24,8 @@ class User extends Authenticatable implements HasMedia
      * @var array
      */
     protected $fillable = [
-        'username', 'email', 'password', 'active_code', 'active'
+        'username', 'password',
+        'email', 'email_active', 'email_active_code'
     ];
 
     /**
@@ -30,8 +35,12 @@ class User extends Authenticatable implements HasMedia
      */
     protected $hidden = [
         'password', 'remember_token',
+        'email_active_code'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function info()
     {
         return $this->hasOne(UserInfo::class);

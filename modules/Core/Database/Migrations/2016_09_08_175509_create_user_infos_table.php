@@ -34,6 +34,7 @@ class CreateUserInfosTable extends Migration
             $table->string('country')->nullable(); // expect this to link into country table
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

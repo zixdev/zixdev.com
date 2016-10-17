@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSiteVersionsTable extends Migration
+class CreateSiteUisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSiteVersionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('site_versions', function (Blueprint $table) {
+        Schema::create('site_uis', function (Blueprint $table) {
             $table->increments('id');
 
             $table->integer('site_id')->unsigned()->index();
@@ -21,10 +21,13 @@ class CreateSiteVersionsTable extends Migration
 
             $table->string('scripts');
             $table->string('version', 30);
-            $table->string('size', 30);
+            $table->string('code_size', 30);
+            $table->string('assets_size', 30);
+
             $table->boolean('status')->default(true);
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -35,6 +38,6 @@ class CreateSiteVersionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('site_versions');
+        Schema::dropIfExists('site_uis');
     }
 }

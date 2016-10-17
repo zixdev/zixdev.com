@@ -13,15 +13,10 @@ class SiteDataBaseSeeder extends Seeder
      */
     public function run()
     {
-        $site_url = env('API_DEFAULT_SITE_CLIENT_URL', 'https://zixdev.com');
-
         Site::create([
             'name'		                => env('API_DEFAULT_SITE_CLIENT', 'Zix Development'),
-            'url'		                => $site_url,
+            'url'		                => env('API_DEFAULT_SITE_CLIENT_URL', 'https://zixdev.com'),
             'ui'		                => 'default',
-            'public_code'          => md5($site_url),
-            'private_code'         => bcrypt($site_url),
-            'ssl'		                => ''
         ]);
 
     }

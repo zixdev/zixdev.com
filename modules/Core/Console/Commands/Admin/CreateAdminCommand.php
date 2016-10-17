@@ -44,7 +44,7 @@ class CreateAdminCommand extends BaseCommand
             'username'      => $username,
             'email'         => $email,
             'password'      => bcrypt($password),
-            'active'        => true
+            'email_active'  => true
         ]);
 
         $user->assignRole('admin');

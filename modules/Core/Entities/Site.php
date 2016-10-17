@@ -3,19 +3,20 @@
 namespace Zix\Core\Entities;
 
 use Illuminate\Database\Eloquent\Model;
-use Zix\Core\Helpers\Traits\Model\SmartModelTrait;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 use Zix\Core\Libraries\Sites\Traits\HasMultiSitesTrait;
 
 class Site extends Model
 {
-    use HasMultiSitesTrait, SmartModelTrait;
+    use HasMultiSitesTrait, HasStatusTrait, SoftDeletes;
 
     protected $fillable = ['name', 'url', 'ui', 'status'];
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function versions()
+    public function uis()
     {
-        return $this->hasMany(SiteVersion::class);
+        return $this->hasMany(SiteUi::class);
     }
 }
