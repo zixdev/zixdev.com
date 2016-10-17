@@ -8,11 +8,11 @@ use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
 class SiteUi extends Model
 {
-    use HasStatusTrait, HasMediaTrait, SoftDeletes;
+    use HasStatusTrait, SoftDeletes;
     /**
      * @var array
      */
-    protected $fillable = ['scripts', 'size', 'version'];
+    protected $fillable = ['scripts', 'code_size', 'assets_size', 'version'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo

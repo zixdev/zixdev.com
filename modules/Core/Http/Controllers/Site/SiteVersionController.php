@@ -3,12 +3,10 @@
 namespace Zix\Core\Http\Controllers\Site;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
 use ZipArchive;
 use Zix\Core\Entities\Site;
 use Zix\Core\Http\Requests\Site\SiteUploadVersionRequest;
 use Zix\Core\Support\Traits\ApiResponses;
-use Illuminate\Support\Facades\Storage;
 
 /**
  * Class SiteVersionController
@@ -40,7 +38,7 @@ class SiteVersionController
      */
     public function index($id)
     {
-        return $this->respondWithData($this->site->findOrFail($id)->versions()->latest()->get());
+        return $this->respondWithData($this->site->findOrFail($id)->uis()->latest()->get());
     }
 
     /**

@@ -13,7 +13,7 @@ trait SiteUiTrait
      */
     public function addSiteUiScripts($ui_path)
     {
-        $this->site->versions()->disable();
+        $this->site->uis()->disable();
 
 
         $scripts = $this->storeUiScripts($ui_path);
@@ -21,10 +21,11 @@ trait SiteUiTrait
 
 
         // create new site version.
-        return $this->site->versions()->create([
-            'scripts'   => $scripts->get('scripts'),
-            'size'      => $scripts->get('size'),
-            'version'   => $this->getNewUiVersion()
+        return $this->site->uis()->create([
+            'scripts'       => $scripts->get('scripts'),
+            'code_size'     => $scripts->get('code_size'),
+            'assets_size'     => $scripts->get('code_size'),
+            'version'       => $this->getNewUiVersion()
         ]);
     }
 
@@ -34,8 +35,8 @@ trait SiteUiTrait
     public function getNewUiVersion()
     {
         return increment_version(
-            $this->site->versions()->count() ?
-            $this->site->versions()->latest()->first()->version :
+            $this->site->uis()->count() ?
+            $this->site->uis()->latest()->first()->version :
             '0.0.0'
         );
     }
@@ -65,7 +66,7 @@ trait SiteUiTrait
 
         return collect([
             'scripts'   => $scripts,
-            'size'      => get_human_file_size($size)
+            'code_size'      => get_human_file_size($size)
         ]);
     }
 

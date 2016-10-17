@@ -50,7 +50,7 @@ class Site
      */
     public function handleMissingRoute(Request $request, Exception $e)
     {
-        if(site() && site()->versions()->count())
+        if(site() && site()->uis()->count())
             return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.master');
         return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.install-ui');
     }

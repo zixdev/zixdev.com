@@ -5,6 +5,7 @@ namespace Zix\Core\Providers;
 use Illuminate\Support\ServiceProvider;
 use Zix\Core\Console\Commands\Admin\CreateAdminCommand;
 use Zix\Core\Console\Commands\Admin\CreateAdminFullAccessRoleCommand;
+use Zix\Core\Console\Commands\Admin\InstallAdminPanelCommand;
 use Zix\Core\Console\Commands\DatabaseSeedCommand;
 use Zix\Core\Console\Commands\GenerateApiDocs;
 use Zix\Core\Console\Commands\InstallCommand;
@@ -65,9 +66,10 @@ class ConsoleServiceProvider extends ServiceProvider
         DatabaseSeedCommand::class,
         GenerateApiDocs::class,
 
-        // App Create commands
+        // App Admin commands
         CreateAdminCommand::class,
-        CreateAdminFullAccessRoleCommand::class
+        CreateAdminFullAccessRoleCommand::class,
+        InstallAdminPanelCommand::class
     ];
 
     /**
