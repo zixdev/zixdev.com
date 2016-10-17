@@ -48,7 +48,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $e)
     {
         if ($this->isHttpException($e)) {
-            return \Site::handleMissingRoute($request, $e);
+            return \Site::handleMissingRoute();
         }
 
         if (config('app.debug')) {

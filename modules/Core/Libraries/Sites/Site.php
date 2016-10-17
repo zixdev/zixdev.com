@@ -44,11 +44,9 @@ class Site
     }
 
     /**
-     * @param Request $request
-     * @param Exception $e
      * @return string
      */
-    public function handleMissingRoute(Request $request, Exception $e)
+    public function handleMissingRoute()
     {
         if(site() && site()->uis()->count())
             return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.master');

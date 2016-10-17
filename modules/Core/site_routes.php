@@ -16,11 +16,7 @@ Route::get('/{name}.{build}.{type}.map', function($name, $build, $type) {
 
 
 Route::group(['domain' => '{account}.zixapi.com'], function () {
-    Route::get('/{slug?}', function ($account, $slug = null) {
-        return [
-            'url'       => url('/'),
-            'domain'    => $account,
-            'slug'      => $slug
-        ];
+    Route::get('/', function ($account) {
+        return \Site::handleMissingRoute();
     });
 });

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminFullAccessRoleCommand.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php" afterPath="$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" afterPath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php" afterPath="$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" afterPath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/site_routes.php" afterPath="$PROJECT_DIR$/modules/Core/site_routes.php" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
+      <file leaf-file-name="site_routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Core/site_routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45659164">
-              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.57877815">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -81,7 +77,6 @@
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/modules/Core/helpers.php" />
         <option value="$PROJECT_DIR$/modules/Core/Notifications/User/ActivateYourAccount.php" />
-        <option value="$PROJECT_DIR$/modules/Core/site_routes.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_17_160936_create_site_configs_table.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php" />
@@ -93,7 +88,6 @@
         <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/HasMultiSitesTrait.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Seeders/SiteDataBaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/modules/Core/Entities/SiteUi.php" />
         <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/SiteUiTrait.php" />
         <option value="$PROJECT_DIR$/modules/Core/Entities/Site.php" />
@@ -104,8 +98,10 @@
         <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminFullAccessRoleCommand.php" />
         <option value="$PROJECT_DIR$/modules/Core/Providers/ConsoleServiceProvider.php" />
         <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/modules/Core/site_routes.php" />
+        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php" />
       </list>
     </option>
   </component>
@@ -293,98 +289,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -953,31 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20364416">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1476722351053" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder=" A list of the exception types that should not be reported. ..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder=" Report or log an exception. ..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder=" Render an exception into an HTTP response. ..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder=" Convert an authentication exception into an unauthenticated response. ..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder=" Render an exception using Whoops. ..." />
-            <marker date="1476722351053" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Providers/CoreServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1108,28 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/site_routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28938907">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476341986755" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Site.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4051447">
@@ -1232,26 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36334404">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <marker date="1476728503462" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder=" Site constructor. ..." />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder=" @param Request $request ..." />
-            <marker date="1476728503462" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23151125">
@@ -1277,8 +1114,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45659164">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.34083602">
+          <caret line="160" column="46" selection-start-line="160" selection-start-column="46" selection-end-line="160" selection-end-column="46" />
+          <folding>
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728512957" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Libraries/Sites/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39228296">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding>
+            <marker date="1476728726938" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder=" Site constructor. ..." />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder=" @return string ..." />
+            <marker date="1476728726938" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.454448">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <marker date="1476728706275" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder=" A list of the exception types that should not be reported. ..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder=" Report or log an exception. ..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder=" Render an exception into an HTTP response. ..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder=" Convert an authentication exception into an unauthenticated response. ..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder=" Render an exception using Whoops. ..." />
+            <marker date="1476728706275" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/site_routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57877815">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
