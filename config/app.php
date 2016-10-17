@@ -173,6 +173,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Laravel\Passport\PassportServiceProvider::class,
+//        Barryvdh\Debugbar\ServiceProvider::class,
 
         // Spatie Libraries.
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
