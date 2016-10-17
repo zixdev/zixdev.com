@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_09_24_100442_create_site_versions_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Entities/SiteVersion.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/SmartModelTrait.php" afterPath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasStatusTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_000000_create_users_table.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_09_08_175509_create_user_infos_table.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_09_08_175509_create_user_infos_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" afterPath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/HasMultiSitesTrait.php" afterPath="$PROJECT_DIR$/modules/Core/Libraries/Sites/Traits/HasMultiSitesTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Entities/Site.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/Site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Seeders/SiteDataBaseSeeder.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Seeders/SiteDataBaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateAdminCommand.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php">
+      <file leaf-file-name="Handler.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42122185">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.82636654">
+              <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -86,7 +77,6 @@
         <option value="$PROJECT_DIR$/modules/Core/Entities/SiteVersion.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/modules/Core/Libraries/Modules/ModuleServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/resources/views/zexus/install-ui.blade.php" />
         <option value="$PROJECT_DIR$/modules/Core/Libraries/Sites/SiteUi.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -111,6 +101,7 @@
         <option value="$PROJECT_DIR$/modules/Core/Database/Seeders/SiteDataBaseSeeder.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php" />
+        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
       </list>
     </option>
   </component>
@@ -751,28 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30546623">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding>
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder=" A list of the exception types that should not be reported. ..." />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder=" Report or log an exception. ..." />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder=" Render an exception into an HTTP response. ..." />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder=" Convert an authentication exception into an unauthenticated response. ..." />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1476291520974" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Entities/UserInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1126,8 +1095,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/CreateAdminCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42122185">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.33440515">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding>
+            <marker date="1476721736477" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
+            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
+            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
+            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1476721736477" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82636654">
+          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
           <folding />
         </state>
       </provider>
