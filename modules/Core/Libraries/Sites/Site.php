@@ -50,10 +50,7 @@ class Site
      */
     public function handleMissingRoute(Request $request, Exception $e)
     {
-        // check if the routes looking for admin panel
-        if(!site())
-            return 'run zix:install'; // TODO::install your app
-        if(site()->versions()->count())
+        if(site() && site()->versions()->count())
             return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.master');
         return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.install-ui');
     }
