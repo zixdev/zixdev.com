@@ -56,7 +56,7 @@ trait SiteUiTrait
             $name = \File::basename($file);
             $contents = \File::get($file);
 
-            if (!str_contains($name, 'gz') && (str_contains($name, 'main') || str_contains($name, 'styles') || str_contains($name, 'inline'))) {
+            if (!str_contains($name, 'gz') && !str_contains($name, 'map') && (str_contains($name, 'main') || str_contains($name, 'styles') || str_contains($name, 'inline'))) {
                 $size += \File::size($file);
                 $scripts->push($name);
             }
