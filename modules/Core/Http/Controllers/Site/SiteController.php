@@ -38,7 +38,7 @@ class SiteController
      */
     public function index()
     {
-        return $this->respondWithData($this->site->all());
+        return $this->respondWithData($this->site->filtrable());
     }
 
     /**

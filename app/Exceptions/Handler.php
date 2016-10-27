@@ -51,9 +51,9 @@ class Handler extends ExceptionHandler
             return \Site::handleMissingRoute();
         }
 
-        if (config('app.debug')) {
-            return $this->renderExceptionWithWhoops($e);
-        }
+//        if (config('app.debug')) {
+//            return $this->renderExceptionWithWhoops($e);
+//        }
 
         return parent::render($request, $e);
     }

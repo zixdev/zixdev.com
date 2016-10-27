@@ -19,3 +19,11 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(\Zix\Core\Entities\Site::class, function(Faker\Generator $faker) {
+    return [
+        'name'		                => $faker->name,
+        'url'		                => $faker->url,
+        'ui'		                => $faker->city,
+    ];
+});
