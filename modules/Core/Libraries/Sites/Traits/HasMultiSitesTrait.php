@@ -33,4 +33,9 @@ trait HasMultiSitesTrait
         return json_decode(site()->uis()->enabled()->latest()->first()->scripts);
     }
 
+    public function activeUi()
+    {
+        return site()->uis()->enabled()->latest()->first();
+    }
+
 }

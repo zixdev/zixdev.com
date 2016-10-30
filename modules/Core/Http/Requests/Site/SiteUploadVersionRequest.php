@@ -24,7 +24,8 @@ class SiteUploadVersionRequest extends Request
     public function rules()
     {
         return [
-            'ui'     => 'required|mimes:zip'
+            'ui'     => 'required|mimes:zip',
+            'type'      => 'required|'
         ];
     }
 }

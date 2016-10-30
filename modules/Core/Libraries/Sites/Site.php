@@ -49,7 +49,7 @@ class Site
     public function handleMissingRoute()
     {
         if(site() && site()->uis()->count())
-            return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.master');
+            return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.master-'.site()->activeUi()->type);
         return app()->make('Illuminate\Routing\ResponseFactory')->view('zexus.install-ui');
     }
 

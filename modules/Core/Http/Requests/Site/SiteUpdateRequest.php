@@ -25,7 +25,7 @@ class SiteUpdateRequest extends Request
     {
         return [
             'name'      => 'required|min:3|max:255|unique:sites,name,'.$this->id,
-            'url'      => 'required|min:3|max:255|unique:sites,url,'.$this->id,
+            'url'      => 'required|active_url|min:3|max:255|unique:sites,url,'.$this->id,
             'ui'      => 'required|min:3|max:255|unique:sites,ui,'.$this->id
         ];
     }

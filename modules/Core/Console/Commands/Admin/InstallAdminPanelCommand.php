@@ -52,11 +52,11 @@ class InstallAdminPanelCommand extends BaseCommand
         ]);
 
         $zip = new ZipArchive;
-        $zip->open(storage_path('zexus/admin.zip'));// get the zip file;
+        $zip->open(storage_path('zexus/vue-admin.zip'));// get the zip file;
         $zip->extractTo(storage_path('tmp/ui/tmp'));
 
         // create the site ui
-        if(\Site::get($site->id)->addSiteUiScripts(storage_path('tmp/ui/tmp/public')))
+        if(\Site::get($site->id)->addSiteVueUiScripts(storage_path('tmp/ui/tmp/dist')))
             $this->info ('Administration Panel Created Successfully');
 
     }

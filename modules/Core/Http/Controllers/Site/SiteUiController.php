@@ -9,11 +9,11 @@ use Zix\Core\Http\Requests\Site\SiteUploadVersionRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
- * Class SiteVersionController
+ * Class SiteUiController
  * @package Zix\Core\Http\Controllers\Site
  * @resource Site Versions
  */
-class SiteVersionController
+class SiteUiController
 {
     use ApiResponses;
     /**
@@ -38,7 +38,7 @@ class SiteVersionController
      */
     public function index($id)
     {
-        return $this->respondWithData($this->site->findOrFail($id)->uis()->latest()->get());
+        return $this->respondWithData($this->site->findOrFail($id)->uis()->latest()->filtrable());
     }
 
     /**
@@ -64,8 +64,18 @@ class SiteVersionController
         $zip->open($request->file('ui'));
         $zip->extractTo(storage_path('tmp/ui/tmp'));
 
-        // create the site ui
-        return \Site::get($id)->addSiteUiScripts(storage_path('tmp/ui/tmp/public'));
+        switch($request->get('type')) {
+            case 'vue' : {
+                return \Site::get($id)->addSiteVueUiScripts(storage_path('tmp/ui/tmp/dist'));
+            }
+            case 'angular': {
+                return \Site::get($id)->addSiteAngularUiScripts(storage_path('tmp/ui/tmp/public'));
+            }
+            case 'react': {
+                return \Site::get($id)->addSiteReactUiScripts(storage_path('tmp/ui/tmp/public'));
+            }
+        }
+
 
     }
 

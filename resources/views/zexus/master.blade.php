@@ -26,7 +26,7 @@
 
 
 @foreach(site()->scripts() as $script )
-    <script type="text/javascript" src="/{{$script}}"></script>
+    <script type="text/javascript" src="/static/js/{{$script}}"></script>
 @endforeach
 
 </body>

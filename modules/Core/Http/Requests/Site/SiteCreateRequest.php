@@ -25,7 +25,7 @@ class SiteCreateRequest extends Request
     {
         return [
             'name'      => 'required|min:3|max:255|unique:sites',
-            'url'      => 'required|min:3|max:255|unique:sites',
+            'url'      => 'required|active_url|min:3|max:255|unique:sites',
             'ui'      => 'required|min:3|max:255|unique:sites',
         ];
     }
