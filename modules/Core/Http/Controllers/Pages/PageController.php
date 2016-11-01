@@ -1,44 +1,37 @@
 <?php
 
-namespace Zix\Core\Http\Controllers\Site;
+namespace Zix\Core\Http\Controllers\Pages;
 
 use Illuminate\Http\Request;
-use Zix\Core\Entities\Site;
-use Zix\Core\Http\Requests\Site\SiteCreateRequest;
-use Zix\Core\Http\Requests\Site\SiteUpdateRequest;
+use Zix\Core\Entities\Page;
+use Zix\Core\Http\Requests\Pages\CreatePageRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
-/**
- * Class SiteController
- * @package Zix\Core\Http\Controllers\Site
- * @resource Multi Site
- */
-class SiteController
+class PageController
 {
     use ApiResponses;
     /**
-     * @var Site
+     * @var Page
      */
-    private $site;
+    private $page;
 
     /**
-     * SiteController constructor.
-     * @param Site $site
+     * PageController constructor.
+     * @param Page $page
      */
-    public function __construct(Site $site)
+    public function __construct(Page $page)
     {
-        $this->site = $site;
+        $this->page = $page;
     }
 
-
     /**
-     * Get All Sites.
+     * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return $this->respondWithData($this->site->filtrable());
+        return $this->respondWithData($this->page->filtrable());
     }
 
     /**
@@ -52,25 +45,25 @@ class SiteController
     }
 
     /**
-     * Create New Site.
+     * Store a newly created resource in storage.
      *
-     * @param SiteCreateRequest $request
+     * @param CreatePageRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(SiteCreateRequest $request)
+    public function store(CreatePageRequest $request)
     {
-        return $this->respondDataCreated($this->site->create($request->all()));
+        return $this->respondDataCreated($this->page->create($request->all())->sites()->sync($request->get('sites')));
     }
 
     /**
-     * Get Site By Id.
+     * Display the specified resource.
      *
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        return $this->respondWithData($this->site->findOrfail($id));
+        return $this->respondWithData($this->page->findOrfail($id)->with('sites')->first());
     }
 
     /**
@@ -85,15 +78,15 @@ class SiteController
     }
 
     /**
-     * Update Site.
+     * Update the specified resource in storage.
      *
-     * @param SiteUpdateRequest $request
+     * @param  \Illuminate\Http\Request $request
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(SiteUpdateRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        return $this->respondRequestAccepted($this->site->find($id)->update($request->all()));
+        //
     }
 
     /**

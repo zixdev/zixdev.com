@@ -17,6 +17,6 @@ trait HasFiltrableTrait
             return $query->paginate(request()->get('per_page'));
         }
 
-        return $query;
+        return $query->get();
     }
 }

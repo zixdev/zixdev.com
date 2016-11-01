@@ -14,6 +14,8 @@ class SiteConfig extends Model
 {
     use HasStatusTrait, SoftDeletes;
 
+    protected $fillable = ['key', 'value', 'status'];
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
