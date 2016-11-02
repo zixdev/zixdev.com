@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasSeoTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/pages.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/Core/Entities/SEO.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/Seo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" afterPath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Entities/Site.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/Site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Entities/SiteConfig.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/SiteConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/site.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
@@ -36,8 +27,8 @@
       <file leaf-file-name="PageController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4415863">
-              <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.23794213">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -607,7 +598,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34660032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1083,8 +1074,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4415863">
-          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.23794213">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
           <folding />
         </state>
       </provider>
