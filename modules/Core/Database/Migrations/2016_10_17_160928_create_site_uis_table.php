@@ -19,7 +19,7 @@ class CreateSiteUisTable extends Migration
             $table->integer('site_id')->unsigned()->index();
             $table->foreign('site_id')->references('id')->on('sites')->onDelete('cascade');
 
-            $table->string('scripts');
+            $table->text('scripts');
             $table->string('type')->default('vue');
             $table->text('html')->nullable();
             $table->string('version', 30);
