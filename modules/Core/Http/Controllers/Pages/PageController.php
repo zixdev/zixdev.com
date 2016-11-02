@@ -63,7 +63,7 @@ class PageController
      */
     public function show($id)
     {
-        return $this->respondWithData($this->page->findOrfail($id)->with('sites')->first());
+        return $this->respondWithData($this->page->with('sites')->findOrfail($id));
     }
 
     /**
