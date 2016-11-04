@@ -2,7 +2,10 @@
 
 namespace Zix\Core\Http\Controllers\Auth;
 
+use App\User;
 use Illuminate\Http\Request;
+use Zix\Core\Events\User\UserRegistered;
+use Zix\Core\Http\Requests\User\UserCreateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateInfoRequest;
 use Zix\Core\Support\Traits\ApiResponses;
@@ -15,6 +18,67 @@ use Zix\Core\Support\Traits\ApiResponses;
 class UserController {
 
     use ApiResponses;
+    /**
+     * @var User
+     */
+    private $user;
+
+    /**
+     * UserController constructor.
+     * @param User $user
+     */
+    public function __construct(User $user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function index()
+    {
+        return $this->respondWithData($this->user->filtrable());
+    }
+
+    /**
+     * Get Site By Id.
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        return $this->respondWithData($this->user->findOrfail($id));
+    }
+
+    /**
+     * @param UserUpdateRequest $request
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function update(UserUpdateRequest $request, $id)
+    {
+        return $this->respondRequestAccepted($this->user->find($id)->update($request->all()));
+    }
+
+    /**
+     * @param UserCreateRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function store(UserCreateRequest $request)
+    {
+        $user = $this->user->create([
+            'username'      => $request->get('username'),
+            'email'         => $request->get('email'),
+            'password'      => bcrypt($request->get('password')),
+            'active_code'   => str_random(60)
+        ]);
+
+        // fire event user created.
+        event(new UserRegistered($user));
+
+        return $this->respondDataCreated($user);
+    }
 
     /**
      * Display a listing of the resource.

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
@@ -9,6 +10,8 @@ use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 use Spatie\Permission\Traits\HasRoles;
 use Zix\Core\Entities\UserInfo;
+use Zix\Core\Helpers\Traits\Model\HasFiltrableTrait;
+use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
 /**
  * Class User
@@ -16,7 +19,7 @@ use Zix\Core\Entities\UserInfo;
  */
 class User extends Authenticatable implements HasMedia
 {
-    use Notifiable, HasApiTokens, HasMediaTrait, HasRoles;
+    use Notifiable, HasApiTokens, HasMediaTrait, HasRoles, HasStatusTrait, SoftDeletes, HasFiltrableTrait;
 
     /**
      * The attributes that are mass assignable.

@@ -16,7 +16,9 @@ Route::group(['namespace' => '\Auth'], function ($router) {
     $router->get('logout', 'LoginController@logout');
     $router->post('user/account/activate', 'RegisterController@activateAccount');
 
+    $router->resource('users', 'UserController');
     $router->group(['middleware' => ['auth:api']], function($router) {
+
 
         $router->get('user', 'UserController@user');
         $router->post('user', 'UserController@updateUser');
