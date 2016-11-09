@@ -2,89 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/collection.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/css/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/css/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/css/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/css/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/css/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/images/navbar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/js/all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/.compare.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/images/navbar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/energize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/highlight.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/imagesloaded.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/jquery.highlight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/jquery.tocify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/jquery_ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/lib/lunr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/_icon_font.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/_monokai.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/_normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/_variables.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/assets/stylus/style.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/includes/_errors.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/documentation/source/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/collection.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/css/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/css/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/css/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/css/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/css/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/images/navbar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/js/all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/.compare.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/images/navbar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/energize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/highlight.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/imagesloaded.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/jquery.highlight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/jquery.tocify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/jquery_ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/lib/lunr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/_icon_font.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/_monokai.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/_normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/_variables.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/assets/stylus/style.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/config.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/includes/_errors.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/index.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/documentation/source/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" afterPath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/UserController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/site.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/site.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -108,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AuthServiceProvider.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php">
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31832796">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.73204714">
+              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -177,13 +96,13 @@
         <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_17_160928_create_site_uis_table.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/UserController.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Routes/site.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Routes/site.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php" />
       </list>
     </option>
   </component>
@@ -576,6 +495,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -603,6 +570,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -730,10 +727,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33112216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33112216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -851,13 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/pages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08681672">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Pages/CreatePageRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8392283">
@@ -900,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12861736">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/User/UserUpdateRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17363344">
@@ -939,6 +922,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8392283">
           <caret line="44" column="42" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -946,20 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34726688">
           <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2315112">
-          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3043478">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -981,13 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7278583">
           <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="21" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2173913">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1061,13 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17363344">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1135,6 +1091,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31832796">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1475891480000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder=" Register the service provider. ..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder=" Register the authenticator services. ..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder=" Register a resolver for the authenticated user. ..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder=" Register the access gate service. ..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder=" Register a resolver for the authenticated user. ..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1475891480000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028938906">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1478673259858" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" @var Page ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" PageController constructor. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" Show the form for creating a new resource. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" Show the form for editing the specified resource. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" Update the specified resource in storage. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1478673259858" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34726688">
+          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+          <folding>
+            <marker date="1477944625670" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder=" Class Site ..." />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\HasMany ..." />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder=" @param null $name ..." />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\HasMany ..." />
+            <marker date="1477944625670" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.41800642">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder=" Class HasFiltrableTrait ..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder=" @param $query ..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder=" @param $query ..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder=" @param $query ..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673841432" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/pages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08681672">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding>
+            <marker date="1477999463945" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1477999463945" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.115755625">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+          <folding>
+            <marker date="1478673992769" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673992769" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673992769" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673992769" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1478673992769" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73204714">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
           <folding />
         </state>
       </provider>

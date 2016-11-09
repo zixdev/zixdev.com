@@ -17,12 +17,8 @@ trait HasFiltrableTrait
             $query = $query->orderBy($sortCol, $sortDir);
         }
 
-        if (request()->has('filter')) {
-            $query = $query->where('name', 'LIKE', '%' . request()->get('filter') . '%');
-        }
-
-        if(request()->has('action')) {
-            $query = $this->getFilteredAction($query, request()->get('action'));
+        if(request()->has('filter')) {
+            $query = $this->getFilteredAction($query, request()->get('filter'));
         }
 
         if(request()->has('per_page')) {

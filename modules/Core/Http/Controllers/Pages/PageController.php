@@ -7,13 +7,13 @@ use Zix\Core\Entities\Page;
 use Zix\Core\Http\Requests\Pages\CreatePageRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
-abstract class PageController
+class PageController
 {
     use ApiResponses;
     /**
      * @var Page
      */
-    private $page;
+    protected $page;
 
     /**
      * PageController constructor.
