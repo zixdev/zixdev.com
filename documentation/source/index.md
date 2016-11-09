@@ -22,6 +22,94 @@ Welcome to the generated API reference.
 <!-- END_INFO -->
 
 #Authentication
+<!-- START_7e6ee60aafd6de54298e0e276a7451fe -->
+## Logout User.
+
+When User Logout We Will Log him out and destroy the token.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/logout" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/logout", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+{
+    "data": 0,
+    "status_code": 200
+}
+```
+
+
+### HTTP Request
+`GET api/logout`
+
+`HEAD api/logout`
+
+
+<!-- END_7e6ee60aafd6de54298e0e276a7451fe -->
+<!-- START_8d78d43a0817865525e3740dbf866578 -->
+## Activate User&#039;s account.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/user/account/activate" \
+-H "Accept: application/json" \
+    -d "active_code"="vero" \
+
+```
+
+```javascript
+// Angular 2
+let data = {
+        "active_code": "vero"
+};
+
+this.apiServie.post("api/user/account/activate", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+
+
+### HTTP Request
+`POST api/user/account/activate`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    active_code | string |  required  | Minimum: `60` Maximum: `60`
+
+<!-- END_8d78d43a0817865525e3740dbf866578 -->
 <!-- START_c3fa189a6c95ca36ad6ac4791a873d23 -->
 ## Login user.
 
@@ -235,22 +323,21 @@ Parameter | Type | Status | Description
     password | string |  required  | Maximum: `255` Minimum: `6`
 
 <!-- END_6d3061d375666b8cf6babe163b36f250 -->
-<!-- START_7e6ee60aafd6de54298e0e276a7451fe -->
-## Logout User.
-
-When User Logout We Will Log him out and destroy the token.
+#Authenticated User
+<!-- START_da5727be600e4865c1b632f7745c8e91 -->
+## api/users
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/logout" \
+curl "http://localhost/api/users" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.get("api/logout", data)
+this.apiServie.get("api/users", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -267,38 +354,63 @@ this.apiServie.get("api/logout", data)
 
 ```json
 {
-    "data": 0,
+    "data": [
+        {
+            "id": 1,
+            "username": "chraider v2",
+            "email": "badi1wow@gmail.com",
+            "email_active": 1,
+            "created_at": "2016-10-30 13:40:30",
+            "updated_at": "2016-11-04 10:53:27",
+            "deleted_at": null
+        },
+        {
+            "id": 2,
+            "username": "badi",
+            "email": "chraider1badi@gmail.com",
+            "email_active": 0,
+            "created_at": "2016-11-04 09:32:33",
+            "updated_at": "2016-11-05 09:17:21",
+            "deleted_at": null
+        }
+    ],
     "status_code": 200
 }
 ```
 
 
 ### HTTP Request
-`GET api/logout`
+`GET api/users`
 
-`HEAD api/logout`
+`HEAD api/users`
 
 
-<!-- END_7e6ee60aafd6de54298e0e276a7451fe -->
-<!-- START_8d78d43a0817865525e3740dbf866578 -->
-## Activate User&#039;s account.
+<!-- END_da5727be600e4865c1b632f7745c8e91 -->
+<!-- START_12e37982cc5398c7100e59625ebb5514 -->
+## api/users
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/user/account/activate" \
+curl "http://localhost/api/users" \
 -H "Accept: application/json" \
-    -d "active_code"="vero" \
+    -d "username"="ut" \
+    -d "email"="nakia.mcclure@example.org" \
+    -d "password"="ut" \
+    -d "accept_terms"="1" \
 
 ```
 
 ```javascript
 // Angular 2
 let data = {
-        "active_code": "vero"
+        "username": "ut",
+        "email": "nakia.mcclure@example.org",
+        "password": "ut",
+        "accept_terms": true
 };
 
-this.apiServie.post("api/user/account/activate", data)
+this.apiServie.post("api/users", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -314,16 +426,106 @@ this.apiServie.post("api/user/account/activate", data)
 
 
 ### HTTP Request
-`POST api/user/account/activate`
+`POST api/users`
 
 #### Parameters
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    active_code | string |  required  | Minimum: `60` Maximum: `60`
+    username | string |  required  | Maximum: `255` Minimum: `3`
+    email | email |  required  | Maximum: `255` Minimum: `3`
+    password | string |  required  | Maximum: `255` Minimum: `6`
+    accept_terms | boolean |  required  | 
 
-<!-- END_8d78d43a0817865525e3740dbf866578 -->
-#Authenticated User
+<!-- END_12e37982cc5398c7100e59625ebb5514 -->
+<!-- START_8f99b42746e451f8dc43742e118cb47b -->
+## Get Site By Id.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/users/{user}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/users/{user}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/users/{user}`
+
+`HEAD api/users/{user}`
+
+
+<!-- END_8f99b42746e451f8dc43742e118cb47b -->
+<!-- START_48a3115be98493a3c866eb0e23347262 -->
+## api/users/{user}
+
+> Example request:
+
+```bash
+curl "http://localhost/api/users/{user}" \
+-H "Accept: application/json" \
+    -d "username"="cum" \
+    -d "email"="ole99@example.net" \
+
+```
+
+```javascript
+// Angular 2
+let data = {
+        "username": "cum",
+        "email": "ole99@example.net"
+};
+
+this.apiServie.put("api/users/{user}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+
+
+### HTTP Request
+`PUT api/users/{user}`
+
+`PATCH api/users/{user}`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    username | string |  required  | Maximum: `255` Minimum: `3`
+    email | email |  required  | Maximum: `255` Minimum: `3`
+
+<!-- END_48a3115be98493a3c866eb0e23347262 -->
 <!-- START_2ea88ff35aa222f5582e50f39a2b35fd -->
 ## Display a listing of the resource.
 
@@ -357,12 +559,12 @@ this.apiServie.get("api/user", data)
     "data": {
         "user": {
             "id": 1,
-            "username": "chraider",
+            "username": "chraider v2",
             "email": "badi1wow@gmail.com",
-            "active": 1,
-            "active_code": null,
-            "created_at": "2016-09-30 08:11:34",
-            "updated_at": "2016-09-30 08:11:34"
+            "email_active": 1,
+            "created_at": "2016-10-30 13:40:30",
+            "updated_at": "2016-11-04 10:53:27",
+            "deleted_at": null
         },
         "permissions": [
             "full_access",
@@ -460,13 +662,29 @@ this.apiServie.get("api/user/info", data)
     "data": {
         "user": {
             "id": 1,
-            "username": "chraider",
+            "username": "chraider v2",
             "email": "badi1wow@gmail.com",
-            "active": 1,
-            "active_code": null,
-            "created_at": "2016-09-30 08:11:34",
-            "updated_at": "2016-09-30 08:11:34",
-            "info": null
+            "email_active": 1,
+            "created_at": "2016-10-30 13:40:30",
+            "updated_at": "2016-11-04 10:53:27",
+            "deleted_at": null,
+            "info": {
+                "id": 1,
+                "user_id": 1,
+                "first_name": null,
+                "last_name": null,
+                "phone_number": null,
+                "mobile_number": null,
+                "address_line_1": null,
+                "address_line_2": null,
+                "subrub": null,
+                "post_code": null,
+                "state": null,
+                "country": null,
+                "created_at": "2016-11-06 11:41:00",
+                "updated_at": "2016-11-06 11:41:00",
+                "deleted_at": null
+            }
         }
     },
     "status_code": 200
@@ -585,20 +803,20 @@ this.apiServie.post("api/media", data)
 
 
 <!-- END_5900363c9d9cf8069f0abf41866a659f -->
-<!-- START_40678f04b4e400fabecec3d2fbc5060f -->
-## Get Site Versions.
+<!-- START_c44904d8eb741cc708c2d88a56a69927 -->
+## Display a listing of the resource.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/versions" \
+curl "http://localhost/api/pages" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.get("api/sites/{id}/versions", data)
+this.apiServie.get("api/pages", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -614,31 +832,55 @@ this.apiServie.get("api/sites/{id}/versions", data)
 > Example response:
 
 ```json
-null
+{
+    "data": [
+        {
+            "id": 2,
+            "title": "About us",
+            "slug": "about-us",
+            "content": "<p>haw hw<\/p>\n<p>&nbsp;<\/p>",
+            "status": 1,
+            "created_at": "2016-11-04 15:14:25",
+            "updated_at": "2016-11-05 09:13:57",
+            "deleted_at": null
+        },
+        {
+            "id": 3,
+            "title": "Contact Us",
+            "slug": "contact-us",
+            "content": "<p>rzerzer<\/p>",
+            "status": 1,
+            "created_at": "2016-11-04 15:14:43",
+            "updated_at": "2016-11-04 16:18:39",
+            "deleted_at": null
+        }
+    ],
+    "status_code": 200
+}
 ```
 
 
 ### HTTP Request
-`GET api/sites/{id}/versions`
+`GET api/pages`
 
-`HEAD api/sites/{id}/versions`
+`HEAD api/pages`
 
 
-<!-- END_40678f04b4e400fabecec3d2fbc5060f -->
-<!-- START_e11e41acfb8431af3bd59f2341a7669f -->
+<!-- END_c44904d8eb741cc708c2d88a56a69927 -->
+<!-- START_7519e4dc6775220105645da4eb91a457 -->
 ## Show the form for creating a new resource.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/versions/create" \
+curl "http://localhost/api/pages/create" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.get("api/sites/{id}/versions/create", data)
+this.apiServie.get("api/pages/create", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -659,26 +901,37 @@ null
 
 
 ### HTTP Request
-`GET api/sites/{id}/versions/create`
+`GET api/pages/create`
 
-`HEAD api/sites/{id}/versions/create`
+`HEAD api/pages/create`
 
 
-<!-- END_e11e41acfb8431af3bd59f2341a7669f -->
-<!-- START_15cfcdb334b901a76203fe07e909f8de -->
+<!-- END_7519e4dc6775220105645da4eb91a457 -->
+<!-- START_9db908f3cc041bad182795bc2a844789 -->
 ## Store a newly created resource in storage.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/versions" \
--H "Accept: application/json"
+curl "http://localhost/api/pages" \
+-H "Accept: application/json" \
+    -d "title"="assumenda" \
+    -d "slug"="assumenda" \
+    -d "sites"="assumenda" \
+    -d "content"="assumenda" \
+
 ```
 
 ```javascript
 // Angular 2
+let data = {
+        "title": "assumenda",
+        "slug": "assumenda",
+        "sites": "assumenda",
+        "content": "assumenda"
+};
 
-this.apiServie.post("api/sites/{id}/versions", data)
+this.apiServie.post("api/pages", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -694,24 +947,32 @@ this.apiServie.post("api/sites/{id}/versions", data)
 
 
 ### HTTP Request
-`POST api/sites/{id}/versions`
+`POST api/pages`
 
+#### Parameters
 
-<!-- END_15cfcdb334b901a76203fe07e909f8de -->
-<!-- START_15390f9a9a8a1b379c2bf54e0fdd4016 -->
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    title | string |  required  | Minimum: `3` Maximum: `255`
+    slug | string |  required  | Minimum: `3` Maximum: `255`
+    sites | string |  required  | 
+    content | string |  required  | 
+
+<!-- END_9db908f3cc041bad182795bc2a844789 -->
+<!-- START_4019012e188986f89822c1f74dec9036 -->
 ## Display the specified resource.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/versions/{version}" \
+curl "http://localhost/api/pages/{page}" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.get("api/sites/{id}/versions/{version}", data)
+this.apiServie.get("api/pages/{page}", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -732,26 +993,26 @@ null
 
 
 ### HTTP Request
-`GET api/sites/{id}/versions/{version}`
+`GET api/pages/{page}`
 
-`HEAD api/sites/{id}/versions/{version}`
+`HEAD api/pages/{page}`
 
 
-<!-- END_15390f9a9a8a1b379c2bf54e0fdd4016 -->
-<!-- START_c70a9dbff7199185962a6ae75d8341aa -->
+<!-- END_4019012e188986f89822c1f74dec9036 -->
+<!-- START_8566933932ce5f8ff3a6c96664c48752 -->
 ## Show the form for editing the specified resource.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/versions/{version}/edit" \
+curl "http://localhost/api/pages/{page}/edit" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.get("api/sites/{id}/versions/{version}/edit", data)
+this.apiServie.get("api/pages/{page}/edit", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -772,26 +1033,26 @@ null
 
 
 ### HTTP Request
-`GET api/sites/{id}/versions/{version}/edit`
+`GET api/pages/{page}/edit`
 
-`HEAD api/sites/{id}/versions/{version}/edit`
+`HEAD api/pages/{page}/edit`
 
 
-<!-- END_c70a9dbff7199185962a6ae75d8341aa -->
-<!-- START_cff6263e9d23ff2667d105d2e51e6b5f -->
+<!-- END_8566933932ce5f8ff3a6c96664c48752 -->
+<!-- START_3a520900c57f00a662864e51d25666f7 -->
 ## Update the specified resource in storage.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/versions/{version}" \
+curl "http://localhost/api/pages/{page}" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.put("api/sites/{id}/versions/{version}", data)
+this.apiServie.put("api/pages/{page}", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -807,26 +1068,26 @@ this.apiServie.put("api/sites/{id}/versions/{version}", data)
 
 
 ### HTTP Request
-`PUT api/sites/{id}/versions/{version}`
+`PUT api/pages/{page}`
 
-`PATCH api/sites/{id}/versions/{version}`
+`PATCH api/pages/{page}`
 
 
-<!-- END_cff6263e9d23ff2667d105d2e51e6b5f -->
-<!-- START_7fd590211ab23ff6acba6362f83e2941 -->
+<!-- END_3a520900c57f00a662864e51d25666f7 -->
+<!-- START_e2366ca631ebde337e0de1fb73461e8b -->
 ## Remove the specified resource from storage.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/versions/{version}" \
+curl "http://localhost/api/pages/{page}" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.delete("api/sites/{id}/versions/{version}", data)
+this.apiServie.delete("api/pages/{page}", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -842,10 +1103,291 @@ this.apiServie.delete("api/sites/{id}/versions/{version}", data)
 
 
 ### HTTP Request
-`DELETE api/sites/{id}/versions/{version}`
+`DELETE api/pages/{page}`
 
 
-<!-- END_7fd590211ab23ff6acba6362f83e2941 -->
+<!-- END_e2366ca631ebde337e0de1fb73461e8b -->
+<!-- START_e7bf23caf9c2a9cd4c40296cb830f376 -->
+## Display a listing of the resource.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/sites/{id}/config", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/config`
+
+`HEAD api/sites/{id}/config`
+
+
+<!-- END_e7bf23caf9c2a9cd4c40296cb830f376 -->
+<!-- START_99c0968d1d72d2bae1086d4df1403250 -->
+## Show the form for creating a new resource.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config/create" \
+-H "Accept: application/json" \
+    -d "key"="sequi" \
+    -d "value"="sequi" \
+
+```
+
+```javascript
+// Angular 2
+let data = {
+        "key": "sequi",
+        "value": "sequi"
+};
+
+this.apiServie.get("api/sites/{id}/config/create", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+{
+    "key": [
+        "The key field is required."
+    ],
+    "value": [
+        "The value field is required."
+    ]
+}
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/config/create`
+
+`HEAD api/sites/{id}/config/create`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    key | string |  required  | Minimum: `3` Maximum: `255`
+    value | string |  required  | Minimum: `3` Maximum: `255`
+
+<!-- END_99c0968d1d72d2bae1086d4df1403250 -->
+<!-- START_8f6a297bf8d60f97310a0af655aa3803 -->
+## Store a newly created resource in storage.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.post("api/sites/{id}/config", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+
+
+### HTTP Request
+`POST api/sites/{id}/config`
+
+
+<!-- END_8f6a297bf8d60f97310a0af655aa3803 -->
+<!-- START_93adf66113ee8536a5eb0ae3250846fb -->
+## Display the specified resource.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config/{config}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/sites/{id}/config/{config}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/config/{config}`
+
+`HEAD api/sites/{id}/config/{config}`
+
+
+<!-- END_93adf66113ee8536a5eb0ae3250846fb -->
+<!-- START_e31a0bd1d9afd6711719ba32461ffaff -->
+## Show the form for editing the specified resource.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config/{config}/edit" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/sites/{id}/config/{config}/edit", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/config/{config}/edit`
+
+`HEAD api/sites/{id}/config/{config}/edit`
+
+
+<!-- END_e31a0bd1d9afd6711719ba32461ffaff -->
+<!-- START_887bb5500670831acc17d0e49d7f7b7d -->
+## Update the specified resource in storage.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config/{config}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.put("api/sites/{id}/config/{config}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+
+
+### HTTP Request
+`PUT api/sites/{id}/config/{config}`
+
+`PATCH api/sites/{id}/config/{config}`
+
+
+<!-- END_887bb5500670831acc17d0e49d7f7b7d -->
+<!-- START_8d18675aebdb1f5600fb0dbc0d5ef778 -->
+## Remove the specified resource from storage.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config/{config}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.delete("api/sites/{id}/config/{config}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+
+
+### HTTP Request
+`DELETE api/sites/{id}/config/{config}`
+
+
+<!-- END_8d18675aebdb1f5600fb0dbc0d5ef778 -->
 #Multi Site
 <!-- START_6bde012eab6506f2b473003076ee19f4 -->
 ## Get All Sites.
@@ -877,34 +1419,7 @@ this.apiServie.get("api/sites", data)
 
 ```json
 {
-    "data": [
-        {
-            "id": 1,
-            "name": "Zix Development",
-            "public_code": "70490311fe7c84acda8886406a6d884b",
-            "private_code": "$2y$10$DmBRPgg0vBNHcsW0HIJ.Q.er\/vde0VMdnpYSvoGXstPjW1MHclXQ.",
-            "url": "http:\/\/localhost:8000",
-            "ui": "default",
-            "ssl": "",
-            "status": 1,
-            "created_at": "2016-09-30 08:11:21",
-            "updated_at": "2016-10-10 16:01:02",
-            "deleted_at": null
-        },
-        {
-            "id": 2,
-            "name": "Zix Development v2",
-            "public_code": null,
-            "private_code": null,
-            "url": "http:\/\/localhost:8080",
-            "ui": "zixdev",
-            "ssl": null,
-            "status": 1,
-            "created_at": "2016-10-02 13:53:50",
-            "updated_at": "2016-10-10 19:14:29",
-            "deleted_at": null
-        }
-    ],
+    "data": [],
     "status_code": 200
 }
 ```
@@ -917,46 +1432,6 @@ this.apiServie.get("api/sites", data)
 
 
 <!-- END_6bde012eab6506f2b473003076ee19f4 -->
-<!-- START_c7cd12d95cd3eaaf3af48dc5fcae9d79 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/create" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/create", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/create`
-
-`HEAD api/sites/create`
-
-
-<!-- END_c7cd12d95cd3eaaf3af48dc5fcae9d79 -->
 <!-- START_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
 ## Create New Site.
 
@@ -966,7 +1441,7 @@ null
 curl "http://localhost/api/sites" \
 -H "Accept: application/json" \
     -d "name"="et" \
-    -d "url"="et" \
+    -d "url"="http://hayes.com/facilis-sit-et-atque-nihil-similique-facilis.html" \
     -d "ui"="et" \
 
 ```
@@ -975,7 +1450,7 @@ curl "http://localhost/api/sites" \
 // Angular 2
 let data = {
         "name": "et",
-        "url": "et",
+        "url": "http:\/\/hayes.com\/facilis-sit-et-atque-nihil-similique-facilis.html",
         "ui": "et"
 };
 
@@ -1002,7 +1477,7 @@ this.apiServie.post("api/sites", data)
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
     name | string |  required  | Minimum: `3` Maximum: `255`
-    url | string |  required  | Minimum: `3` Maximum: `255`
+    url | url |  required  | Minimum: `3` Maximum: `255`
     ui | string |  required  | Minimum: `3` Maximum: `255`
 
 <!-- END_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
@@ -1046,46 +1521,6 @@ null
 
 
 <!-- END_94c94fc597738cd4377b55266da9ff28 -->
-<!-- START_2a638f3cb43c3741d9eec0133103bf86 -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{site}/edit" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{site}/edit", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{site}/edit`
-
-`HEAD api/sites/{site}/edit`
-
-
-<!-- END_2a638f3cb43c3741d9eec0133103bf86 -->
 <!-- START_773c9bdb2e712908dcb18a7159ba29ec -->
 ## Update Site.
 
@@ -1095,7 +1530,7 @@ null
 curl "http://localhost/api/sites/{site}" \
 -H "Accept: application/json" \
     -d "name"="dolores" \
-    -d "url"="dolores" \
+    -d "url"="https://www.okuneva.org/voluptas-deleniti-ipsum-quos-nobis-non-laudantium-et" \
     -d "ui"="dolores" \
 
 ```
@@ -1104,7 +1539,7 @@ curl "http://localhost/api/sites/{site}" \
 // Angular 2
 let data = {
         "name": "dolores",
-        "url": "dolores",
+        "url": "https:\/\/www.okuneva.org\/voluptas-deleniti-ipsum-quos-nobis-non-laudantium-et",
         "ui": "dolores"
 };
 
@@ -1133,24 +1568,112 @@ this.apiServie.put("api/sites/{site}", data)
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
     name | string |  required  | Minimum: `3` Maximum: `255`
-    url | string |  required  | Minimum: `3` Maximum: `255`
+    url | url |  required  | Minimum: `3` Maximum: `255`
     ui | string |  required  | Minimum: `3` Maximum: `255`
 
 <!-- END_773c9bdb2e712908dcb18a7159ba29ec -->
-<!-- START_5d642e3a724d019171d9753fe202f9b6 -->
-## Remove the specified resource from storage.
+#Site Versions
+<!-- START_2769ec165c2297d6e49ced508170544d -->
+## Get Site Versions.
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{site}" \
+curl "http://localhost/api/sites/{id}/ui" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Angular 2
 
-this.apiServie.delete("api/sites/{site}", data)
+this.apiServie.get("api/sites/{id}/ui", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/ui`
+
+`HEAD api/sites/{id}/ui`
+
+
+<!-- END_2769ec165c2297d6e49ced508170544d -->
+<!-- START_1cb243aec0bde34505983c0c6aac4ca2 -->
+## Show the form for creating a new resource.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui/create" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/sites/{id}/ui/create", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/ui/create`
+
+`HEAD api/sites/{id}/ui/create`
+
+
+<!-- END_1cb243aec0bde34505983c0c6aac4ca2 -->
+<!-- START_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+## Upload new version.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui" \
+-H "Accept: application/json" \
+    -d "ui"="amet" \
+    -d "type"="amet" \
+
+```
+
+```javascript
+// Angular 2
+let data = {
+        "ui": "amet",
+        "type": "amet"
+};
+
+this.apiServie.post("api/sites/{id}/ui", data)
     .subscribe(
         response => {
             console.info(response.json());
@@ -1166,7 +1689,161 @@ this.apiServie.delete("api/sites/{site}", data)
 
 
 ### HTTP Request
-`DELETE api/sites/{site}`
+`POST api/sites/{id}/ui`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    ui | string |  required  | Allowed mime types: `zip`
+    type | string |  required  | 
+
+<!-- END_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+<!-- START_e61cb2180c02ab2ab57834f80f553426 -->
+## Display the specified resource.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui/{ui}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/sites/{id}/ui/{ui}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
 
 
-<!-- END_5d642e3a724d019171d9753fe202f9b6 -->
+### HTTP Request
+`GET api/sites/{id}/ui/{ui}`
+
+`HEAD api/sites/{id}/ui/{ui}`
+
+
+<!-- END_e61cb2180c02ab2ab57834f80f553426 -->
+<!-- START_c0c783082a73551e827873a22d3917bc -->
+## Show the form for editing the specified resource.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui/{ui}/edit" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.get("api/sites/{id}/ui/{ui}/edit", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/ui/{ui}/edit`
+
+`HEAD api/sites/{id}/ui/{ui}/edit`
+
+
+<!-- END_c0c783082a73551e827873a22d3917bc -->
+<!-- START_99cc82634d5e0537b36942e4cd2583ab -->
+## Update the specified resource in storage.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui/{ui}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.put("api/sites/{id}/ui/{ui}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+
+
+### HTTP Request
+`PUT api/sites/{id}/ui/{ui}`
+
+`PATCH api/sites/{id}/ui/{ui}`
+
+
+<!-- END_99cc82634d5e0537b36942e4cd2583ab -->
+<!-- START_d78c937c8d4ab38e29423500e061dbb6 -->
+## Remove the specified resource from storage.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui/{ui}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Angular 2
+
+this.apiServie.delete("api/sites/{id}/ui/{ui}", data)
+    .subscribe(
+        response => {
+            console.info(response.json());
+        },
+
+        error => {
+            console.warn(error);
+        }
+    );
+
+```
+
+
+
+### HTTP Request
+`DELETE api/sites/{id}/ui/{ui}`
+
+
+<!-- END_d78c937c8d4ab38e29423500e061dbb6 -->

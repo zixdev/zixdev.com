@@ -81,6 +81,17 @@ class UserController {
     }
 
     /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        return $this->respondRequestAccepted($this->user->withTrashed()->where('id', $id)->updateAction());
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @param Request $request

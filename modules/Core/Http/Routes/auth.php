@@ -2,6 +2,9 @@
 
 
 Route::group(['namespace' => '\Auth'], function ($router) {
+    $router->get('logout', 'LoginController@logout');
+    $router->post('user/account/activate', 'RegisterController@activateAccount');
+
 
     $router->group(['middleware' => ['guest:api']], function($router) {
 
@@ -13,12 +16,10 @@ Route::group(['namespace' => '\Auth'], function ($router) {
     });
 
 
-    $router->get('logout', 'LoginController@logout');
-    $router->post('user/account/activate', 'RegisterController@activateAccount');
-
-    $router->resource('users', 'UserController');
     $router->group(['middleware' => ['auth:api']], function($router) {
-
+        $router->resource('users', 'UserController', ['only' =>[
+            'index', 'show', 'update', 'store'
+        ]]);
 
         $router->get('user', 'UserController@user');
         $router->post('user', 'UserController@updateUser');

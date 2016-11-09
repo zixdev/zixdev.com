@@ -7,7 +7,7 @@ use Zix\Core\Entities\Page;
 use Zix\Core\Http\Requests\Pages\CreatePageRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
-class PageController
+abstract class PageController
 {
     use ApiResponses;
     /**
@@ -97,7 +97,7 @@ class PageController
      */
     public function destroy($id)
     {
-        //
+        return $this->respondRequestAccepted($this->page->withTrashed()->where('id', $id)->updateAction());
     }
 
 }

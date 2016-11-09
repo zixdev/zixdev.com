@@ -42,16 +42,6 @@ class SiteController
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Create New Site.
      *
      * @param SiteCreateRequest $request
@@ -93,7 +83,7 @@ class SiteController
      */
     public function destroy($id)
     {
-        //
+        return $this->respondRequestAccepted($this->site->withTrashed()->where('id', $id)->updateAction());
     }
 
 }
