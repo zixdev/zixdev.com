@@ -1,6 +1,5 @@
 <?php
-
-Route::group(['namespace' => '\Pages', 'middleware' => ['auth:api', 'role:admin']], function ($router) { //'auth:api', 'role:admin'
-    $router->resource('pages', 'PageController'); //->middleware('role:admin,view_sites');
-
+//, 'middleware' => ['auth:api', 'role:admin']
+Route::group(['namespace' => '\Pages'], function ($router) {
+    $router->resource('pages', 'PageController');
 });

@@ -63,7 +63,9 @@ class PageController
      */
     public function show($id)
     {
-        return $this->respondWithData($this->page->with('sites')->findOrfail($id));
+        if(is_int($id))
+            return $this->respondWithData($this->page->with('sites')->findOrfail($id));
+        return $this->respondWithData($this->page->with('sites')->where('slug', $id)->first());
     }
 
     /**
