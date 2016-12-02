@@ -10,6 +10,7 @@ use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 use Spatie\Permission\Traits\HasRoles;
 use Zix\Core\Entities\UserInfo;
+use Zix\Core\Entities\UserSocial;
 use Zix\Core\Helpers\Traits\Model\HasFiltrableTrait;
 use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
@@ -27,7 +28,7 @@ class User extends Authenticatable implements HasMedia
      * @var array
      */
     protected $fillable = [
-        'username', 'password',
+        'username', 'password', 'avatar',
         'email', 'email_active', 'email_active_code'
     ];
 
@@ -47,5 +48,13 @@ class User extends Authenticatable implements HasMedia
     public function info()
     {
         return $this->hasOne(UserInfo::class);
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function social()
+    {
+        return $this->hasMany(UserSocial::class);
     }
 }

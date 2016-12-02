@@ -22,6 +22,11 @@ class CreateUserInfosTable extends Migration
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
 
+            $table->string('avatar_url')->nullable();
+            $table->string('bio')->nullable();
+            $table->string('website')->nullable();
+            $table->string('company')->nullable();
+
             $table->string('phone_number')->nullable();
             $table->string('mobile_number')->nullable();
 
@@ -31,6 +36,7 @@ class CreateUserInfosTable extends Migration
             $table->string('subrub')->nullable();
             $table->string('post_code')->nullable();
             $table->string('state')->nullable();
+            $table->string('location')->nullable();
             $table->string('country')->nullable(); // expect this to link into country table
 
             $table->timestamps();

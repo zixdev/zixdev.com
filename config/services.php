@@ -35,4 +35,12 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    /*
+     * Socialite Keys
+     */
+    'github' => [
+        'client_id'     => 'be87556483d5d7bedd07',
+        'client_secret' => '8ae6802f6cb625c9342ccf09f1c6f6a3b1da6876',
+        'redirect'      => 'http://localhost:8000/api/auth/social/callback/github',
+    ],
 ];

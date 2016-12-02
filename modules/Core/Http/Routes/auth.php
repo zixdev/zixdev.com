@@ -5,7 +5,6 @@ Route::group(['namespace' => '\Auth'], function ($router) {
     $router->get('logout', 'LoginController@logout');
     $router->post('user/account/activate', 'RegisterController@activateAccount');
 
-
     $router->group(['middleware' => ['guest:api']], function($router) {
 
         $router->post('login', 'LoginController@login');
@@ -30,3 +29,14 @@ Route::group(['namespace' => '\Auth'], function ($router) {
     });
 
 });
+
+Route::group(['namespace' => '\Auth', 'middleware' => ['web']], function ($router) {
+    /*
+     * Social Login Routes
+     */
+    $router->get('auth/social/login-with/{type}', 'SocialController@redirectToProvider');
+    $router->get('auth/social/callback/{type}', 'SocialController@handleProviderCallback');
+
+
+});
+

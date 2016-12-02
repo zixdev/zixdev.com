@@ -173,6 +173,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Laravel\Passport\PassportServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 //        Barryvdh\Debugbar\ServiceProvider::class,
 
         // Spatie Libraries.
@@ -229,6 +230,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
         'Module'    => Zix\Core\Libraries\Modules\ModuleFacade::class,
         'Site'    => Zix\Core\Libraries\Sites\SiteFacade::class,
