@@ -23,9 +23,14 @@ class UserUpdateRequest extends Request
      */
     public function rules()
     {
-        return [
+        $rules = [
             'username'      => 'required|max:255|min:3|unique:users,id,'.$this->id,
-            'email'         => 'required|email|max:255|min:3|unique:users,id,'.$this->id,
         ];
+        if (request()->user()->email != request()->get('email')) {
+            $rules['email'] = 'required|email|max:255|min:3|unique:users';
+        } else {
+            $rules['email'] = 'required|email|max:255|min:3|unique:users,id,'.$this->id;
+        }
+        return $rules;
     }
 }

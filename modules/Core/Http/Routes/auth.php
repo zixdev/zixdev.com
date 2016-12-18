@@ -22,6 +22,7 @@ Route::group(['namespace' => '\Auth'], function ($router) {
 
         $router->get('user', 'UserController@user');
         $router->post('user', 'UserController@updateUser');
+        $router->post('user/change-password', 'UserController@updatePassword');
 
         $router->get('user/info', 'UserController@info')->middleware('role:admin');;
         $router->post('user/info', 'UserController@updateInfo');
@@ -39,4 +40,3 @@ Route::group(['namespace' => '\Auth', 'middleware' => ['web']], function ($route
 
 
 });
-

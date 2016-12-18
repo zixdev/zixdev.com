@@ -48,7 +48,7 @@ class ForgotPasswordController extends Controller
     public function reset(UserForgotPasswordRequest $request)
     {
         $response = $this->broker()->sendResetLink(
-            $request->only('email'), $this->resetNotifier()
+            $request->only('email')
         );
 
         if ($response === Password::RESET_LINK_SENT) {

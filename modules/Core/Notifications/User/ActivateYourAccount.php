@@ -58,8 +58,8 @@ class ActivateYourAccount extends Notification
     {
         return (new MailMessage)
             ->greeting('Hello, ' . $this->user->username)
-            ->line('To get started, click the link below to confirm your account.')
-            ->action('Confirm Your Account ', url('auth/account/activate/'. $this->user->active_code))
+            ->line('To get started, click the link below to confirm your email.')
+            ->action('Confirm Your Email ', url('auth/email/activate/'. $this->user->email_active_code))
 
             ->line('Thank you for using our application!');
 

@@ -48,6 +48,7 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $e)
     {
         if ($this->isHttpException($e)) {
+//            return redirect()->to(str_replace(':8000/', ':8080/', $request->url()));
             return \Site::handleMissingRoute();
         }
 

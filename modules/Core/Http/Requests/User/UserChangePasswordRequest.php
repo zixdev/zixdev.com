@@ -4,7 +4,7 @@ namespace Zix\Core\Http\Requests\User;
 
 use App\Http\Requests\Request;
 
-class UserActivateEmailRequest extends Request
+class UserChangePasswordRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,8 @@ class UserActivateEmailRequest extends Request
     public function rules()
     {
         return [
-            'code'       => 'required|min:60|max:60'
+            'current_password' => 'required',
+            'password' => 'required|confirmed|min:6'
         ];
     }
 }

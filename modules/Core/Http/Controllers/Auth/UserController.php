@@ -4,10 +4,13 @@ namespace Zix\Core\Http\Controllers\Auth;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Zix\Core\Events\User\UserRegistered;
+use Zix\Core\Http\Requests\User\UserChangePasswordRequest;
 use Zix\Core\Http\Requests\User\UserCreateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateInfoRequest;
+use Zix\Core\Notifications\User\ActivateYourAccount;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
@@ -114,7 +117,8 @@ class UserController {
     public function info(Request $request)
     {
         return $this->respondWithData([
-            'user' => $request->user()->with('info')->first()
+            'user' => $request->user()->with('info')->first(),
+            'email_active' => false
         ]);
     }
 
@@ -126,12 +130,32 @@ class UserController {
      */
     public function updateUser(UserUpdateRequest $request)
     {
+        // if the user updated him email, he should activate it.
+        if ($request->user()->email != $request->get('email')) {
+            $request->user()->update([
+                'email_active_code'   => str_random(60),
+                'email'         => $request->get('email'),
+                'username'      => $request->get('username'),
+                'username'      => $request->get('username'),
+                'email_active'  => false
+            ]);
+
+            $request->user()->notify(new ActivateYourAccount($request->user()));
+
+            return $this->respondWithData([
+                'user' => $request->user(),
+                'message' => 'We have sent you an email to confirm your new address Email'
+            ]);
+
+        }
+
         $request->user()->update($request->only([
             'email', 'username'
         ]));
 
         return $this->respondWithData([
-            'user' => $request->user()
+            'user' => $request->user(),
+            'message' => 'Your Account Was Successfully updated'
         ]);
     }
 
@@ -154,7 +178,25 @@ class UserController {
     }
 
 
+    /**
+     * @param UserChangePasswordRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function updatePassword(UserChangePasswordRequest $request)
+    {
+        if (! Hash::check($request->current_password, $request->user()->password)) {
+            return response()->json(
+                ['current_password' => ['The current password you provided is incorrect.']], 422
+            );
+        }
 
+        $request->user()->password = Hash::make($request->password);
+        $request->user()->save();
+
+        return $this->respondWithData([
+            'message' => 'Your Password Been Updated!'
+        ]);
+    }
 
 	
 }

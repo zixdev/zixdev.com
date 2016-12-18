@@ -21,6 +21,8 @@ class CreateUserSocialsTable extends Migration
 
             $table->string('type');
             $table->string('token')->unique();
+            $table->string('email');
+
             $table->timestamps();
             $table->softDeletes();
         });

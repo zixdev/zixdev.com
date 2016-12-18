@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class UserSocial extends Model
 {
-    protected $fillable = ['token', 'type'];
+    protected $fillable = ['token', 'type', 'email'];
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

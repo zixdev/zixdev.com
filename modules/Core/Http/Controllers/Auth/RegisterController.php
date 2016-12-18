@@ -58,7 +58,7 @@ class RegisterController extends Controller
             'username'      => $request->get('username'),
             'email'         => $request->get('email'),
             'password'      => bcrypt($request->get('password')),
-            'active_code'   => str_random(60)
+            'email_active_code'   => str_random(60)
         ]);
 
         // fire event user created.
@@ -77,20 +77,12 @@ class RegisterController extends Controller
      */
     public function activateAccount(UserActivateEmailRequest $request)
     {
-        $user = User::where('active_code', $request->get('active_code'))->where('active', false)->first();
+        $user = User::where('email_active_code', $request->get('code'))->where('email_active', false)->first();
         if($user) {
-            $user->active_code = null;
-            $user->active = true;
+            $user->email_active_code = null;
+            $user->email_active = true;
             $user->save();
-
-            // remove the old token.
-            $user->tokens()->where('name', $request->header('User-Agent'))->delete();
-
-            return $this->respondWithData([
-                'token' => $user->createToken($request->header('User-Agent'))->accessToken,
-                'user'  => $user,
-                'message' => 'Your account was successfully activated'
-            ]);
+            return $this->respondWithData(true);
         }
 
         return $this->respondNotFound('<b>Oops</b> looks like something went wrong .<br> Please check your link or try again later !');

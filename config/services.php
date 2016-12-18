@@ -35,6 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'mailchimp' => [
+        'secret' => 'c1f533c3f7bd6290c5c5aac3522224a3-us14',
+    ],
     /*
      * Socialite Keys
      */

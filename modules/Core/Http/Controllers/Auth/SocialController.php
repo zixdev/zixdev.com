@@ -48,7 +48,7 @@ class SocialController
         // if so redirect to forgot password
         if ($existing_user = $this->user->where('email', $user->email)->first()) {
             // log him in, if the token much the store token
-            if($existing_user->social()->where('type', $type)->where('token', $user->token)) {
+            if($existing_user->social()->where('type', $type)->where('token', $user->token)->first()) {
                 // redirect to the front end logger
                 return redirect()->to(url('auth/indent-login?token='. $existing_user->createToken($type)->accessToken));
             }
@@ -59,10 +59,10 @@ class SocialController
         // create new user
         // set tmp password
         $password = str_random(8);
-        // send tmp password email
+
         // redirect to front-end to set new user also mail that link.
 
-        $user = $this->user->create([
+        $new_user = $this->user->create([
             'username'      => $user->getNickname(),
             'email'         => $user->getEmail(),
             'avatar'        => $user->getAvatar(),
@@ -71,12 +71,18 @@ class SocialController
             'email_active'  => true,
         ]);
 
+        // TODO:: Update user info
+        $new_user->social()->create([
+            'type'  => $type,
+            'token' => $user->token,
+            'email' => $user->getEmail()
+        ]);
+
         // store the socialite token and name
 
         // notify the user to set him new password.
-        $user->notify(new SetNewPassword($user));
-
-        return redirect()->to(url('auth/account/password/'. $user->active_code));
+//        $user->notify(new SetNewPassword($user, $password));
+        return redirect()->to(url('auth/indent-login?setPassword='.$password.'&token='. $new_user->createToken($type)->accessToken));
     }
 
 
