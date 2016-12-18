@@ -2,7 +2,7 @@
 
 use Illuminate\Notifications\Notifiable;
 use Zix\Core\Events\User\UserRegistered;
-use Zix\Core\Notifications\User\ActivateYourAccount;
+use Zix\Core\Notifications\User\ActivateYourEmail;
 
 class UserEventSubscriber
 {
@@ -24,7 +24,7 @@ class UserEventSubscriber
      * @param $event
      */
     public function onUserRegister(UserRegistered $event) {
-        $event->user->notify(new ActivateYourAccount($event->user));
+        $event->user->notify(new ActivateYourEmail($event->user));
     }
 
     /**

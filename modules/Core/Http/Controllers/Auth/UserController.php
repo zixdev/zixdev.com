@@ -10,7 +10,7 @@ use Zix\Core\Http\Requests\User\UserChangePasswordRequest;
 use Zix\Core\Http\Requests\User\UserCreateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateInfoRequest;
-use Zix\Core\Notifications\User\ActivateYourAccount;
+use Zix\Core\Notifications\User\ActivateYourEmail;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
@@ -136,11 +136,10 @@ class UserController {
                 'email_active_code'   => str_random(60),
                 'email'         => $request->get('email'),
                 'username'      => $request->get('username'),
-                'username'      => $request->get('username'),
                 'email_active'  => false
             ]);
 
-            $request->user()->notify(new ActivateYourAccount($request->user()));
+            $request->user()->notify(new ActivateYourEmail($request->user()));
 
             return $this->respondWithData([
                 'user' => $request->user(),
@@ -195,6 +194,43 @@ class UserController {
 
         return $this->respondWithData([
             'message' => 'Your Password Been Updated!'
+        ]);
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function updateAvatar(Request $request)
+    {
+        $image_url = $request->user()->addMedia($request->file('avatar'))->toCollection('images')->getUrl();
+        $request->user()->update([
+            'avatar' => url($image_url)
+        ]);
+        return $this->respondWithData([
+            'user' => $request->user()
+        ]);
+    }
+
+    public function selectAvatar(Request $request)
+    {
+        $request->user()->update([
+            'avatar' => $request->get('url')
+        ]);
+        return $this->respondWithData([
+            'user' => $request->user()
+        ]);
+    }
+
+    public function images(Request $request)
+    {
+        return $this->respondWithData([
+            'images' => $request->user()->getMedia()->map(function($image) {
+                return [
+                    'url' => url($image->getUrl()),
+                    'name' => $image->file_name
+                ];
+            })
         ]);
     }
 

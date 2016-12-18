@@ -7,7 +7,7 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ActivateYourAccount extends Notification
+class ActivateYourEmail extends Notification
 {
     use Queueable;
     /**
