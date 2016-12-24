@@ -14,7 +14,7 @@ class Form extends Model
     /**
      * @var array
      */
-    protected $fillable = ['name', 'slug'];
+    protected $fillable = ['title', 'slug'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany

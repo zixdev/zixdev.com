@@ -15,10 +15,9 @@ class CreateFormsTable extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('title');
             $table->string('slug');
 
-            $table->boolean('protect_with_captcha')->default(true);
             $table->string('submit_text');
 
 
