@@ -18,8 +18,14 @@ Route::get('test', function () {
 });
 
 Route::get('forms', function () {
-    $forms = Zix\Core\Entities\Forms\Form::all();
-//    return dd($form->fields);
+    $forms = Zix\Core\Entities\Forms\Form::with(['fields' => function($q) {
+        return $q->orderBy('field_to_form.order');
+    }])
+
+        ->get();
+
+
+//    return $forms;
     return view('forms', compact('forms'));
 });
 

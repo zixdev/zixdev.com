@@ -1,16 +1,16 @@
 @foreach($forms as $form)
-    <h1>{{ $form->name }}</h1>
+    <h1>{{ $form->title }}</h1>
     <hr>
     <form action="/forms" method="POST">
         <input type="hidden" name="form_name" value="{{ $form->slug }}">
         {!! csrf_field() !!}
-        @foreach($form->fields as $filed)
+        @foreach($form->fields()->orderBy('field_to_form.order')->get() as $filed)
             <div>
                 <label for="{{ $filed->name }}">
-                    {{ $filed->label }} :
+                    {{ $filed->label }} : {{ $filed['ordering'] }}
                 </label>
 
-                <input type="{{ $filed->type }}"
+                <{{ $filed->model }} type="{{ $filed->type }}"
                        id="{{ $filed->name }}"
                        name="{{ $filed->name }}"
                        placeholder="{{ $filed->placeholder }}"
@@ -18,6 +18,7 @@
                        min="{{ $filed->min }}"
                        @if($filed->required) required @endif
                         >
+                </{{ $filed->model }}>
             </div>
             <br>
         @endforeach
@@ -35,3 +36,4 @@
         </ul>
     </div>
 @endif
+

@@ -40,7 +40,7 @@ class CreateFormFieldRulesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rule_to_field');
+        Schema::dropIfExists('form_field_to_rule_field');
         Schema::dropIfExists('form_field_rules');
     }
 }

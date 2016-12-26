@@ -3,6 +3,9 @@
 namespace Zix\Core\Entities\Forms;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Zix\Core\Helpers\Traits\Model\HasFiltrableTrait;
+use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
 /**
  * Class FormField
@@ -10,17 +13,18 @@ use Illuminate\Database\Eloquent\Model;
  */
 class FormField extends Model
 {
+    use HasStatusTrait, SoftDeletes, HasFiltrableTrait;
     /**
      * @var array
      */
     protected $fillable = [
-        'order', 'name', 'label', 'type', 'placeholder'
+        'model', 'name', 'label', 'type', 'placeholder'
     ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function form()
+    public function forms()
     {
         return $this->belongsToMany(Form::class);
     }

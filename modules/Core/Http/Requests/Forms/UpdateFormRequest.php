@@ -13,7 +13,7 @@ class UpdateFormRequest extends Request
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class UpdateFormRequest extends Request
     public function rules()
     {
         return [
-            //
+            'title' => 'required|min:3|max:255',
+            'slug' => 'required|min:3|max:255',
+            'submit_text' => 'required|min:3|max:255',
         ];
     }
 }

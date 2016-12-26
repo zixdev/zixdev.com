@@ -16,9 +16,12 @@ class CreateFormFieldsTable extends Migration
         Schema::create('form_fields', function (Blueprint $table) {
             $table->increments('id');
 
+            $table->string('model');
+            $table->string('type');
+
             $table->string('label');
             $table->string('name');
-            $table->string('type');
+
             $table->string('placeholder');
 
 
@@ -29,6 +32,8 @@ class CreateFormFieldsTable extends Migration
         });
 
         Schema::create('field_to_form', function (Blueprint $table) {
+            $table->integer('order');
+
             $table->integer('form_id')->unsigned()->index();
             $table->foreign('form_id')->references('id')->on('forms')->onDelete('cascade');
 
