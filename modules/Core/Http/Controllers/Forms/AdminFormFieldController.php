@@ -92,7 +92,7 @@ class AdminFormFieldController
      */
     public function show($id)
     {
-        //
+        return 'field';
     }
 
     /**

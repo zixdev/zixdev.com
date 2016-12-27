@@ -21,6 +21,10 @@ class CreateFormsTable extends Migration
             $table->string('submit_text');
 
 
+            $table->boolean('notify')->default(false);
+            $table->string('notify_email')->nullable();
+
+            $table->boolean('captcha')->default(false);
             $table->boolean('status')->default(true);
 
             $table->timestamps();

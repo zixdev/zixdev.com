@@ -4,36 +4,42 @@ namespace Zix\Core\Http\Controllers\Forms;
 
 use Illuminate\Http\Request;
 use Zix\Core\Entities\Forms\Form;
-use Zix\Core\Http\Requests\Forms\CreateFormRequest;
-use Zix\Core\Http\Requests\Forms\UpdateFormRequest;
+use Zix\Core\Entities\Forms\FormResponse;
 use Zix\Core\Support\Traits\ApiResponses;
 
-class AdminFormController
+class AdminFormResponsesController
 {
     use ApiResponses;
     /**
      * @var Form
      */
     private $form;
+    /**
+     * @var FormResponse
+     */
+    private $response;
 
     /**
-     * AdminFormController constructor.
+     * AdminFormResponsesController constructor.
      * @param Form $form
+     * @param FormResponse $response
      */
-    public function __construct(Form $form)
+    public function __construct(Form $form, FormResponse $response)
     {
         $this->form = $form;
+        $this->response = $response;
     }
 
 
     /**
      * Display a listing of the resource.
      *
+     * @param $slug
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($slug)
     {
-        return $this->respondWithData($this->form->filtrable());
+        return $this->respondWithData($this->form->where('slug', $slug)->first()->responses()->filtrable());
     }
 
     /**
@@ -49,23 +55,29 @@ class AdminFormController
     /**
      * Store a newly created resource in storage.
      *
-     * @param CreateFormRequest $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateFormRequest $request)
+    public function store(Request $request)
     {
-        // we need to create new event class
-        return $this->respondDataCreated($this->form->create($request->all()));
+        //
     }
 
     /**
      * Display the specified resource.
+     *
+     * @param $slug
      * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug, $id)
     {
-        return $this->respondWithData($this->form->where('id', $id)->with('fields')->first());
+        $response = $this->response->where('id', $id)->with('fields')->first();
+        // mark the response as viewed
+        return $this->respondWithData([
+            'form' => $this->form->where('slug', $slug)->with('fields')->first(),
+            'response' => $this->response->where('id', $id)->with('fields')->first()
+        ]);
     }
 
     /**
@@ -82,24 +94,25 @@ class AdminFormController
     /**
      * Update the specified resource in storage.
      *
-     * @param UpdateFormRequest $request
+     * @param  \Illuminate\Http\Request $request
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateFormRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        return $this->respondRequestAccepted($this->form->findOrFail($id)->update($request->all()));
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
+     * @param $slug
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($slug, $id)
     {
-        return $this->respondRequestAccepted($this->form->withTrashed()->where('id', $id)->updateAction());
+        return $this->respondRequestAccepted($this->response->withTrashed()->where('id', $id)->updateAction());
     }
 
 }

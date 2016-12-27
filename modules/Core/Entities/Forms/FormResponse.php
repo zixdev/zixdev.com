@@ -3,7 +3,10 @@
 namespace Zix\Core\Entities\Forms;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Zix\Core\Entities\Site;
+use Zix\Core\Helpers\Traits\Model\HasFiltrableTrait;
+use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
 /**
  * Class FormResponse
@@ -11,10 +14,11 @@ use Zix\Core\Entities\Site;
  */
 class FormResponse extends Model
 {
+    use HasStatusTrait, SoftDeletes, HasFiltrableTrait;
     /**
      * @var array
      */
-    protected $fillable = ['identifier', 'site_id'];
+    protected $fillable = ['identifier', 'site_id', 'viewed', 'responded'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
