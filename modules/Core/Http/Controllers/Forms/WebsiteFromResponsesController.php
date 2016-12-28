@@ -5,6 +5,7 @@ namespace Zix\Core\Http\Controllers\Forms;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Zix\Core\Entities\Forms\Form;
+use Zix\Core\Events\Forms\FormRespondReply;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
@@ -45,7 +46,7 @@ class WebsiteFromResponsesController
         $response = $this->createNewResponse($request, $form);
 
         //  fire new event
-
+        event(new FormRespondReply($form, $response));
 
         return $this->respondDataCreated($response);
     }

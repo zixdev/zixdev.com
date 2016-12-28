@@ -55,6 +55,10 @@ class AdminFormController
     public function store(CreateFormRequest $request)
     {
         // we need to create new event class
+        \Artisan::call('zix:make-event', [
+            'name' => 'Forms/SexForm',
+            'module' => 'Core'
+        ]);
         return $this->respondDataCreated($this->form->create($request->all()));
     }
 
