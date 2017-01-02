@@ -29,7 +29,6 @@ class ModuleServiceProvider extends ServiceProvider
         $this->bindContracts();
         \Route::any( '{catchall}', function ( $page ) {
             return view('master');
-            dd( $page . ' requested' );
         } );
 
     }

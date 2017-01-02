@@ -20,9 +20,10 @@ class CreateSiteConfigsTable extends Migration
             $table->foreign('site_id')->references('id')->on('sites')->onDelete('cascade');
 
             $table->string('key');
-            $table->string('value')->nullable();
+            $table->text('value')->nullable();
 
             $table->boolean('status')->default(true);
+            $table->boolean('public')->default(false);
 
             $table->timestamps();
             $table->softDeletes();

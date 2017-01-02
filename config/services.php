@@ -36,14 +36,20 @@ return [
     ],
 
     'mailchimp' => [
-        'secret' => 'c1f533c3f7bd6290c5c5aac3522224a3-us14',
+        'secret' => '-us14',
     ],
     /*
      * Socialite Keys
      */
     'github' => [
-        'client_id'     => 'be87556483d5d7bedd07',
-        'client_secret' => '8ae6802f6cb625c9342ccf09f1c6f6a3b1da6876',
+        'client_id'     => '',
+        'client_secret' => '',
+        'redirect'      => 'http://localhost:8000/api/auth/social/callback/github',
+    ],
+
+    'facebook' => [
+        'client_id'     => '',
+        'client_secret' => '',
         'redirect'      => 'http://localhost:8000/api/auth/social/callback/github',
     ],
 ];

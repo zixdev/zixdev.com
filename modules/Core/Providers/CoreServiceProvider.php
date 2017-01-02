@@ -19,7 +19,6 @@ class CoreServiceProvider extends ServiceProvider
 
         $this->registerLibraries();
 
-
     }
 
     /**
@@ -38,5 +37,15 @@ class CoreServiceProvider extends ServiceProvider
     public function registerLibraries()
     {
 
+    }
+
+    private function registerSiteConfig()
+    {
+        $configs = collect();
+        site()->config->map(function($config) use ($configs){
+            $configs[$config->key] = $config->value;
+        });
+
+        config(['site' => $configs->toArray()]);
     }
 }

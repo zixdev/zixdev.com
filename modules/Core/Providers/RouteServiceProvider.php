@@ -24,6 +24,7 @@ class RouteServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerRoutes();
+        $this->registerSiteConfig();
     }
 
     /**
@@ -46,6 +47,16 @@ class RouteServiceProvider extends ServiceProvider
                 File::getRequire($file);
             }
         });
+    }
+
+    private function registerSiteConfig()
+    {
+        site()->config->map(function($config){
+            $key =  str_replace('_', '.', $config->key);
+            $key = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $key));
+            config([$key => $config->value]);
+        });
+
     }
 
 

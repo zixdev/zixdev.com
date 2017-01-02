@@ -3,8 +3,8 @@
 namespace Zix\Core\Http\Controllers\Site;
 
 use Illuminate\Http\Request;
+use Zix\Core\Entities\Site;
 use Zix\Core\Http\Requests\Site\SiteConfigCreateRequest;
-use Zix\Core\Libraries\Sites\Site;
 use Zix\Core\Support\Traits\ApiResponses;
 
 class SiteConfigController
@@ -22,22 +22,19 @@ class SiteConfigController
      */
     public function __construct(Site $site)
     {
-        $this->site = $site->current();
+        $this->site = $site;
     }
 
 
     /**
      * Display a listing of the resource.
      *
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-//        $this->site->config()->create([
-//            'key'   => 'api.facebook',
-//            'value' => 'AZERZERJFGZLFNJ'
-//        ]);
-        return $this->respondWithData($this->site->config);
+        return $this->respondWithData($this->site->find($id)->config);
     }
 
     /**
@@ -57,9 +54,19 @@ class SiteConfigController
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
-        //
+        $tmp = collect($request->all())->map(function($value, $key) use($id) {
+            return $this->site->find($id)->config()->updateOrCreate(
+                ['key' => $key],
+                [
+                    'key' => $key,
+                    'value' => $value
+                ]
+            );
+        });
+        return $this->respondWithData($tmp);
+        return $request->all();
     }
 
     /**
