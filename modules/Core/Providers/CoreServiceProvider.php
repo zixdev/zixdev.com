@@ -38,14 +38,4 @@ class CoreServiceProvider extends ServiceProvider
     {
 
     }
-
-    private function registerSiteConfig()
-    {
-        $configs = collect();
-        site()->config->map(function($config) use ($configs){
-            $configs[$config->key] = $config->value;
-        });
-
-        config(['site' => $configs->toArray()]);
-    }
 }
