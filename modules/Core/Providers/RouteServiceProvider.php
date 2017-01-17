@@ -51,11 +51,14 @@ class RouteServiceProvider extends ServiceProvider
 
     private function registerSiteConfig()
     {
-        site()->config->map(function($config){
-            $key =  str_replace('_', '.', $config->key);
-            $key = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $key));
-            config([$key => $config->value]);
-        });
+        if(!\App::runningInConsole() ) {
+            site()->config->map(function($config){
+                $key =  str_replace('_', '.', $config->key);
+                $key = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $key));
+                config([$key => $config->value]);
+            });
+
+        }
 
     }
 
