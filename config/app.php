@@ -175,6 +175,7 @@ return [
         Laravel\Passport\PassportServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
 //        Barryvdh\Debugbar\ServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
 
         // Spatie Libraries.
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,

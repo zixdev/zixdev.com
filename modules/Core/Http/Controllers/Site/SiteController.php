@@ -7,6 +7,7 @@ use Zix\Core\Entities\Site;
 use Zix\Core\Http\Requests\Site\SiteCreateRequest;
 use Zix\Core\Http\Requests\Site\SiteUpdateRequest;
 use Zix\Core\Support\Traits\ApiResponses;
+use Zix\Core\Support\Traits\CrudControllerTrait;
 
 /**
  * Class SiteController
@@ -15,31 +16,17 @@ use Zix\Core\Support\Traits\ApiResponses;
  */
 class SiteController
 {
-    use ApiResponses;
-    /**
-     * @var Site
-     */
-    private $site;
+    use ApiResponses, CrudControllerTrait;
 
     /**
      * SiteController constructor.
-     * @param Site $site
+     * @param Site $model
      */
-    public function __construct(Site $site)
+    public function __construct(Site $model)
     {
-        $this->site = $site;
+        $this->model = $model;
     }
 
-
-    /**
-     * Get All Sites.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return $this->respondWithData($this->site->filtrable());
-    }
 
     /**
      * Create New Site.
@@ -49,19 +36,9 @@ class SiteController
      */
     public function store(SiteCreateRequest $request)
     {
-        return $this->respondDataCreated($this->site->create($request->all()));
+        return $this->respondDataCreated($this->model->create($request->all()));
     }
 
-    /**
-     * Get Site By Id.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        return $this->respondWithData($this->site->findOrfail($id));
-    }
 
     /**
      * Update Site.
@@ -72,18 +49,7 @@ class SiteController
      */
     public function update(SiteUpdateRequest $request, $id)
     {
-        return $this->respondRequestAccepted($this->site->find($id)->update($request->all()));
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        return $this->respondRequestAccepted($this->site->withTrashed()->where('id', $id)->updateAction());
+        return $this->respondRequestAccepted($this->model->find($id)->update($request->all()));
     }
 
 }

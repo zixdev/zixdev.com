@@ -16,9 +16,7 @@ Route::group(['namespace' => '\Auth'], function ($router) {
 
 
     $router->group(['middleware' => ['auth:api']], function($router) {
-        $router->resource('users', 'UserController', ['only' =>[
-            'index', 'show', 'update', 'store'
-        ]]);
+        $router->resource('users', 'UserController');
 
         $router->get('user', 'UserController@user');
         $router->post('user', 'UserController@updateUser');

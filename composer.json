@@ -16,7 +16,8 @@
         "filp/whoops": "^2.1",
         "barryvdh/laravel-debugbar": "^2.3",
         "laravel/socialite": "^2.0",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "yajra/laravel-datatables-oracle": "~6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -7,6 +7,7 @@ use ZipArchive;
 use Zix\Core\Entities\Site;
 use Zix\Core\Http\Requests\Site\SiteUploadVersionRequest;
 use Zix\Core\Support\Traits\ApiResponses;
+use Zix\Core\Support\Traits\CrudControllerTrait;
 
 /**
  * Class SiteUiController
@@ -15,7 +16,7 @@ use Zix\Core\Support\Traits\ApiResponses;
  */
 class SiteUiController
 {
-    use ApiResponses;
+    use ApiResponses, CrudControllerTrait;
     /**
      * @var Site
      */
@@ -33,11 +34,19 @@ class SiteUiController
     /**
      * Get Site Versions.
      *
+     * @param Request $request
      * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index(Request $request, $id)
     {
+        if($request->get('eloquent') == 'trashed')
+        {
+            return \Datatables::of($this->site->findOrFail($id)->uis()->onlyTrashed())->make(true);
+        }
+
+        return \Datatables::of($this->site->findOrFail($id)->uis()->get())->make(true);
+
         return $this->respondWithData($this->site->findOrFail($id)->uis()->latest()->filtrable());
     }
 

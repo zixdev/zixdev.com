@@ -5,6 +5,7 @@ namespace Zix\Core\Http\Controllers\Auth;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Zix\Core\Support\Traits\CrudControllerTrait;
 use Zix\Core\Events\User\UserRegistered;
 use Zix\Core\Http\Requests\User\UserChangePasswordRequest;
 use Zix\Core\Http\Requests\User\UserCreateRequest;
@@ -18,30 +19,20 @@ use Zix\Core\Support\Traits\ApiResponses;
  * @package Zix\Core\Http\Controllers\Auth
  * @resource Authenticated User
  */
-class UserController {
+class UserController
+{
 
-    use ApiResponses;
-    /**
-     * @var User
-     */
-    private $user;
+    use ApiResponses, CrudControllerTrait;
 
     /**
      * UserController constructor.
-     * @param User $user
+     * @param User $model
      */
-    public function __construct(User $user)
+    public function __construct(User $model)
     {
-        $this->user = $user;
+        $this->model = $model;
     }
 
-    /**
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function index()
-    {
-        return $this->respondWithData($this->user->filtrable());
-    }
 
     /**
      * Get Site By Id.
@@ -51,7 +42,7 @@ class UserController {
      */
     public function show($id)
     {
-        return $this->respondWithData($this->user->findOrfail($id));
+        return $this->respondWithData($this->model->findOrfail($id));
     }
 
     /**
@@ -61,7 +52,7 @@ class UserController {
      */
     public function update(UserUpdateRequest $request, $id)
     {
-        return $this->respondRequestAccepted($this->user->find($id)->update($request->all()));
+        return $this->respondRequestAccepted($this->model->find($id)->update($request->all()));
     }
 
     /**
@@ -70,11 +61,11 @@ class UserController {
      */
     public function store(UserCreateRequest $request)
     {
-        $user = $this->user->create([
-            'username'      => $request->get('username'),
-            'email'         => $request->get('email'),
-            'password'      => bcrypt($request->get('password')),
-            'active_code'   => str_random(60)
+        $user = $this->model->create([
+            'username' => $request->get('username'),
+            'email' => $request->get('email'),
+            'password' => bcrypt($request->get('password')),
+            'active_code' => str_random(60)
         ]);
 
         // fire event user created.
@@ -83,16 +74,6 @@ class UserController {
         return $this->respondDataCreated($user);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        return $this->respondRequestAccepted($this->user->withTrashed()->where('id', $id)->updateAction());
-    }
 
     /**
      * Display a listing of the resource.
@@ -104,7 +85,7 @@ class UserController {
     {
         return $this->respondWithData([
             'user' => $request->user(),
-            'permissions'  => $request->user()->permissions()->pluck('name')
+            'permissions' => $request->user()->permissions()->pluck('name')
         ]);
     }
 
@@ -133,10 +114,10 @@ class UserController {
         // if the user updated him email, he should activate it.
         if ($request->user()->email != $request->get('email')) {
             $request->user()->update([
-                'email_active_code'   => str_random(60),
-                'email'         => $request->get('email'),
-                'username'      => $request->get('username'),
-                'email_active'  => false
+                'email_active_code' => str_random(60),
+                'email' => $request->get('email'),
+                'username' => $request->get('username'),
+                'email_active' => false
             ]);
 
             $request->user()->notify(new ActivateYourEmail($request->user()));
@@ -165,7 +146,7 @@ class UserController {
      */
     public function updateInfo(UserUpdateInfoRequest $request)
     {
-        if($request->user()->info) {
+        if ($request->user()->info) {
             $request->user()->info->update($request->input());
         } else {
             $request->user()->info()->create($request->input());
@@ -183,7 +164,7 @@ class UserController {
      */
     public function updatePassword(UserChangePasswordRequest $request)
     {
-        if (! Hash::check($request->current_password, $request->user()->password)) {
+        if (!Hash::check($request->current_password, $request->user()->password)) {
             return response()->json(
                 ['current_password' => ['The current password you provided is incorrect.']], 422
             );
@@ -212,6 +193,10 @@ class UserController {
         ]);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function selectAvatar(Request $request)
     {
         $request->user()->update([
@@ -222,10 +207,14 @@ class UserController {
         ]);
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function images(Request $request)
     {
         return $this->respondWithData([
-            'images' => $request->user()->getMedia()->map(function($image) {
+            'images' => $request->user()->getMedia()->map(function ($image) {
                 return [
                     'url' => url($image->getUrl()),
                     'name' => $image->file_name
@@ -234,5 +223,5 @@ class UserController {
         ]);
     }
 
-	
+
 }

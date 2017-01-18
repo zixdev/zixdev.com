@@ -7,10 +7,11 @@ use Zix\Core\Entities\Forms\Form;
 use Zix\Core\Http\Requests\Forms\CreateFormRequest;
 use Zix\Core\Http\Requests\Forms\UpdateFormRequest;
 use Zix\Core\Support\Traits\ApiResponses;
+use Zix\Core\Support\Traits\CrudControllerTrait;
 
 class AdminFormController
 {
-    use ApiResponses;
+    use ApiResponses, CrudControllerTrait;
     /**
      * @var Form
      */
@@ -19,32 +20,15 @@ class AdminFormController
     /**
      * AdminFormController constructor.
      * @param Form $form
+     * @param Form $model
      */
-    public function __construct(Form $form)
+    public function __construct(Form $form, Form $model)
     {
         $this->form = $form;
+        $this->model = $model;
     }
 
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return $this->respondWithData($this->form->filtrable());
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
