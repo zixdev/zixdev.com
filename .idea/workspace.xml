@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_31_194408_create_pages_table.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_31_194408_create_pages_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" afterPath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" afterPath="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Entities/Page.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/Page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Requests/Pages/UpdatePageRequest.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Requests/Pages/UpdatePageRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2016_10_17_161056_create_seos_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_17_161056_create_seos_table.php">
+      <file leaf-file-name="Page.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44480172">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.49196142">
+              <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -56,9 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Core/Entities/Forms/FormFieldRule.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_12_18_183521_create_form_field_rules_table.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Forms/CreateFormRequest.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Forms/UpdateFormRequest.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_12_26_080901_create_form_field_orders_table.php" />
         <option value="$PROJECT_DIR$/modules/Core/Entities/Forms/FormFieldOrder.php" />
@@ -101,12 +93,15 @@
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteUiController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/AdminFormController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_31_194408_create_pages_table.php" />
         <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Entities/Page.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Pages/UpdatePageRequest.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Events/Seo/CreateSeoRelation.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Events/Site/CreateSiteRelation.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Events/Seo/UpdateSeoRelation.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_31_194408_create_pages_table.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Entities/Page.php" />
       </list>
     </option>
   </component>
@@ -660,27 +655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Core/Libraries/Modules/ModuleServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028938906">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.170418">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/broadcasting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.69453377">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/cache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -936,10 +910,177 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4340836">
+          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+          <folding>
+            <marker date="1484900915738" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" Create admin roles ..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" create admin account ..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68488747">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <marker date="1484664785837" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
+            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
+            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
+            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31832796">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <marker date="1484901008253" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Pages/CreatePageRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7524116">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="29" selection-end-column="36" />
+          <folding>
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/User/UserUpdateRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Pages/UpdatePageRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57877815">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
+            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_17_161056_create_seos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45766345">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <marker date="1484664785881" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/User/UserCreateRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasSeoTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.115755625">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34190783">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Class CrudControllerTrait ..." />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" @var ..." />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Get Dynamic Data Table ..." />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Get resource By Id. ..." />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35155413">
-          <caret line="1003" column="20" selection-start-line="1003" selection-start-column="20" selection-end-line="1003" selection-end-column="20" />
+        <state vertical-scroll-proportion="-0.23151125">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <marker date="1481824997000" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1481824997000" expanded="true" signature="-1:-1" placeholder="{...}" />
@@ -1545,217 +1686,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Events/Site/CreateSiteRelation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34190783">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="62" />
+          <folding>
+            <marker date="1484904621746" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484904621746" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904621746" expanded="true" signature="-1:-1" placeholder=" Create a new event instance. ..." />
+            <marker date="1484904621746" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904621746" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904621746" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904621746" expanded="true" signature="-1:-1" placeholder=" Get the channels the event should be broadcast on. ..." />
+            <marker date="1484904621746" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Events/Seo/CreateSeoRelation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39978564">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <marker date="1484904481763" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484904481763" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904481763" expanded="true" signature="-1:-1" placeholder=" Create a new event instance. ..." />
+            <marker date="1484904481763" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904481763" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904481763" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904481763" expanded="true" signature="-1:-1" placeholder=" Get the channels the event should be broadcast on. ..." />
+            <marker date="1484904481763" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Events/Seo/UpdateSeoRelation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72347265">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding>
+            <marker date="1484904856457" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484904856457" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904856457" expanded="true" signature="-1:-1" placeholder=" Create a new event instance. ..." />
+            <marker date="1484904856457" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904856457" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904856457" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904856457" expanded="true" signature="-1:-1" placeholder=" Get the channels the event should be broadcast on. ..." />
+            <marker date="1484904856457" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_31_194408_create_pages_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19323671">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.5080386">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1484752552012" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1484752552012" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasSeoTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.115755625">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4340836">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-          <folding>
-            <marker date="1484900915738" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" Create admin roles ..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder=" create admin account ..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484900915738" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Console/Commands/InstallCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68488747">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-          <folding>
-            <marker date="1484664785837" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder=" The console command name. ..." />
-            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder=" The console command description. ..." />
-            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder=" Execute the console command. ..." />
-            <marker date="1484664785837" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2016_08_04_161537_create_sites_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31832796">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <marker date="1484901008253" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1484901008253" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3762058">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1484901184783" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1484901184783" expanded="true" signature="-1:-1" placeholder=" Class Page ..." />
-            <marker date="1484901184783" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484901184783" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
-            <marker date="1484901184783" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\BelongsToMany ..." />
-            <marker date="1484901184783" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23151125">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Class CrudControllerTrait ..." />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" @var ..." />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Get Dynamic Data Table ..." />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Get resource By Id. ..." />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
-            <marker date="1484745982178" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Pages/CreatePageRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7524116">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/User/UserUpdateRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Pages/UpdatePageRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57877815">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
-            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
-            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902091507" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/User/UserCreateRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Determine if the user is authorized to make this request. ..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484664785909" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904922528" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484904922528" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904922528" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1484904922528" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904922528" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904922528" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904922528" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1484904922528" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2154341">
-          <caret line="47" column="82" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.4051447">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
-            <marker date="1484902332504" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder=" PageController constructor. ..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder=" @param UpdatePageRequest $request ..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1484902332504" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904810333" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder=" PageController constructor. ..." />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder=" Display the specified resource. ..." />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder=" @param UpdatePageRequest $request ..." />
+            <marker date="1484904810333" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2016_10_17_161056_create_seos_table.php">
+    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44480172">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.49196142">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding />
         </state>
       </provider>

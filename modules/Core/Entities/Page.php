@@ -19,7 +19,7 @@ class Page extends Model
     /**
      * @var array
      */
-    protected $fillable = ['title', 'slug', 'content'];
+    protected $fillable = ['title', 'slug', 'content', 'status'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany

@@ -3,6 +3,9 @@
 namespace Zix\Core\Http\Controllers\Pages;
 
 use Illuminate\Http\Request;
+use Zix\Core\Events\Seo\CreateSeoRelation;
+use Zix\Core\Events\Seo\UpdateSeoRelation;
+use Zix\Core\Events\Site\CreateSiteRelation;
 use Zix\Core\Http\Requests\Pages\UpdatePageRequest;
 use Zix\Core\Support\Traits\CrudControllerTrait;
 use Zix\Core\Entities\Page;
@@ -30,10 +33,12 @@ class PageController
      */
     public function store(CreatePageRequest $request)
     {
-        $sites = collect($request->get('sites'))->map(function ($site) {
-            return $site['id'];
-        })->toArray();
-        return $this->respondDataCreated($this->model->create($request->all())->sites()->sync($sites));
+        $page = $this->model->create($request->all());
+
+        event(new CreateSeoRelation($page, $request));
+        event(new CreateSiteRelation($page, $request));
+
+        return $this->respondDataCreated($page);
     }
 
     /**
@@ -45,9 +50,9 @@ class PageController
     public function show($id)
     {
         if (!is_int($id)) {
-            return $this->respondWithData($this->model->with('sites')->find($id));
+            return $this->respondWithData($this->model->with(['sites', 'seo'])->find($id));
         }
-        return $this->respondWithData($this->model->with('sites')->where('slug', $id)->first());
+        return $this->respondWithData($this->model->with(['sites', 'seo'])->where('slug', $id)->first());
     }
 
     /**
@@ -57,11 +62,10 @@ class PageController
      */
     public function update(UpdatePageRequest $request, $id)
     {
-        $sites = collect($request->get('sites'))->map(function ($site) {
-            return $site['id'];
-        })->toArray();
-        $this->model->find($id)->sites()->sync($sites);
-        return $this->respondRequestAccepted($this->model->find($id)->update($request->all()));
+        $model =  $this->model->find($id);
+        event(new CreateSiteRelation($model, $request));
+        event(new UpdateSeoRelation($model, $request));
+        return $this->respondRequestAccepted($model->update($request->all()));
     }
 
 
