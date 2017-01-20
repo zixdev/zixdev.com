@@ -3,7 +3,6 @@
 namespace Zix\Core\Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Zix\Core\Database\Seeders\SiteDataBaseSeeder;
 
 class CoreDataBaseSeeder extends Seeder
 {
@@ -15,5 +14,6 @@ class CoreDataBaseSeeder extends Seeder
     public function run()
     {
         $this->call(SiteDataBaseSeeder::class);
+        $this->call(PermissionsDatabaseSeeder::class);
     }
 }

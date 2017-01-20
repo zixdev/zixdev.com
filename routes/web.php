@@ -13,8 +13,17 @@
 //
 
 Route::get('test', function () {
+    $controllers = [];
 
-//    return site()->config->toArray();
-    return dd(config());
+    foreach (Route::getRoutes()->getRoutes() as $route) {
+        $action = $route->getAction();
+
+        if (array_key_exists('controller', $action)) {
+            // You can also use explode('@', $action['controller']); here
+            // to separate the class name from the method
+            $controllers[] = $action;
+        }
+    }
+    return dd($controllers);
 });
 

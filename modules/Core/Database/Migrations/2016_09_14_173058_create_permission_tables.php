@@ -18,12 +18,15 @@ class CreatePermissionTables extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::create($config['permissions'], function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
+            $table->string('type')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::create($config['user_has_permissions'], function (Blueprint $table) use ($config) {
