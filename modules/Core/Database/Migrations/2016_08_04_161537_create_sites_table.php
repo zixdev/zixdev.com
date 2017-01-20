@@ -26,6 +26,15 @@ class CreateSitesTable extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
+
+        Schema::create('siteables', function (Blueprint $table) {
+
+            $table->integer('site_id')->unsigned()->index();
+            $table->foreign('site_id')->references('id')->on('sites')->onDelete('cascade');
+
+            $table->morphs('siteable');
+
+        });
     }
 
     /**
@@ -35,6 +44,7 @@ class CreateSitesTable extends Migration
      */
     public function down()
     {
+        Schema::drop('siteables');
         Schema::drop('sites');
     }
 }

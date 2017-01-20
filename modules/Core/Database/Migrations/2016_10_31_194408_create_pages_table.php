@@ -26,13 +26,13 @@ class CreatePagesTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::create('page_site', function (Blueprint $table) {
-            $table->integer('site_id')->unsigned()->index();
-            $table->foreign('site_id')->references('id')->on('sites')->onDelete('cascade');
-
-            $table->integer('page_id')->unsigned()->index();
-            $table->foreign('page_id')->references('id')->on('pages')->onDelete('cascade');
-        });
+//        Schema::create('page_site', function (Blueprint $table) {
+//            $table->integer('site_id')->unsigned()->index();
+//            $table->foreign('site_id')->references('id')->on('sites')->onDelete('cascade');
+//
+//            $table->integer('page_id')->unsigned()->index();
+//            $table->foreign('page_id')->references('id')->on('pages')->onDelete('cascade');
+//        });
     }
 
     /**
@@ -42,7 +42,7 @@ class CreatePagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('page_site');
+//        Schema::dropIfExists('page_site');
         Schema::dropIfExists('pages');
     }
 }

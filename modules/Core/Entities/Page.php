@@ -26,7 +26,7 @@ class Page extends Model
      */
     public function sites()
     {
-        return $this->belongsToMany(Site::class);
+        return $this->morphToMany(Site::class, 'siteable');
     }
 
 

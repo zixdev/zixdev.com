@@ -13,7 +13,7 @@ class UpdatePageRequest extends Request
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,10 @@ class UpdatePageRequest extends Request
     public function rules()
     {
         return [
-            //
+            'title' => 'required|min:3|max:255',
+            'slug'  => 'required|min:3|max:255|unique:pages,id,'.$this->id,
+            'sites' => 'required',
+            'content' => 'required',
         ];
     }
 }
