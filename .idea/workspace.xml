@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteUiController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteUiController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_pages.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_sites.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_sites.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SiteUi.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Core/Entities/SiteUi.php">
+      <file leaf-file-name="ManageUserController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3043478">
-              <caret line="15" column="48" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.8695652">
+              <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -82,7 +79,6 @@
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/SocialController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/auth.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Admin/UserController.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/PageController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Pages/ManagePageController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/pages.php" />
@@ -101,9 +97,10 @@
         <option value="$PROJECT_DIR$/modules/Core/Database/Seeders/PermissionsDatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteConfigController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/manage_pages.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/manage_sites.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Site/SiteUiController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php" />
       </list>
     </option>
   </component>
@@ -964,20 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08695652">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/manage_user_roles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9549114">
-          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/manage_forms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69404185">
@@ -1023,28 +1006,6 @@
             <marker date="1485027124666" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1485027124666" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1485027124666" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5652174">
-          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
-          <folding>
-            <marker date="1485027538824" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder=" Class ManageUserController ..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder=" UserController constructor. ..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder=" Get User ..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder=" Create User ..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder=" Update User ..." />
-            <marker date="1485027538824" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1121,6 +1082,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3043478">
           <caret line="15" column="48" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <marker date="1484664785881" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\BelongsTo ..." />
+            <marker date="1484664785881" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/manage_user_roles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9549114">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          <folding>
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485011427880" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.863124">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="51" />
+          <folding>
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485032105385" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8695652">
+          <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
           <folding />
         </state>
       </provider>

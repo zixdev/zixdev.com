@@ -72,4 +72,19 @@ class ManageUserController
     {
         return $this->respondRequestAccepted($this->model->find($id)->update($request->all()));
     }
+
+    public function roles($id)
+    {
+        return $this->respondWithData($this->model->with('roles')->find($id));
+    }
+
+    public function updateRoles(Request $request, $id)
+    {
+        $roles = collect();
+        collect($request->get('roles'))->map(function ($role) use ($roles) {
+            $roles->push($role['name']);
+        });
+
+        return $this->respondRequestAccepted($this->model->find($id)->syncRoles($roles->toArray()));
+    }
 }

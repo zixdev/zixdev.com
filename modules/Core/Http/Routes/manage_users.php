@@ -12,6 +12,16 @@ Route::group(['namespace' => '\User', 'middleware' => ['auth:api']], function ($
         'before' => 'can:view_users'
     ]);
 
+    $router->get('users/{id}/roles', [
+        'uses' => 'ManageUserController@roles',
+        'before' => 'can:view_roles'
+    ]);
+
+    $router->post('users/{id}/roles', [
+        'uses' => 'ManageUserController@updateRoles',
+        'before' => 'can:create_roles'
+    ]);
+
     $router->post('users', [
         'uses' => 'ManageUserController@store',
         'before' => 'can:create_users'
