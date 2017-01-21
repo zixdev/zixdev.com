@@ -804,6 +804,33 @@ this.$http.get(config.api_url + "api/pages", data)
 <p><code>GET api/pages</code></p>
 <p><code>HEAD api/pages</code></p>
 <!-- END_c44904d8eb741cc708c2d88a56a69927 -->
+<!-- START_5f7f04fadcf4c83473a53e32dcb7248a -->
+<h2>Get Page</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/pages/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/pages/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/pages/{id}</code></p>
+<p><code>HEAD api/pages/{id}</code></p>
+<!-- END_5f7f04fadcf4c83473a53e32dcb7248a -->
 <!-- START_9db908f3cc041bad182795bc2a844789 -->
 <h2>Create Page</h2>
 <blockquote>
@@ -1156,16 +1183,16 @@ this.$http.delete(config.api_url + "api/sites/{id}", data)
 <h3>HTTP Request</h3>
 <p><code>DELETE api/sites/{id}</code></p>
 <!-- END_00e90caed6de37f0a44ce5288c2ab262 -->
-<!-- START_2769ec165c2297d6e49ced508170544d -->
+<!-- START_6a64e7bad83e3c6587acfbcbc612b6b9 -->
 <h2>Get Site Themes</h2>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/ui" \
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/themes" \
 -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">// Vue 2
 
-this.$http.get(config.api_url + "api/sites/{id}/ui", data)
+this.$http.get(config.api_url + "api/sites/{id}/themes", data)
     .then(response =&gt; {
         console.info(response.data.tata);
     })
@@ -1180,26 +1207,26 @@ this.$http.get(config.api_url + "api/sites/{id}/ui", data)
     "error": "Unauthenticated."
 }</code></pre>
 <h3>HTTP Request</h3>
-<p><code>GET api/sites/{id}/ui</code></p>
-<p><code>HEAD api/sites/{id}/ui</code></p>
-<!-- END_2769ec165c2297d6e49ced508170544d -->
-<!-- START_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+<p><code>GET api/sites/{id}/themes</code></p>
+<p><code>HEAD api/sites/{id}/themes</code></p>
+<!-- END_6a64e7bad83e3c6587acfbcbc612b6b9 -->
+<!-- START_5e77becfc6d62cc0d8a81ee744a93100 -->
 <h2>Upload Site Theme</h2>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
-<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/ui" \
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/themes" \
 -H "Accept: application/json" \
-    -d "ui"="explicabo" \
-    -d "type"="explicabo" \
+    -d "ui"="asperiores" \
+    -d "type"="asperiores" \
 </code></pre>
 <pre><code class="language-javascript">// Vue 2
 let data = {
-        "ui": "explicabo",
-        "type": "explicabo"
+        "ui": "asperiores",
+        "type": "asperiores"
 };
 
-this.$http.post(config.api_url + "api/sites/{id}/ui", data)
+this.$http.post(config.api_url + "api/sites/{id}/themes", data)
     .then(response =&gt; {
         console.info(response.data.tata);
     })
@@ -1208,7 +1235,7 @@ this.$http.post(config.api_url + "api/sites/{id}/ui", data)
     });
 </code></pre>
 <h3>HTTP Request</h3>
-<p><code>POST api/sites/{id}/ui</code></p>
+<p><code>POST api/sites/{id}/themes</code></p>
 <h4>Parameters</h4>
 <table>
 <thead>
@@ -1233,7 +1260,7 @@ this.$http.post(config.api_url + "api/sites/{id}/ui", data)
 </tr>
 </tbody>
 </table>
-<!-- END_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+<!-- END_5e77becfc6d62cc0d8a81ee744a93100 -->
 <!-- START_e7bf23caf9c2a9cd4c40296cb830f376 -->
 <h2>Get Site Configs</h2>
 <blockquote>
@@ -1533,6 +1560,53 @@ this.$http.get(config.api_url + "api/users/{id}", data)
 <p><code>GET api/users/{id}</code></p>
 <p><code>HEAD api/users/{id}</code></p>
 <!-- END_5da4a01649c4efd773d0d8417009a943 -->
+<!-- START_69309277951e6001c751ee1232e7ce3a -->
+<h2>Get User Roles</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users/{id}/roles" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/users/{id}/roles", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/users/{id}/roles</code></p>
+<p><code>HEAD api/users/{id}/roles</code></p>
+<!-- END_69309277951e6001c751ee1232e7ce3a -->
+<!-- START_4be73e17c7a5fa529d6cf32df76c05ba -->
+<h2>Update User Roles</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users/{id}/roles" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.post(config.api_url + "api/users/{id}/roles", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/users/{id}/roles</code></p>
+<!-- END_4be73e17c7a5fa529d6cf32df76c05ba -->
 <!-- START_12e37982cc5398c7100e59625ebb5514 -->
 <h2>Create User</h2>
 <h3>Required permission (can:create_users)</h3>
@@ -1697,8 +1771,7 @@ this.$http.get(config.api_url + "api/pages/{slug}", data)
 <p>Example response:</p>
 </blockquote>
 <pre><code class="language-json">{
-    "data": null,
-    "status_code": 200
+    "error": "Unauthenticated."
 }</code></pre>
 <h3>HTTP Request</h3>
 <p><code>GET api/pages/{slug}</code></p>

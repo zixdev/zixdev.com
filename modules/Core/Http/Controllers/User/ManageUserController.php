@@ -73,11 +73,22 @@ class ManageUserController
         return $this->respondRequestAccepted($this->model->find($id)->update($request->all()));
     }
 
+    /**
+     * Get User Roles
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function roles($id)
     {
         return $this->respondWithData($this->model->with('roles')->find($id));
     }
 
+    /**
+     * Update User Roles
+     * @param Request $request
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function updateRoles(Request $request, $id)
     {
         $roles = collect();

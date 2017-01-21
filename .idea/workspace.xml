@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_users.php" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="ManageUserController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8695652">
-              <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6956522">
+              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -1146,8 +1145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8695652">
-          <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6956522">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
           <folding />
         </state>
       </provider>

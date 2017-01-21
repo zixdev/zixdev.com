@@ -867,6 +867,45 @@ this.$http.get(config.api_url + "api/pages", data)
 
 
 <!-- END_c44904d8eb741cc708c2d88a56a69927 -->
+<!-- START_5f7f04fadcf4c83473a53e32dcb7248a -->
+## Get Page
+
+> Example request:
+
+```bash
+curl "http://localhost/api/pages/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/pages/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/pages/{id}`
+
+`HEAD api/pages/{id}`
+
+
+<!-- END_5f7f04fadcf4c83473a53e32dcb7248a -->
 <!-- START_9db908f3cc041bad182795bc2a844789 -->
 ## Create Page
 
@@ -1202,20 +1241,20 @@ this.$http.delete(config.api_url + "api/sites/{id}", data)
 
 
 <!-- END_00e90caed6de37f0a44ce5288c2ab262 -->
-<!-- START_2769ec165c2297d6e49ced508170544d -->
+<!-- START_6a64e7bad83e3c6587acfbcbc612b6b9 -->
 ## Get Site Themes
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/ui" \
+curl "http://localhost/api/sites/{id}/themes" \
 -H "Accept: application/json"
 ```
 
 ```javascript
 // Vue 2
 
-this.$http.get(config.api_url + "api/sites/{id}/ui", data)
+this.$http.get(config.api_url + "api/sites/{id}/themes", data)
     .then(response => {
         console.info(response.data.tata);
     })
@@ -1235,33 +1274,33 @@ this.$http.get(config.api_url + "api/sites/{id}/ui", data)
 
 
 ### HTTP Request
-`GET api/sites/{id}/ui`
+`GET api/sites/{id}/themes`
 
-`HEAD api/sites/{id}/ui`
+`HEAD api/sites/{id}/themes`
 
 
-<!-- END_2769ec165c2297d6e49ced508170544d -->
-<!-- START_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+<!-- END_6a64e7bad83e3c6587acfbcbc612b6b9 -->
+<!-- START_5e77becfc6d62cc0d8a81ee744a93100 -->
 ## Upload Site Theme
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/sites/{id}/ui" \
+curl "http://localhost/api/sites/{id}/themes" \
 -H "Accept: application/json" \
-    -d "ui"="explicabo" \
-    -d "type"="explicabo" \
+    -d "ui"="asperiores" \
+    -d "type"="asperiores" \
 
 ```
 
 ```javascript
 // Vue 2
 let data = {
-        "ui": "explicabo",
-        "type": "explicabo"
+        "ui": "asperiores",
+        "type": "asperiores"
 };
 
-this.$http.post(config.api_url + "api/sites/{id}/ui", data)
+this.$http.post(config.api_url + "api/sites/{id}/themes", data)
     .then(response => {
         console.info(response.data.tata);
     })
@@ -1274,7 +1313,7 @@ this.$http.post(config.api_url + "api/sites/{id}/ui", data)
 
 
 ### HTTP Request
-`POST api/sites/{id}/ui`
+`POST api/sites/{id}/themes`
 
 #### Parameters
 
@@ -1283,7 +1322,7 @@ Parameter | Type | Status | Description
     ui | string |  required  | Allowed mime types: `zip`
     type | string |  required  | 
 
-<!-- END_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+<!-- END_5e77becfc6d62cc0d8a81ee744a93100 -->
 <!-- START_e7bf23caf9c2a9cd4c40296cb830f376 -->
 ## Get Site Configs
 
@@ -1719,6 +1758,75 @@ this.$http.get(config.api_url + "api/users/{id}", data)
 
 
 <!-- END_5da4a01649c4efd773d0d8417009a943 -->
+<!-- START_69309277951e6001c751ee1232e7ce3a -->
+## Get User Roles
+
+> Example request:
+
+```bash
+curl "http://localhost/api/users/{id}/roles" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/users/{id}/roles", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/users/{id}/roles`
+
+`HEAD api/users/{id}/roles`
+
+
+<!-- END_69309277951e6001c751ee1232e7ce3a -->
+<!-- START_4be73e17c7a5fa529d6cf32df76c05ba -->
+## Update User Roles
+
+> Example request:
+
+```bash
+curl "http://localhost/api/users/{id}/roles" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.post(config.api_url + "api/users/{id}/roles", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/users/{id}/roles`
+
+
+<!-- END_4be73e17c7a5fa529d6cf32df76c05ba -->
 <!-- START_12e37982cc5398c7100e59625ebb5514 -->
 ## Create User
 ### Required permission (can:create_users)
@@ -1872,8 +1980,7 @@ this.$http.get(config.api_url + "api/pages/{slug}", data)
 
 ```json
 {
-    "data": null,
-    "status_code": 200
+    "error": "Unauthenticated."
 }
 ```
 
