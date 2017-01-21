@@ -16,6 +16,7 @@ use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
 /**
  * Class User
+ * @property mixed roles
  * @package App
  */
 class User extends Authenticatable implements HasMedia
@@ -56,5 +57,22 @@ class User extends Authenticatable implements HasMedia
     public function social()
     {
         return $this->hasMany(UserSocial::class);
+    }
+
+    /**
+     * Get All this user permissions from all him roles
+     * @return static
+     */
+    public function getAllPermissions()
+    {
+        $permissions = collect();
+
+        $this->roles->map(function($role) use ($permissions){
+            $role->permissions->map(function($permission) use ($permissions) {
+                $permissions->push($permission->name);
+            });
+        });
+
+        return $permissions->unique();
     }
 }

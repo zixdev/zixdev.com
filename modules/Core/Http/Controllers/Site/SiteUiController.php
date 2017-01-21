@@ -12,7 +12,7 @@ use Zix\Core\Support\Traits\CrudControllerTrait;
 /**
  * Class SiteUiController
  * @package Zix\Core\Http\Controllers\Site
- * @resource Site Versions
+ * @resource Manage Sites
  */
 class SiteUiController
 {
@@ -32,7 +32,7 @@ class SiteUiController
     }
 
     /**
-     * Get Site Versions.
+     * Get Site Themes
      *
      * @param Request $request
      * @param $id
@@ -46,22 +46,10 @@ class SiteUiController
         }
 
         return \Datatables::of($this->site->findOrFail($id)->uis()->get())->make(true);
-
-        return $this->respondWithData($this->site->findOrFail($id)->uis()->latest()->filtrable());
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Upload new version.
+     * Upload Site Theme
      *
      * @param  SiteUploadVersionRequest $request
      * @param $id
@@ -84,53 +72,5 @@ class SiteUiController
                 return \Site::get($id)->addSiteReactUiScripts(storage_path('tmp/ui/tmp/public'));
             }
         }
-
-
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
-
 }

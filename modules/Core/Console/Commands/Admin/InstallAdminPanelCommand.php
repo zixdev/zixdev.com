@@ -94,8 +94,6 @@ class InstallAdminPanelCommand extends BaseCommand
         ]);
 
         $user->assignRole('admin');
-        $user->givePermissionTo('full_access');
-        $user->givePermissionTo('view_admin');
 
         $this->info('Congrats '. $username . ' You successfully created an admin account !');
     }

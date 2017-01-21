@@ -29,7 +29,7 @@ class LoginController
     use ApiResponses, AuthenticatesUsers;
 
     /**
-     * Login user.
+     * Login User.
      * @param UserLoginRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -60,7 +60,7 @@ class LoginController
             return $this->respondDataCreated([
                 'token' => $user->createToken($request->header('User-Agent'))->accessToken,
                 'user' => $user,
-                'permissions'  => $user->permissions()->pluck('name')
+                'permissions'  => $user->getAllPermissions()
             ]);
         }
 

@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\EncryptCookies;
+use App\Http\Middleware\PermissionMiddleware;
 use App\Http\Middleware\RoleMiddleware;
 use App\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Auth\Middleware\Authorize;
@@ -66,7 +67,7 @@ class Kernel extends HttpKernel
         'auth' => Authenticate::class,
         'auth.basic' => AuthenticateWithBasicAuth::class,
         'bindings' => SubstituteBindings::class,
-        'can' => Authorize::class,
+        'can' => PermissionMiddleware::class,
         'guest' => RedirectIfAuthenticated::class,
         'throttle' => ThrottleRequests::class,
         'role' => RoleMiddleware::class,

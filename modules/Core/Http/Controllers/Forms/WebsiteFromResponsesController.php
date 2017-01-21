@@ -11,6 +11,7 @@ use Zix\Core\Support\Traits\ApiResponses;
 /**
  * Class WebsiteFromResponsesController
  * @package Zix\Core\Http\Controllers\Forms
+ * @resource Forms
  */
 class WebsiteFromResponsesController
 {
@@ -31,6 +32,7 @@ class WebsiteFromResponsesController
     }
 
     /**
+     * Submit Form Reply
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */

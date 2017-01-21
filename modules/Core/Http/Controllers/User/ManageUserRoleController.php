@@ -1,7 +1,8 @@
 <?php
 
-namespace Zix\Core\Http\Controllers\Admin;
+namespace Zix\Core\Http\Controllers\User;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Zix\Core\Entities\Permission;
@@ -10,13 +11,14 @@ use Zix\Core\Support\Traits\ApiResponses;
 use Zix\Core\Support\Traits\CrudControllerTrait;
 
 /**
- * Class RoleController
+ * Class ManageUserRoleController
  * @package Zix\Core\Http\Controllers\Admin
+ * @resource Manage User Roles
  */
-class RoleController
+class ManageUserRoleController extends Controller
 {
 
-    use ApiResponses, CrudControllerTrait, ValidatesRequests;
+    use ApiResponses, CrudControllerTrait;
     /**
      * @var Permission
      */
@@ -35,6 +37,7 @@ class RoleController
     }
 
     /**
+     * Create Role
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -45,6 +48,7 @@ class RoleController
     }
 
     /**
+     * Update Role
      * @param Request $request
      * @param $id
      * @return \Illuminate\Http\JsonResponse
@@ -57,6 +61,7 @@ class RoleController
     }
 
     /**
+     * Get Role Permissions
      * @return \Illuminate\Http\JsonResponse
      */
     public function permissions()
@@ -65,7 +70,7 @@ class RoleController
     }
 
     /**
-     * Get resource By Id.
+     * Get Role For Edit
      *
      * @param  int $id
      * @return \Illuminate\Http\Response
@@ -76,7 +81,7 @@ class RoleController
     }
 
     /**
-     * Get resource By Id.
+     * Get Role Permissions
      *
      * @param  int $id
      * @return \Illuminate\Http\Response
@@ -87,6 +92,7 @@ class RoleController
     }
 
     /**
+     * Update Role Permissions
      * @param Request $request
      * @param $id
      * @return \Illuminate\Http\JsonResponse

@@ -18,146 +18,11 @@ toc_footers:
 
 Welcome to the generated API reference.
 [Get Postman Collection](http://localhost/documentation/collection.json)
-
 <!-- END_INFO -->
 
 #Authentication
-<!-- START_7e6ee60aafd6de54298e0e276a7451fe -->
-## Logout User.
-
-When User Logout We Will Log him out and destroy the token.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/logout" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/logout", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-{
-    "data": 0,
-    "status_code": 200
-}
-```
-
-
-### HTTP Request
-`GET api/logout`
-
-`HEAD api/logout`
-
-
-<!-- END_7e6ee60aafd6de54298e0e276a7451fe -->
-<!-- START_8d78d43a0817865525e3740dbf866578 -->
-## Activate User&#039;s account.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/user/account/activate" \
--H "Accept: application/json" \
-    -d "active_code"="vero" \
-
-```
-
-```javascript
-// Angular 2
-let data = {
-        "active_code": "vero"
-};
-
-this.apiServie.post("api/user/account/activate", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`POST api/user/account/activate`
-
-#### Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    active_code | string |  required  | Minimum: `60` Maximum: `60`
-
-<!-- END_8d78d43a0817865525e3740dbf866578 -->
-<!-- START_c3fa189a6c95ca36ad6ac4791a873d23 -->
-## Login user.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/login" \
--H "Accept: application/json" \
-    -d "email"="uzieme@example.org" \
-    -d "password"="rerum" \
-
-```
-
-```javascript
-// Angular 2
-let data = {
-        "email": "uzieme@example.org",
-        "password": "rerum"
-};
-
-this.apiServie.post("api/login", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`POST api/login`
-
-#### Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    email | email |  required  | 
-    password | string |  required  | 
-
-<!-- END_c3fa189a6c95ca36ad6ac4791a873d23 -->
 <!-- START_d7b7952e7fdddc07c978c9bdaf757acf -->
-## Register new user.
+## Register User.
 
 When the submit a register form we will be creating new account for him,
 also we will be sending to him and email with link to activate him account.
@@ -167,32 +32,29 @@ also we will be sending to him and email with link to activate him account.
 ```bash
 curl "http://localhost/api/register" \
 -H "Accept: application/json" \
-    -d "username"="et" \
-    -d "email"="milo77@example.org" \
-    -d "password"="et" \
+    -d "username"="enim" \
+    -d "email"="westley85@example.org" \
+    -d "password"="enim" \
     -d "accept_terms"="1" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "username": "et",
-        "email": "milo77@example.org",
-        "password": "et",
+        "username": "enim",
+        "email": "westley85@example.org",
+        "password": "enim",
         "accept_terms": true
 };
 
-this.apiServie.post("api/register", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/register", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -211,6 +73,91 @@ Parameter | Type | Status | Description
     accept_terms | boolean |  required  | 
 
 <!-- END_d7b7952e7fdddc07c978c9bdaf757acf -->
+<!-- START_c3fa189a6c95ca36ad6ac4791a873d23 -->
+## Login User.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/login" \
+-H "Accept: application/json" \
+    -d "email"="morissette.frieda@example.com" \
+    -d "password"="repellat" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "email": "morissette.frieda@example.com",
+        "password": "repellat"
+};
+
+this.$http.post(config.api_url + "api/login", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/login`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    email | email |  required  | 
+    password | string |  required  | 
+
+<!-- END_c3fa189a6c95ca36ad6ac4791a873d23 -->
+<!-- START_7e6ee60aafd6de54298e0e276a7451fe -->
+## Logout User.
+
+When User Logout We Will Log him out and destroy the token.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/logout" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/logout", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "data": true,
+    "status_code": 200
+}
+```
+
+
+### HTTP Request
+`GET api/logout`
+
+`HEAD api/logout`
+
+
+<!-- END_7e6ee60aafd6de54298e0e276a7451fe -->
 <!-- START_78c4b7d6388c81c68bc37ec872d44f65 -->
 ## Send Reset Password Email.
 
@@ -230,26 +177,23 @@ Parameter | Type | Status | Description
 ```bash
 curl "http://localhost/api/forgot-password" \
 -H "Accept: application/json" \
-    -d "email"="cordell06@example.net" \
+    -d "email"="carol.towne@example.net" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "email": "cordell06@example.net"
+        "email": "carol.towne@example.net"
 };
 
-this.apiServie.post("api/forgot-password", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/forgot-password", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -285,28 +229,25 @@ Parameter | Type | Status | Description
 ```bash
 curl "http://localhost/api/reset-password" \
 -H "Accept: application/json" \
-    -d "email"="maximillia06@example.com" \
-    -d "password"="provident" \
+    -d "email"="mitchell.bryana@example.org" \
+    -d "password"="nulla" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "email": "maximillia06@example.com",
-        "password": "provident"
+        "email": "mitchell.bryana@example.org",
+        "password": "nulla"
 };
 
-this.apiServie.post("api/reset-password", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/reset-password", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -323,9 +264,1384 @@ Parameter | Type | Status | Description
     password | string |  required  | Maximum: `255` Minimum: `6`
 
 <!-- END_6d3061d375666b8cf6babe163b36f250 -->
-#Authenticated User
+<!-- START_8d78d43a0817865525e3740dbf866578 -->
+## Activate User&#039;s account.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/user/account/activate" \
+-H "Accept: application/json" \
+    -d "code"="sit" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "code": "sit"
+};
+
+this.$http.post(config.api_url + "api/user/account/activate", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/user/account/activate`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    code | string |  required  | Minimum: `60` Maximum: `60`
+
+<!-- END_8d78d43a0817865525e3740dbf866578 -->
+<!-- START_d275f853c4ddf9364b8a5869a05adaa0 -->
+## Login With Social Sites
+(facebook/twitter/github)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/auth/social/login-with/{type}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/auth/social/login-with/{type}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/auth/social/login-with/{type}`
+
+`HEAD api/auth/social/login-with/{type}`
+
+
+<!-- END_d275f853c4ddf9364b8a5869a05adaa0 -->
+<!-- START_d05cb9fa652b35960690842fb33839a8 -->
+## Login With Social Sites Feedback
+
+> Example request:
+
+```bash
+curl "http://localhost/api/auth/social/callback/{type}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/auth/social/callback/{type}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+null
+```
+
+
+### HTTP Request
+`GET api/auth/social/callback/{type}`
+
+`HEAD api/auth/social/callback/{type}`
+
+
+<!-- END_d05cb9fa652b35960690842fb33839a8 -->
+#Forms
+<!-- START_5a3be3b8cd540c7506c74c30c130fb46 -->
+## Submit Form Reply
+
+> Example request:
+
+```bash
+curl "http://localhost/api/form" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.post(config.api_url + "api/form", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/form`
+
+
+<!-- END_5a3be3b8cd540c7506c74c30c130fb46 -->
+#Manage Forms
+<!-- START_c49085b6426cbb5312fc081c074013f2 -->
+## Get Data
+### Required permission (can:view_model)
+This will return dynamic filtrable data, (paginate, search, orderBy).
+
+To get the deleted data use query(?eloquent=trashed)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/forms", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/forms`
+
+`HEAD api/forms`
+
+
+<!-- END_c49085b6426cbb5312fc081c074013f2 -->
+<!-- START_e86c5559f6bc3371a08a5a47ebbdb263 -->
+## Get Form
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/forms/{id}`
+
+`HEAD api/forms/{id}`
+
+
+<!-- END_e86c5559f6bc3371a08a5a47ebbdb263 -->
+<!-- START_326dd9cee4f966dffabfa8a7db01b393 -->
+## Create Forms
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms" \
+-H "Accept: application/json" \
+    -d "title"="dicta" \
+    -d "slug"="dicta" \
+    -d "submit_text"="dicta" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "title": "dicta",
+        "slug": "dicta",
+        "submit_text": "dicta"
+};
+
+this.$http.post(config.api_url + "api/forms", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/forms`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    title | string |  required  | Minimum: `3` Maximum: `255`
+    slug | string |  required  | Minimum: `3` Maximum: `255`
+    submit_text | string |  required  | Minimum: `3` Maximum: `255`
+
+<!-- END_326dd9cee4f966dffabfa8a7db01b393 -->
+<!-- START_5d307c4febe8068bb64e57c0907c4eb0 -->
+## Update Form
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{id}" \
+-H "Accept: application/json" \
+    -d "title"="tenetur" \
+    -d "slug"="tenetur" \
+    -d "submit_text"="tenetur" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "title": "tenetur",
+        "slug": "tenetur",
+        "submit_text": "tenetur"
+};
+
+this.$http.put(config.api_url + "api/forms/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`PUT api/forms/{id}`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    title | string |  required  | Minimum: `3` Maximum: `255`
+    slug | string |  required  | Minimum: `3` Maximum: `255`
+    submit_text | string |  required  | Minimum: `3` Maximum: `255`
+
+<!-- END_5d307c4febe8068bb64e57c0907c4eb0 -->
+<!-- START_3a41ea3a035641a017cd2afe6a272550 -->
+## Remove Data
+### Required permission (can:delete_model)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.delete(config.api_url + "api/forms/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`DELETE api/forms/{id}`
+
+
+<!-- END_3a41ea3a035641a017cd2afe6a272550 -->
+<!-- START_fc63747f73399d87a8744bf1a8eede18 -->
+## Get Form Fields
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{slug}/fields" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{slug}/fields", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/forms/{slug}/fields`
+
+`HEAD api/forms/{slug}/fields`
+
+
+<!-- END_fc63747f73399d87a8744bf1a8eede18 -->
+<!-- START_137e996e03c7187dce199c94ce7abaa1 -->
+## Create Form Fields
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{slug}/fields" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.post(config.api_url + "api/forms/{slug}/fields", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/forms/{slug}/fields`
+
+
+<!-- END_137e996e03c7187dce199c94ce7abaa1 -->
+<!-- START_70e2f1aff34dd9f4379bb4904ef2768c -->
+## Update Form Fields
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{slug}/fields/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.put(config.api_url + "api/forms/{slug}/fields/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`PUT api/forms/{slug}/fields/{id}`
+
+
+<!-- END_70e2f1aff34dd9f4379bb4904ef2768c -->
+<!-- START_0e6174f2f5d1531551d1fb9dcc9ec8ff -->
+## Get From Responses
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{slug}/responses" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{slug}/responses", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/forms/{slug}/responses`
+
+`HEAD api/forms/{slug}/responses`
+
+
+<!-- END_0e6174f2f5d1531551d1fb9dcc9ec8ff -->
+<!-- START_70c1a1dae47ab64b105ade168bd2b231 -->
+## Get Form Response
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{slug}/responses/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{slug}/responses/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/forms/{slug}/responses/{id}`
+
+`HEAD api/forms/{slug}/responses/{id}`
+
+
+<!-- END_70c1a1dae47ab64b105ade168bd2b231 -->
+<!-- START_52ae26d1c4c8b66dbd68d2bc45eb6162 -->
+## Delete Form Response
+
+> Example request:
+
+```bash
+curl "http://localhost/api/forms/{slug}/responses/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.delete(config.api_url + "api/forms/{slug}/responses/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`DELETE api/forms/{slug}/responses/{id}`
+
+
+<!-- END_52ae26d1c4c8b66dbd68d2bc45eb6162 -->
+#Manage Pages
+<!-- START_c44904d8eb741cc708c2d88a56a69927 -->
+## Get Data
+### Required permission (can:view_model)
+This will return dynamic filtrable data, (paginate, search, orderBy).
+
+To get the deleted data use query(?eloquent=trashed)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/pages" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/pages", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/pages`
+
+`HEAD api/pages`
+
+
+<!-- END_c44904d8eb741cc708c2d88a56a69927 -->
+<!-- START_9db908f3cc041bad182795bc2a844789 -->
+## Create Page
+
+> Example request:
+
+```bash
+curl "http://localhost/api/pages" \
+-H "Accept: application/json" \
+    -d "title"="est" \
+    -d "slug"="est" \
+    -d "sites"="est" \
+    -d "content"="est" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "title": "est",
+        "slug": "est",
+        "sites": "est",
+        "content": "est"
+};
+
+this.$http.post(config.api_url + "api/pages", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/pages`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    title | string |  required  | Minimum: `3` Maximum: `255`
+    slug | string |  required  | Minimum: `3` Maximum: `255`
+    sites | string |  required  | 
+    content | string |  required  | 
+
+<!-- END_9db908f3cc041bad182795bc2a844789 -->
+<!-- START_d49ae3294aa1a51c31696f736f2cf22e -->
+## Update Page
+
+> Example request:
+
+```bash
+curl "http://localhost/api/pages/{id}" \
+-H "Accept: application/json" \
+    -d "title"="atque" \
+    -d "slug"="atque" \
+    -d "sites"="atque" \
+    -d "content"="atque" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "title": "atque",
+        "slug": "atque",
+        "sites": "atque",
+        "content": "atque"
+};
+
+this.$http.put(config.api_url + "api/pages/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`PUT api/pages/{id}`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    title | string |  required  | Minimum: `3` Maximum: `255`
+    slug | string |  required  | Minimum: `3` Maximum: `255`
+    sites | string |  required  | 
+    content | string |  required  | 
+
+<!-- END_d49ae3294aa1a51c31696f736f2cf22e -->
+<!-- START_32d51619c4070ff1232268887700befd -->
+## Remove Data
+### Required permission (can:delete_model)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/pages/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.delete(config.api_url + "api/pages/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`DELETE api/pages/{id}`
+
+
+<!-- END_32d51619c4070ff1232268887700befd -->
+#Manage Sites
+<!-- START_6bde012eab6506f2b473003076ee19f4 -->
+## Get Data
+### Required permission (can:view_model)
+This will return dynamic filtrable data, (paginate, search, orderBy).
+
+To get the deleted data use query(?eloquent=trashed)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/sites", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/sites`
+
+`HEAD api/sites`
+
+
+<!-- END_6bde012eab6506f2b473003076ee19f4 -->
+<!-- START_050561d0692a332850f55e4b6e23c90d -->
+## Get Site
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/sites/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/sites/{id}`
+
+`HEAD api/sites/{id}`
+
+
+<!-- END_050561d0692a332850f55e4b6e23c90d -->
+<!-- START_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
+## Create Site
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites" \
+-H "Accept: application/json" \
+    -d "name"="quos" \
+    -d "url"="https://www.thiel.net/cupiditate-consequatur-modi-dolore" \
+    -d "ui"="quos" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "name": "quos",
+        "url": "https:\/\/www.thiel.net\/cupiditate-consequatur-modi-dolore",
+        "ui": "quos"
+};
+
+this.$http.post(config.api_url + "api/sites", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/sites`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Minimum: `3` Maximum: `255`
+    url | url |  required  | Minimum: `3` Maximum: `255`
+    ui | string |  required  | Minimum: `3` Maximum: `255`
+
+<!-- END_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
+<!-- START_5c735973cfbd0edc25ddcb9c8ddd8610 -->
+## Update Site
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}" \
+-H "Accept: application/json" \
+    -d "name"="aliquam" \
+    -d "url"="http://brakus.info/" \
+    -d "ui"="aliquam" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "name": "aliquam",
+        "url": "http:\/\/brakus.info\/",
+        "ui": "aliquam"
+};
+
+this.$http.put(config.api_url + "api/sites/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`PUT api/sites/{id}`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    name | string |  required  | Minimum: `3` Maximum: `255`
+    url | url |  required  | Minimum: `3` Maximum: `255`
+    ui | string |  required  | Minimum: `3` Maximum: `255`
+
+<!-- END_5c735973cfbd0edc25ddcb9c8ddd8610 -->
+<!-- START_00e90caed6de37f0a44ce5288c2ab262 -->
+## Remove Data
+### Required permission (can:delete_model)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.delete(config.api_url + "api/sites/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`DELETE api/sites/{id}`
+
+
+<!-- END_00e90caed6de37f0a44ce5288c2ab262 -->
+<!-- START_2769ec165c2297d6e49ced508170544d -->
+## Get Site Themes
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/sites/{id}/ui", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/ui`
+
+`HEAD api/sites/{id}/ui`
+
+
+<!-- END_2769ec165c2297d6e49ced508170544d -->
+<!-- START_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+## Upload Site Theme
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/ui" \
+-H "Accept: application/json" \
+    -d "ui"="explicabo" \
+    -d "type"="explicabo" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "ui": "explicabo",
+        "type": "explicabo"
+};
+
+this.$http.post(config.api_url + "api/sites/{id}/ui", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/sites/{id}/ui`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    ui | string |  required  | Allowed mime types: `zip`
+    type | string |  required  | 
+
+<!-- END_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
+<!-- START_e7bf23caf9c2a9cd4c40296cb830f376 -->
+## Get Site Configs
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/sites/{id}/config", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/sites/{id}/config`
+
+`HEAD api/sites/{id}/config`
+
+
+<!-- END_e7bf23caf9c2a9cd4c40296cb830f376 -->
+<!-- START_8f6a297bf8d60f97310a0af655aa3803 -->
+## Update Site Config
+
+> Example request:
+
+```bash
+curl "http://localhost/api/sites/{id}/config" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.post(config.api_url + "api/sites/{id}/config", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/sites/{id}/config`
+
+
+<!-- END_8f6a297bf8d60f97310a0af655aa3803 -->
+#Manage User Roles
+<!-- START_0a74816f6409e89e5fc8538015f2b907 -->
+## Get Data
+### Required permission (can:view_model)
+This will return dynamic filtrable data, (paginate, search, orderBy).
+
+To get the deleted data use query(?eloquent=trashed)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/roles", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/roles`
+
+`HEAD api/roles`
+
+
+<!-- END_0a74816f6409e89e5fc8538015f2b907 -->
+<!-- START_ee0837edbb11701ed30dbeb0ccb0b984 -->
+## Get Role Permissions
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/roles/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/roles/{id}`
+
+`HEAD api/roles/{id}`
+
+
+<!-- END_ee0837edbb11701ed30dbeb0ccb0b984 -->
+<!-- START_a4aa9bc74cd63eb1e389f052680d4a42 -->
+## Get Role For Edit
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles/{id}/edit" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/roles/{id}/edit", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/roles/{id}/edit`
+
+`HEAD api/roles/{id}/edit`
+
+
+<!-- END_a4aa9bc74cd63eb1e389f052680d4a42 -->
+<!-- START_90c780acaefab9740431579512d07101 -->
+## Create Role
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.post(config.api_url + "api/roles", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/roles`
+
+
+<!-- END_90c780acaefab9740431579512d07101 -->
+<!-- START_66a5365d6273a0f12351f1a19e197a06 -->
+## Update Role
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.put(config.api_url + "api/roles/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`PUT api/roles/{id}`
+
+
+<!-- END_66a5365d6273a0f12351f1a19e197a06 -->
+<!-- START_d7d76016c9a76a1ed7d5d016fb1ba3bc -->
+## Remove Data
+### Required permission (can:delete_model)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.delete(config.api_url + "api/roles/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`DELETE api/roles/{id}`
+
+
+<!-- END_d7d76016c9a76a1ed7d5d016fb1ba3bc -->
+<!-- START_4a9d5428fe93c48a0f2de64b775ca8a3 -->
+## Get Role Permissions
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles/all/permissions" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/roles/all/permissions", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/roles/all/permissions`
+
+`HEAD api/roles/all/permissions`
+
+
+<!-- END_4a9d5428fe93c48a0f2de64b775ca8a3 -->
+<!-- START_9df85a3a61f6284b75d7a067ff42ff36 -->
+## Update Role Permissions
+
+> Example request:
+
+```bash
+curl "http://localhost/api/roles/{id}/permissions" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.post(config.api_url + "api/roles/{id}/permissions", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/roles/{id}/permissions`
+
+
+<!-- END_9df85a3a61f6284b75d7a067ff42ff36 -->
+#Manage Users
 <!-- START_da5727be600e4865c1b632f7745c8e91 -->
-## api/users
+## Get Data
+### Required permission (can:view_model)
+This will return dynamic filtrable data, (paginate, search, orderBy).
+
+To get the deleted data use query(?eloquent=trashed)
 
 > Example request:
 
@@ -335,18 +1651,15 @@ curl "http://localhost/api/users" \
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 
-this.apiServie.get("api/users", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.get(config.api_url + "api/users", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -354,27 +1667,7 @@ this.apiServie.get("api/users", data)
 
 ```json
 {
-    "data": [
-        {
-            "id": 1,
-            "username": "chraider v2",
-            "email": "badi1wow@gmail.com",
-            "email_active": 1,
-            "created_at": "2016-10-30 13:40:30",
-            "updated_at": "2016-11-04 10:53:27",
-            "deleted_at": null
-        },
-        {
-            "id": 2,
-            "username": "badi",
-            "email": "chraider1badi@gmail.com",
-            "email_active": 0,
-            "created_at": "2016-11-04 09:32:33",
-            "updated_at": "2016-11-05 09:17:21",
-            "deleted_at": null
-        }
-    ],
-    "status_code": 200
+    "error": "Unauthenticated."
 }
 ```
 
@@ -386,40 +1679,78 @@ this.apiServie.get("api/users", data)
 
 
 <!-- END_da5727be600e4865c1b632f7745c8e91 -->
+<!-- START_5da4a01649c4efd773d0d8417009a943 -->
+## Get User
+### Required permission (can:view_users)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/users/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/users/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "error": "Unauthenticated."
+}
+```
+
+
+### HTTP Request
+`GET api/users/{id}`
+
+`HEAD api/users/{id}`
+
+
+<!-- END_5da4a01649c4efd773d0d8417009a943 -->
 <!-- START_12e37982cc5398c7100e59625ebb5514 -->
-## api/users
+## Create User
+### Required permission (can:create_users)
 
 > Example request:
 
 ```bash
 curl "http://localhost/api/users" \
 -H "Accept: application/json" \
-    -d "username"="ut" \
-    -d "email"="nakia.mcclure@example.org" \
-    -d "password"="ut" \
+    -d "username"="rem" \
+    -d "email"="claire.schumm@example.net" \
+    -d "password"="rem" \
     -d "accept_terms"="1" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "username": "ut",
-        "email": "nakia.mcclure@example.org",
-        "password": "ut",
+        "username": "rem",
+        "email": "claire.schumm@example.net",
+        "password": "rem",
         "accept_terms": true
 };
 
-this.apiServie.post("api/users", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/users", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -438,85 +1769,41 @@ Parameter | Type | Status | Description
     accept_terms | boolean |  required  | 
 
 <!-- END_12e37982cc5398c7100e59625ebb5514 -->
-<!-- START_8f99b42746e451f8dc43742e118cb47b -->
-## Get Site By Id.
+<!-- START_9332edb67641ad6a0c477285396a59e6 -->
+## Update User
+### Required permission (can:update_users)
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/users/{user}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/users/{user}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/users/{user}`
-
-`HEAD api/users/{user}`
-
-
-<!-- END_8f99b42746e451f8dc43742e118cb47b -->
-<!-- START_48a3115be98493a3c866eb0e23347262 -->
-## api/users/{user}
-
-> Example request:
-
-```bash
-curl "http://localhost/api/users/{user}" \
+curl "http://localhost/api/users/{id}" \
 -H "Accept: application/json" \
-    -d "username"="cum" \
-    -d "email"="ole99@example.net" \
+    -d "username"="sint" \
+    -d "email"="ukoch@example.com" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "username": "cum",
-        "email": "ole99@example.net"
+        "username": "sint",
+        "email": "ukoch@example.com"
 };
 
-this.apiServie.put("api/users/{user}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.put(config.api_url + "api/users/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
 
 
 ### HTTP Request
-`PUT api/users/{user}`
-
-`PATCH api/users/{user}`
+`PUT api/users/{id}`
 
 #### Parameters
 
@@ -525,9 +1812,83 @@ Parameter | Type | Status | Description
     username | string |  required  | Maximum: `255` Minimum: `3`
     email | email |  required  | Maximum: `255` Minimum: `3`
 
-<!-- END_48a3115be98493a3c866eb0e23347262 -->
+<!-- END_9332edb67641ad6a0c477285396a59e6 -->
+<!-- START_fceddd82d8c88376fcee403bd01f165a -->
+## Remove Data
+### Required permission (can:delete_model)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/users/{id}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.delete(config.api_url + "api/users/{id}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`DELETE api/users/{id}`
+
+
+<!-- END_fceddd82d8c88376fcee403bd01f165a -->
+#Pages
+<!-- START_99d69b7d4c16f9206069482b2df9bd08 -->
+## Get Page (slug)
+
+> Example request:
+
+```bash
+curl "http://localhost/api/pages/{slug}" \
+-H "Accept: application/json"
+```
+
+```javascript
+// Vue 2
+
+this.$http.get(config.api_url + "api/pages/{slug}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+> Example response:
+
+```json
+{
+    "data": null,
+    "status_code": 200
+}
+```
+
+
+### HTTP Request
+`GET api/pages/{slug}`
+
+`HEAD api/pages/{slug}`
+
+
+<!-- END_99d69b7d4c16f9206069482b2df9bd08 -->
+#User
 <!-- START_2ea88ff35aa222f5582e50f39a2b35fd -->
-## Display a listing of the resource.
+## User
+Get the logged in user with him all permissions.
 
 > Example request:
 
@@ -537,18 +1898,15 @@ curl "http://localhost/api/user" \
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 
-this.apiServie.get("api/user", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.get(config.api_url + "api/user", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -556,22 +1914,7 @@ this.apiServie.get("api/user", data)
 
 ```json
 {
-    "data": {
-        "user": {
-            "id": 1,
-            "username": "chraider v2",
-            "email": "badi1wow@gmail.com",
-            "email_active": 1,
-            "created_at": "2016-10-30 13:40:30",
-            "updated_at": "2016-11-04 10:53:27",
-            "deleted_at": null
-        },
-        "permissions": [
-            "full_access",
-            "view_admin"
-        ]
-    },
-    "status_code": 200
+    "error": "Unauthenticated."
 }
 ```
 
@@ -584,35 +1927,36 @@ this.apiServie.get("api/user", data)
 
 <!-- END_2ea88ff35aa222f5582e50f39a2b35fd -->
 <!-- START_f0654d3f2fc63c11f5723f233cc53c83 -->
-## Update the specified resource in storage.
+## User Update
+Update the logged in user detail.
+
+if the user email been changed we will send him a confirmation link to
+activate him new email.
 
 > Example request:
 
 ```bash
 curl "http://localhost/api/user" \
 -H "Accept: application/json" \
-    -d "username"="unde" \
-    -d "email"="felipa52@example.org" \
+    -d "username"="ab" \
+    -d "email"="dschoen@example.net" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "username": "unde",
-        "email": "felipa52@example.org"
+        "username": "ab",
+        "email": "dschoen@example.net"
 };
 
-this.apiServie.post("api/user", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/user", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -630,7 +1974,8 @@ Parameter | Type | Status | Description
 
 <!-- END_f0654d3f2fc63c11f5723f233cc53c83 -->
 <!-- START_e24fea9a36c83d9f84bd323b6b9d94db -->
-## Display a listing of the resource.
+## User Info
+Get the logged in user infos.
 
 > Example request:
 
@@ -640,18 +1985,15 @@ curl "http://localhost/api/user/info" \
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 
-this.apiServie.get("api/user/info", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.get(config.api_url + "api/user/info", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -659,35 +2001,7 @@ this.apiServie.get("api/user/info", data)
 
 ```json
 {
-    "data": {
-        "user": {
-            "id": 1,
-            "username": "chraider v2",
-            "email": "badi1wow@gmail.com",
-            "email_active": 1,
-            "created_at": "2016-10-30 13:40:30",
-            "updated_at": "2016-11-04 10:53:27",
-            "deleted_at": null,
-            "info": {
-                "id": 1,
-                "user_id": 1,
-                "first_name": null,
-                "last_name": null,
-                "phone_number": null,
-                "mobile_number": null,
-                "address_line_1": null,
-                "address_line_2": null,
-                "subrub": null,
-                "post_code": null,
-                "state": null,
-                "country": null,
-                "created_at": "2016-11-06 11:41:00",
-                "updated_at": "2016-11-06 11:41:00",
-                "deleted_at": null
-            }
-        }
-    },
-    "status_code": 200
+    "error": "Unauthenticated."
 }
 ```
 
@@ -700,51 +2014,48 @@ this.apiServie.get("api/user/info", data)
 
 <!-- END_e24fea9a36c83d9f84bd323b6b9d94db -->
 <!-- START_1cf9d677dadd7b751523d1b871857f9c -->
-## Update the specified resource in storage.
+## User Info Update
 
 > Example request:
 
 ```bash
 curl "http://localhost/api/user/info" \
 -H "Accept: application/json" \
-    -d "first_name"="et" \
-    -d "last_name"="et" \
-    -d "phone_number"="et" \
-    -d "mobile_number"="et" \
-    -d "address_line_1"="et" \
-    -d "address_line_2"="et" \
-    -d "subrub"="et" \
-    -d "post_code"="et" \
-    -d "state"="et" \
-    -d "country"="et" \
+    -d "first_name"="suscipit" \
+    -d "last_name"="suscipit" \
+    -d "phone_number"="suscipit" \
+    -d "mobile_number"="suscipit" \
+    -d "address_line_1"="suscipit" \
+    -d "address_line_2"="suscipit" \
+    -d "subrub"="suscipit" \
+    -d "post_code"="suscipit" \
+    -d "state"="suscipit" \
+    -d "country"="suscipit" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "first_name": "et",
-        "last_name": "et",
-        "phone_number": "et",
-        "mobile_number": "et",
-        "address_line_1": "et",
-        "address_line_2": "et",
-        "subrub": "et",
-        "post_code": "et",
-        "state": "et",
-        "country": "et"
+        "first_name": "suscipit",
+        "last_name": "suscipit",
+        "phone_number": "suscipit",
+        "mobile_number": "suscipit",
+        "address_line_1": "suscipit",
+        "address_line_2": "suscipit",
+        "subrub": "suscipit",
+        "post_code": "suscipit",
+        "state": "suscipit",
+        "country": "suscipit"
 };
 
-this.apiServie.post("api/user/info", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/user/info", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -769,63 +2080,108 @@ Parameter | Type | Status | Description
     country | string |  optional  | Minimum: `3` Maximum: `255`
 
 <!-- END_1cf9d677dadd7b751523d1b871857f9c -->
-#general
-<!-- START_5900363c9d9cf8069f0abf41866a659f -->
-## Store a newly created resource in storage.
+<!-- START_e835795e301f9db730fefd2b61c35c22 -->
+## User Avatar Update
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/media" \
--H "Accept: application/json"
+curl "http://localhost/api/user/upload-avatar" \
+-H "Accept: application/json" \
+    -d "avatar"="nisi" \
+
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
+let data = {
+        "avatar": "nisi"
+};
 
-this.apiServie.post("api/media", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/user/upload-avatar", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
 
 
 ### HTTP Request
-`POST api/media`
+`POST api/user/upload-avatar`
 
+#### Parameters
 
-<!-- END_5900363c9d9cf8069f0abf41866a659f -->
-<!-- START_c44904d8eb741cc708c2d88a56a69927 -->
-## Display a listing of the resource.
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    avatar | image |  required  | Must be an image (jpeg, png, bmp, gif, or svg)
+
+<!-- END_e835795e301f9db730fefd2b61c35c22 -->
+<!-- START_d23a710a00a38fab97a33e30ff4db011 -->
+## User Avatar Change
+Logged in user can select an image from him Images
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/pages" \
+curl "http://localhost/api/user/select-avatar" \
+-H "Accept: application/json" \
+    -d "url"="https://casper.com/sunt-nam-expedita-qui-qui-rerum.html" \
+
+```
+
+```javascript
+// Vue 2
+let data = {
+        "url": "https:\/\/casper.com\/sunt-nam-expedita-qui-qui-rerum.html"
+};
+
+this.$http.post(config.api_url + "api/user/select-avatar", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
+
+```
+
+
+
+### HTTP Request
+`POST api/user/select-avatar`
+
+#### Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    url | url |  required  | 
+
+<!-- END_d23a710a00a38fab97a33e30ff4db011 -->
+<!-- START_7768c0075d080d4c4baddbd9853b0378 -->
+## User Images
+Get all images been uploaded by this logged in user.
+
+> Example request:
+
+```bash
+curl "http://localhost/api/user/images" \
 -H "Accept: application/json"
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 
-this.apiServie.get("api/pages", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.get(config.api_url + "api/user/images", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
@@ -833,1017 +2189,58 @@ this.apiServie.get("api/pages", data)
 
 ```json
 {
-    "data": [
-        {
-            "id": 2,
-            "title": "About us",
-            "slug": "about-us",
-            "content": "<p>haw hw<\/p>\n<p>&nbsp;<\/p>",
-            "status": 1,
-            "created_at": "2016-11-04 15:14:25",
-            "updated_at": "2016-11-05 09:13:57",
-            "deleted_at": null
-        },
-        {
-            "id": 3,
-            "title": "Contact Us",
-            "slug": "contact-us",
-            "content": "<p>rzerzer<\/p>",
-            "status": 1,
-            "created_at": "2016-11-04 15:14:43",
-            "updated_at": "2016-11-04 16:18:39",
-            "deleted_at": null
-        }
-    ],
-    "status_code": 200
+    "error": "Unauthenticated."
 }
 ```
 
 
 ### HTTP Request
-`GET api/pages`
+`GET api/user/images`
 
-`HEAD api/pages`
-
-
-<!-- END_c44904d8eb741cc708c2d88a56a69927 -->
-<!-- START_7519e4dc6775220105645da4eb91a457 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/pages/create" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/pages/create", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
+`HEAD api/user/images`
 
 
-### HTTP Request
-`GET api/pages/create`
-
-`HEAD api/pages/create`
-
-
-<!-- END_7519e4dc6775220105645da4eb91a457 -->
-<!-- START_9db908f3cc041bad182795bc2a844789 -->
-## Store a newly created resource in storage.
+<!-- END_7768c0075d080d4c4baddbd9853b0378 -->
+<!-- START_812ceeb9f4b6c86aab342de07a9a88be -->
+## User Password Update
 
 > Example request:
 
 ```bash
-curl "http://localhost/api/pages" \
+curl "http://localhost/api/user/change-password" \
 -H "Accept: application/json" \
-    -d "title"="assumenda" \
-    -d "slug"="assumenda" \
-    -d "sites"="assumenda" \
-    -d "content"="assumenda" \
+    -d "current_password"="nihil" \
+    -d "password"="nihil" \
 
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 let data = {
-        "title": "assumenda",
-        "slug": "assumenda",
-        "sites": "assumenda",
-        "content": "assumenda"
+        "current_password": "nihil",
+        "password": "nihil"
 };
 
-this.apiServie.post("api/pages", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.post(config.api_url + "api/user/change-password", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 
 
 
 ### HTTP Request
-`POST api/pages`
+`POST api/user/change-password`
 
 #### Parameters
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    title | string |  required  | Minimum: `3` Maximum: `255`
-    slug | string |  required  | Minimum: `3` Maximum: `255`
-    sites | string |  required  | 
-    content | string |  required  | 
+    current_password | string |  required  | 
+    password | string |  required  | Minimum: `6`
 
-<!-- END_9db908f3cc041bad182795bc2a844789 -->
-<!-- START_4019012e188986f89822c1f74dec9036 -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/pages/{page}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/pages/{page}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/pages/{page}`
-
-`HEAD api/pages/{page}`
-
-
-<!-- END_4019012e188986f89822c1f74dec9036 -->
-<!-- START_8566933932ce5f8ff3a6c96664c48752 -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/pages/{page}/edit" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/pages/{page}/edit", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/pages/{page}/edit`
-
-`HEAD api/pages/{page}/edit`
-
-
-<!-- END_8566933932ce5f8ff3a6c96664c48752 -->
-<!-- START_3a520900c57f00a662864e51d25666f7 -->
-## Update the specified resource in storage.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/pages/{page}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.put("api/pages/{page}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`PUT api/pages/{page}`
-
-`PATCH api/pages/{page}`
-
-
-<!-- END_3a520900c57f00a662864e51d25666f7 -->
-<!-- START_e2366ca631ebde337e0de1fb73461e8b -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/pages/{page}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.delete("api/pages/{page}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`DELETE api/pages/{page}`
-
-
-<!-- END_e2366ca631ebde337e0de1fb73461e8b -->
-<!-- START_e7bf23caf9c2a9cd4c40296cb830f376 -->
-## Display a listing of the resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/config" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{id}/config", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/config`
-
-`HEAD api/sites/{id}/config`
-
-
-<!-- END_e7bf23caf9c2a9cd4c40296cb830f376 -->
-<!-- START_99c0968d1d72d2bae1086d4df1403250 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/config/create" \
--H "Accept: application/json" \
-    -d "key"="sequi" \
-    -d "value"="sequi" \
-
-```
-
-```javascript
-// Angular 2
-let data = {
-        "key": "sequi",
-        "value": "sequi"
-};
-
-this.apiServie.get("api/sites/{id}/config/create", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-{
-    "key": [
-        "The key field is required."
-    ],
-    "value": [
-        "The value field is required."
-    ]
-}
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/config/create`
-
-`HEAD api/sites/{id}/config/create`
-
-#### Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    key | string |  required  | Minimum: `3` Maximum: `255`
-    value | string |  required  | Minimum: `3` Maximum: `255`
-
-<!-- END_99c0968d1d72d2bae1086d4df1403250 -->
-<!-- START_8f6a297bf8d60f97310a0af655aa3803 -->
-## Store a newly created resource in storage.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/config" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.post("api/sites/{id}/config", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`POST api/sites/{id}/config`
-
-
-<!-- END_8f6a297bf8d60f97310a0af655aa3803 -->
-<!-- START_93adf66113ee8536a5eb0ae3250846fb -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/config/{config}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{id}/config/{config}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/config/{config}`
-
-`HEAD api/sites/{id}/config/{config}`
-
-
-<!-- END_93adf66113ee8536a5eb0ae3250846fb -->
-<!-- START_e31a0bd1d9afd6711719ba32461ffaff -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/config/{config}/edit" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{id}/config/{config}/edit", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/config/{config}/edit`
-
-`HEAD api/sites/{id}/config/{config}/edit`
-
-
-<!-- END_e31a0bd1d9afd6711719ba32461ffaff -->
-<!-- START_887bb5500670831acc17d0e49d7f7b7d -->
-## Update the specified resource in storage.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/config/{config}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.put("api/sites/{id}/config/{config}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`PUT api/sites/{id}/config/{config}`
-
-`PATCH api/sites/{id}/config/{config}`
-
-
-<!-- END_887bb5500670831acc17d0e49d7f7b7d -->
-<!-- START_8d18675aebdb1f5600fb0dbc0d5ef778 -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/config/{config}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.delete("api/sites/{id}/config/{config}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`DELETE api/sites/{id}/config/{config}`
-
-
-<!-- END_8d18675aebdb1f5600fb0dbc0d5ef778 -->
-#Multi Site
-<!-- START_6bde012eab6506f2b473003076ee19f4 -->
-## Get All Sites.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-{
-    "data": [],
-    "status_code": 200
-}
-```
-
-
-### HTTP Request
-`GET api/sites`
-
-`HEAD api/sites`
-
-
-<!-- END_6bde012eab6506f2b473003076ee19f4 -->
-<!-- START_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
-## Create New Site.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites" \
--H "Accept: application/json" \
-    -d "name"="et" \
-    -d "url"="http://hayes.com/facilis-sit-et-atque-nihil-similique-facilis.html" \
-    -d "ui"="et" \
-
-```
-
-```javascript
-// Angular 2
-let data = {
-        "name": "et",
-        "url": "http:\/\/hayes.com\/facilis-sit-et-atque-nihil-similique-facilis.html",
-        "ui": "et"
-};
-
-this.apiServie.post("api/sites", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`POST api/sites`
-
-#### Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    name | string |  required  | Minimum: `3` Maximum: `255`
-    url | url |  required  | Minimum: `3` Maximum: `255`
-    ui | string |  required  | Minimum: `3` Maximum: `255`
-
-<!-- END_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
-<!-- START_94c94fc597738cd4377b55266da9ff28 -->
-## Get Site By Id.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{site}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{site}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{site}`
-
-`HEAD api/sites/{site}`
-
-
-<!-- END_94c94fc597738cd4377b55266da9ff28 -->
-<!-- START_773c9bdb2e712908dcb18a7159ba29ec -->
-## Update Site.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{site}" \
--H "Accept: application/json" \
-    -d "name"="dolores" \
-    -d "url"="https://www.okuneva.org/voluptas-deleniti-ipsum-quos-nobis-non-laudantium-et" \
-    -d "ui"="dolores" \
-
-```
-
-```javascript
-// Angular 2
-let data = {
-        "name": "dolores",
-        "url": "https:\/\/www.okuneva.org\/voluptas-deleniti-ipsum-quos-nobis-non-laudantium-et",
-        "ui": "dolores"
-};
-
-this.apiServie.put("api/sites/{site}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`PUT api/sites/{site}`
-
-`PATCH api/sites/{site}`
-
-#### Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    name | string |  required  | Minimum: `3` Maximum: `255`
-    url | url |  required  | Minimum: `3` Maximum: `255`
-    ui | string |  required  | Minimum: `3` Maximum: `255`
-
-<!-- END_773c9bdb2e712908dcb18a7159ba29ec -->
-#Site Versions
-<!-- START_2769ec165c2297d6e49ced508170544d -->
-## Get Site Versions.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/ui" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{id}/ui", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/ui`
-
-`HEAD api/sites/{id}/ui`
-
-
-<!-- END_2769ec165c2297d6e49ced508170544d -->
-<!-- START_1cb243aec0bde34505983c0c6aac4ca2 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/ui/create" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{id}/ui/create", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/ui/create`
-
-`HEAD api/sites/{id}/ui/create`
-
-
-<!-- END_1cb243aec0bde34505983c0c6aac4ca2 -->
-<!-- START_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
-## Upload new version.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/ui" \
--H "Accept: application/json" \
-    -d "ui"="amet" \
-    -d "type"="amet" \
-
-```
-
-```javascript
-// Angular 2
-let data = {
-        "ui": "amet",
-        "type": "amet"
-};
-
-this.apiServie.post("api/sites/{id}/ui", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`POST api/sites/{id}/ui`
-
-#### Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    ui | string |  required  | Allowed mime types: `zip`
-    type | string |  required  | 
-
-<!-- END_9c9bedbd0ea2d99ba79d13b4e77f5167 -->
-<!-- START_e61cb2180c02ab2ab57834f80f553426 -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/ui/{ui}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{id}/ui/{ui}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/ui/{ui}`
-
-`HEAD api/sites/{id}/ui/{ui}`
-
-
-<!-- END_e61cb2180c02ab2ab57834f80f553426 -->
-<!-- START_c0c783082a73551e827873a22d3917bc -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/ui/{ui}/edit" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.get("api/sites/{id}/ui/{ui}/edit", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-> Example response:
-
-```json
-null
-```
-
-
-### HTTP Request
-`GET api/sites/{id}/ui/{ui}/edit`
-
-`HEAD api/sites/{id}/ui/{ui}/edit`
-
-
-<!-- END_c0c783082a73551e827873a22d3917bc -->
-<!-- START_99cc82634d5e0537b36942e4cd2583ab -->
-## Update the specified resource in storage.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/ui/{ui}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.put("api/sites/{id}/ui/{ui}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`PUT api/sites/{id}/ui/{ui}`
-
-`PATCH api/sites/{id}/ui/{ui}`
-
-
-<!-- END_99cc82634d5e0537b36942e4cd2583ab -->
-<!-- START_d78c937c8d4ab38e29423500e061dbb6 -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl "http://localhost/api/sites/{id}/ui/{ui}" \
--H "Accept: application/json"
-```
-
-```javascript
-// Angular 2
-
-this.apiServie.delete("api/sites/{id}/ui/{ui}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
-
-```
-
-
-
-### HTTP Request
-`DELETE api/sites/{id}/ui/{ui}`
-
-
-<!-- END_d78c937c8d4ab38e29423500e061dbb6 -->
+<!-- END_812ceeb9f4b6c86aab342de07a9a88be -->

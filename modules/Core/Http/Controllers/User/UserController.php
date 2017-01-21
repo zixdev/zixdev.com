@@ -1,111 +1,44 @@
 <?php
 
-namespace Zix\Core\Http\Controllers\Auth;
+namespace Zix\Core\Http\Controllers\User;
 
-use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
-use Zix\Core\Support\Traits\CrudControllerTrait;
-use Zix\Core\Events\User\UserRegistered;
+use Zix\Core\Http\Requests\User\UserAvatarUpdateRequest;
 use Zix\Core\Http\Requests\User\UserChangePasswordRequest;
-use Zix\Core\Http\Requests\User\UserCreateRequest;
-use Zix\Core\Http\Requests\User\UserUpdateRequest;
+use Zix\Core\Http\Requests\User\UserSelectAvatarRequest;
 use Zix\Core\Http\Requests\User\UserUpdateInfoRequest;
-use Zix\Core\Notifications\User\ActivateYourEmail;
+use Zix\Core\Http\Requests\User\UserUpdateRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
 /**
  * Class UserController
- * @package Zix\Core\Http\Controllers\Auth
- * @resource Authenticated User
+ * @package Zix\Core\Http\Controllers\User
+ * @resource User
  */
 class UserController
 {
-
-    use ApiResponses, CrudControllerTrait;
-
-    /**
-     * UserController constructor.
-     * @param User $model
-     */
-    public function __construct(User $model)
-    {
-        $this->model = $model;
-    }
-
+    use ApiResponses;
 
     /**
-     * Get Site By Id.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        return $this->respondWithData($this->model->findOrfail($id));
-    }
-
-    /**
-     * @param UserUpdateRequest $request
-     * @param $id
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function update(UserUpdateRequest $request, $id)
-    {
-        return $this->respondRequestAccepted($this->model->find($id)->update($request->all()));
-    }
-
-    /**
-     * @param UserCreateRequest $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function store(UserCreateRequest $request)
-    {
-        $user = $this->model->create([
-            'username' => $request->get('username'),
-            'email' => $request->get('email'),
-            'password' => bcrypt($request->get('password')),
-            'active_code' => str_random(60)
-        ]);
-
-        // fire event user created.
-        event(new UserRegistered($user));
-
-        return $this->respondDataCreated($user);
-    }
-
-
-    /**
-     * Display a listing of the resource.
-     *
+     * User
+     * Get the logged in user with him all permissions.
      * @param Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function user(Request $request)
     {
         return $this->respondWithData([
             'user' => $request->user(),
-            'permissions' => $request->user()->permissions()->pluck('name')
-        ]);
-    }
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @param Request $request
-     * @return \Illuminate\Http\Response
-     */
-    public function info(Request $request)
-    {
-        return $this->respondWithData([
-            'user' => $request->user()->with('info')->first(),
-            'email_active' => false
+            'permissions' => $request->user()->getAllPermissions()
         ]);
     }
 
 
     /**
-     * Update the specified resource in storage.
+     * User Update
+     * Update the logged in user detail.
+     * if the user email been changed we will send him a confirmation link to
+     * activate him new email.
      * @param UserUpdateRequest $request
      * @return \Illuminate\Http\Response
      */
@@ -139,8 +72,24 @@ class UserController
         ]);
     }
 
+
     /**
-     * Update the specified resource in storage.
+     * User Info
+     * Get the logged in user infos.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function info(Request $request)
+    {
+        return $this->respondWithData([
+            'user' => $request->user()->with('info')->first(),
+            'email_active' => false
+        ]);
+    }
+
+    /**
+     * User Info Update
      * @param UserUpdateInfoRequest $request
      * @return \Illuminate\Http\Response
      */
@@ -157,8 +106,8 @@ class UserController
         ]);
     }
 
-
     /**
+     * User Password Update
      * @param UserChangePasswordRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -179,10 +128,11 @@ class UserController
     }
 
     /**
-     * @param Request $request
+     * User Avatar Update
+     * @param UserAvatarUpdateRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function updateAvatar(Request $request)
+    public function updateAvatar(UserAvatarUpdateRequest $request)
     {
         $image_url = $request->user()->addMedia($request->file('avatar'))->toCollection('images')->getUrl();
         $request->user()->update([
@@ -194,10 +144,12 @@ class UserController
     }
 
     /**
-     * @param Request $request
+     * User Avatar Change
+     * Logged in user can select an image from him Images
+     * @param UserSelectAvatarRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function selectAvatar(Request $request)
+    public function selectAvatar(UserSelectAvatarRequest $request)
     {
         $request->user()->update([
             'avatar' => $request->get('url')
@@ -208,11 +160,14 @@ class UserController
     }
 
     /**
+     * User Images
+     * Get all images been uploaded by this logged in user.
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function images(Request $request)
     {
+        // TODO:: get only images
         return $this->respondWithData([
             'images' => $request->user()->getMedia()->map(function ($image) {
                 return [
@@ -222,6 +177,5 @@ class UserController
             })
         ]);
     }
-
 
 }

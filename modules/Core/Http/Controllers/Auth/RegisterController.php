@@ -45,7 +45,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Register new user.
+     * Register User.
      *  When the submit a register form we will be creating new account for him,
      * also we will be sending to him and email with link to activate him account.
      * @param UserCreateRequest $request
@@ -53,7 +53,6 @@ class RegisterController extends Controller
      */
     public function register(UserCreateRequest $request)
     {
-
         $user = $this->user->create([
             'username'      => $request->get('username'),
             'email'         => $request->get('email'),

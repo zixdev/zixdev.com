@@ -2,6 +2,7 @@
 
 namespace Zix\Core\Http\Controllers\Forms;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Zix\Core\Entities\Forms\Form;
 use Zix\Core\Http\Requests\Forms\CreateFormRequest;
@@ -9,7 +10,12 @@ use Zix\Core\Http\Requests\Forms\UpdateFormRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 use Zix\Core\Support\Traits\CrudControllerTrait;
 
-class AdminFormController
+/**
+ * Class ManageFormController
+ * @package Zix\Core\Http\Controllers\Forms
+ * @resource Manage Forms
+ */
+class ManageFormController extends Controller
 {
     use ApiResponses, CrudControllerTrait;
     /**
@@ -28,10 +34,8 @@ class AdminFormController
         $this->model = $model;
     }
 
-
-
     /**
-     * Store a newly created resource in storage.
+     * Create Forms
      *
      * @param CreateFormRequest $request
      * @return \Illuminate\Http\Response
@@ -43,7 +47,7 @@ class AdminFormController
     }
 
     /**
-     * Display the specified resource.
+     * Get Form
      * @param $id
      * @return \Illuminate\Http\Response
      */
@@ -53,18 +57,7 @@ class AdminFormController
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update Form
      *
      * @param UpdateFormRequest $request
      * @param  int $id
@@ -75,15 +68,5 @@ class AdminFormController
         return $this->respondRequestAccepted($this->form->findOrFail($id)->update($request->all()));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        return $this->respondRequestAccepted($this->form->withTrashed()->where('id', $id)->updateAction());
-    }
 
 }

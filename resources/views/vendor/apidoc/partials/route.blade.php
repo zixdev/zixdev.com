@@ -20,21 +20,18 @@ curl "{{config('app.url')}}/{{$parsedRoute['uri']}}" \
 ```
 
 ```javascript
-// Angular 2
+// Vue 2
 @if(count($parsedRoute['parameters']))
 let data = {!! str_replace('    ','        ',json_encode(array_combine(array_keys($parsedRoute['parameters']), array_map(function($param){ return $param['value']; },$parsedRoute['parameters'])), JSON_PRETTY_PRINT)) !!};
 @endif
 
-this.apiServie.{{strtolower($parsedRoute['methods'][0])}}("{{$parsedRoute['uri']}}", data)
-    .subscribe(
-        response => {
-            console.info(response.json());
-        },
-
-        error => {
-            console.warn(error);
-        }
-    );
+this.$http.{{strtolower($parsedRoute['methods'][0])}}(config.api_url + "{{$parsedRoute['uri']}}", data)
+    .then(response => {
+        console.info(response.data.tata);
+    })
+    .catch(error => {
+        console.warn(error);
+    });
 
 ```
 

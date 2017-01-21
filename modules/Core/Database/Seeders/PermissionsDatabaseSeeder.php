@@ -15,15 +15,14 @@ class PermissionsDatabaseSeeder extends Seeder
     public function run()
     {
         $role = Role::create(['name' => 'admin']);
-//        $role = Role::find(1);
         Permission::create(['name' => 'full_access', 'type' => 'admin']);
         Permission::create(['name' => 'view_admin', 'type' => 'admin']);
 
         $role->givePermissionTo('full_access');
         $role->givePermissionTo('view_admin');
 
-        $models = ['settings', 'users', 'pages', 'forms'];
-        $permissions = ['view', 'create', 'update', 'delete', 'restore'];
+        $models = ['sites', 'site_themes', 'site_configs', 'users', 'roles', 'pages', 'settings', 'forms'];
+        $permissions = ['view', 'create', 'update', 'delete'];
 
         foreach($models as $model) {
             foreach($permissions as $permission) {

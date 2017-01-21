@@ -7,6 +7,11 @@ use Zix\Core\Entities\Site;
 use Zix\Core\Http\Requests\Site\SiteConfigCreateRequest;
 use Zix\Core\Support\Traits\ApiResponses;
 
+/**
+ * Class SiteConfigController
+ * @package Zix\Core\Http\Controllers\Site
+ * @resource Manage Sites
+ */
 class SiteConfigController
 {
     use ApiResponses;
@@ -27,7 +32,7 @@ class SiteConfigController
 
 
     /**
-     * Display a listing of the resource.
+     * Get Site Configs
      *
      * @param $id
      * @return \Illuminate\Http\Response
@@ -38,7 +43,7 @@ class SiteConfigController
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Create Site Config
      *
      * @param SiteConfigCreateRequest $request
      * @return \Illuminate\Http\Response
@@ -49,14 +54,14 @@ class SiteConfigController
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Update Site Config
      *
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, $id)
     {
-        $tmp = collect($request->all())->map(function($value, $key) use($id) {
+        $tmp = collect($request->all())->map(function ($value, $key) use ($id) {
             return $this->site->find($id)->config()->updateOrCreate(
                 ['key' => $key],
                 [
@@ -66,52 +71,6 @@ class SiteConfigController
             );
         });
         return $this->respondWithData($tmp);
-        return $request->all();
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 
 }

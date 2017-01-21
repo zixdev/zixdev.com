@@ -13,17 +13,9 @@
 //
 
 Route::get('test', function () {
-    $controllers = [];
+    $user = \App\User::find(1);
 
-    foreach (Route::getRoutes()->getRoutes() as $route) {
-        $action = $route->getAction();
-
-        if (array_key_exists('controller', $action)) {
-            // You can also use explode('@', $action['controller']); here
-            // to separate the class name from the method
-            $controllers[] = $action;
-        }
-    }
-    return dd($controllers);
+//    return $user->getAllPermissions();
+    return dd($user->can('full_access'));
 });
 

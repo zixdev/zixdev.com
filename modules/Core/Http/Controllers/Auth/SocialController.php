@@ -8,6 +8,11 @@ use Laravel\Socialite\Facades\Socialite;
 use Zix\Core\Notifications\User\SetNewPassword;
 use Zix\Core\Events\User\UserRegistered;
 
+/**
+ * Class SocialController
+ * @package Zix\Core\Http\Controllers\Auth
+ * @resource Authentication
+ */
 class SocialController
 {
     /**
@@ -25,9 +30,10 @@ class SocialController
     }
 
     /**
-     * Display a listing of the resource.
+     * Login With Social Sites
+     * (facebook/twitter/github)
      *
-     * @param $type
+     * @param $type (facebook/twitter/github)
      * @return \Illuminate\Http\Response
      */
     public function redirectToProvider($type)
@@ -36,6 +42,7 @@ class SocialController
     }
 
     /**
+     * Login With Social Sites Feedback
      * @param Request $request
      * @param $type
      * @return \Illuminate\Http\RedirectResponse
@@ -48,12 +55,12 @@ class SocialController
         // if so redirect to forgot password
         if ($existing_user = $this->user->where('email', $user->email)->first()) {
             // log him in, if the token much the store token
-            if($existing_user->social()->where('type', $type)->where('token', $user->token)->first()) {
+            if ($existing_user->social()->where('type', $type)->where('token', $user->token)->first()) {
                 // redirect to the front end logger
-                return redirect()->to(url('auth/indent-login?token='. $existing_user->createToken($type)->accessToken));
+                return redirect()->to(url('auth/indent-login?token=' . $existing_user->createToken($type)->accessToken));
             }
 
-            return redirect()->to(url('auth/forgot-password?email='. $user->email));
+            return redirect()->to(url('auth/forgot-password?email=' . $user->email));
         }
 
         // create new user
@@ -63,17 +70,17 @@ class SocialController
         // redirect to front-end to set new user also mail that link.
 
         $new_user = $this->user->create([
-            'username'      => $user->getNickname(),
-            'email'         => $user->getEmail(),
-            'avatar'        => $user->getAvatar(),
-            'password'      => bcrypt($password),
-            'active_code'   => $user->token, // tmp
-            'email_active'  => true,
+            'username' => $user->getNickname(),
+            'email' => $user->getEmail(),
+            'avatar' => $user->getAvatar(),
+            'password' => bcrypt($password),
+            'active_code' => $user->token, // tmp
+            'email_active' => true,
         ]);
 
         // TODO:: Update user info
         $new_user->social()->create([
-            'type'  => $type,
+            'type' => $type,
             'token' => $user->token,
             'email' => $user->getEmail()
         ]);
@@ -82,7 +89,7 @@ class SocialController
 
         // notify the user to set him new password.
 //        $user->notify(new SetNewPassword($user, $password));
-        return redirect()->to(url('auth/indent-login?setPassword='.$password.'&token='. $new_user->createToken($type)->accessToken));
+        return redirect()->to(url('auth/indent-login?setPassword=' . $password . '&token=' . $new_user->createToken($type)->accessToken));
     }
 
 

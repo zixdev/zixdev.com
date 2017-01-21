@@ -8,13 +8,25 @@ use Illuminate\Http\Request;
  */
 trait CrudControllerTrait
 {
+    public function setPermissions($name)
+    {
+        $this->middleware("can:view_{$name}")->only('index');
+        $this->middleware("can:view_{$name}")->only('show');
+        $this->middleware("can:create_{$name}")->only('store');
+        $this->middleware("can:update_{$name}")->only('update');
+        $this->middleware("can:update_{$name}")->only('edit');
+        $this->middleware("can:delete_{$name}")->only('delete');
+    }
     /**
      * @var
      */
     protected $model;
 
     /**
-     * Get Dynamic Data Table
+     * Get Data
+     * ### Required permission (can:view_model)
+     * This will return dynamic filtrable data, (paginate, search, orderBy).
+     * To get the deleted data use query(?eloquent=trashed)
      * @param Request $request
      * @return mixed
      */
@@ -40,8 +52,8 @@ trait CrudControllerTrait
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
+     * Remove Data
+     * ### Required permission (can:delete_model)
      * @param  int $id
      * @return \Illuminate\Http\Response
      */

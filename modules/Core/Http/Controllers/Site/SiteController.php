@@ -12,7 +12,7 @@ use Zix\Core\Support\Traits\CrudControllerTrait;
 /**
  * Class SiteController
  * @package Zix\Core\Http\Controllers\Site
- * @resource Multi Site
+ * @resource Manage Sites
  */
 class SiteController
 {
@@ -29,7 +29,7 @@ class SiteController
 
 
     /**
-     * Create New Site.
+     * Create Site
      *
      * @param SiteCreateRequest $request
      * @return \Illuminate\Http\Response
@@ -39,9 +39,19 @@ class SiteController
         return $this->respondDataCreated($this->model->create($request->all()));
     }
 
+    /**
+     * Get Site
+     *
+     * @param  int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        return $this->respondWithData($this->model->findOrfail($id));
+    }
 
     /**
-     * Update Site.
+     * Update Site
      *
      * @param SiteUpdateRequest $request
      * @param  int $id
