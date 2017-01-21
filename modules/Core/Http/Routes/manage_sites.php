@@ -26,12 +26,12 @@ Route::group(['namespace' => '\Site', 'middleware' => ['auth:api']], function ($
         'before' => 'can:delete_sites'
     ]);
 
-    $router->get('sites/{id}/ui', [
+    $router->get('sites/{id}/themes', [
         'uses' => 'SiteUiController@index',
         'before' => 'can:view_site_themes'
     ]);
 
-    $router->post('sites/{id}/ui', [
+    $router->post('sites/{id}/themes', [
         'uses' => 'SiteUiController@store',
         'before' => 'can:create_site_themes'
     ]);

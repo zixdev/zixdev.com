@@ -8,6 +8,11 @@ Route::group(['namespace' => '\Pages', 'middleware' => 'auth:api'], function ($r
         'before' => 'can:view_pages'
     ]);
 
+    $router->get('pages/{id}', [
+        'uses' => 'ManagePageController@show',
+        'before' => 'can:view_pages'
+    ]);
+
     $router->post('pages', [
         'uses' => 'ManagePageController@store',
         'before' => 'can:create_pages'

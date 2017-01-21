@@ -4,6 +4,7 @@ namespace Zix\Core\Http\Controllers\User;
 
 use App\User;
 use Illuminate\Http\Request;
+use Zix\Core\Events\User\UserRegistered;
 use Zix\Core\Http\Requests\User\UserCreateRequest;
 use Zix\Core\Http\Requests\User\UserUpdateRequest;
 use Zix\Core\Support\Traits\ApiResponses;

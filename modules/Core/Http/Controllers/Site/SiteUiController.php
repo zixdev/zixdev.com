@@ -40,6 +40,7 @@ class SiteUiController
      */
     public function index(Request $request, $id)
     {
+//        return $this->respondBadRequest('fuck you');
         if($request->get('eloquent') == 'trashed')
         {
             return \Datatables::of($this->site->findOrFail($id)->uis()->onlyTrashed())->make(true);
