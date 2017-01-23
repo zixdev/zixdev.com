@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormFieldController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormFieldController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormResponsesController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormResponsesController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasSiteTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php" afterPath="$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Entities/Page.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/Page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/badi.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/badi.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
@@ -26,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ManageFormResponsesController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormResponsesController.php">
+      <file leaf-file-name="ContactReplyRequest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactReplyRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63461536">
-              <caret line="66" column="33" selection-start-line="64" selection-start-column="20" selection-end-line="66" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.7813505">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -51,16 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Core/Entities/Permission.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2016_09_14_173058_create_permission_tables.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Database/Seeders/CoreDataBaseSeeder.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Console/Commands/Admin/InstallAdminPanelCommand.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/PermissionMiddleware.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/AdminFormController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/FormController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/FormFieldController.php" />
@@ -68,7 +60,6 @@
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/site.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/apidoc/partials/route.blade.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Requests/User/UserUpdateRequest.php" />
-        <option value="$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Auth/LoginController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/admin_user.php" />
@@ -102,6 +93,17 @@
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/User/ManageUserController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormFieldController.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormResponsesController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_01_23_071739_create_contacts_table.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_01_23_072127_create_contact_replies_table.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Entities/Contact/ContactReply.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasSiteTrait.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Entities/Page.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Entities/Contact/Contact.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactCreateRequest.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Contact/ManageContactController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Contact/ContactController.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactReplyRequest.php" />
       </list>
     </option>
   </component>
@@ -349,6 +351,40 @@
               <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zix-api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Contact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -402,7 +438,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Site" />
+              <option name="myItemId" value="Contact" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,15 +460,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
+              <option name="myItemId" value="Helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
+              <option name="myItemId" value="Traits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zix-api.zixdev.com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Forms" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,11 +543,11 @@
       <recent name="$PROJECT_DIR$/modules/Blog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/Core/Entities/Contact" />
       <recent name="$PROJECT_DIR$/modules/Core/Http/Controllers/User" />
       <recent name="$PROJECT_DIR$/modules/Core/Database/Seeders" />
       <recent name="$PROJECT_DIR$/modules/Core/Http/Controllers/Admin" />
       <recent name="$PROJECT_DIR$/modules/Core/Entities/Forms" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.Routes">
@@ -567,7 +621,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.484375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.484375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -603,88 +657,11 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3043478">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Providers/RouteServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6086956">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26086956">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47665057">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/ControllerMiddlewareOptions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82608694">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6167472">
-          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Forms/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43317232">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasFiltrableTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0869565">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39130434">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/PermissionMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47665057">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66183573">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RoleMiddleware.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5217391">
@@ -752,6 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.94847023">
           <caret line="32" column="51" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -927,6 +905,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77616745">
           <caret line="100" column="1" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -941,13 +920,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20933977">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17230274">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="39" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,8 +933,208 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Forms/ManageFormResponsesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63461536">
+        <state vertical-scroll-proportion="0.33440515">
           <caret line="66" column="33" selection-start-line="64" selection-start-column="20" selection-end-line="66" selection-end-column="33" />
+          <folding>
+            <marker date="1485082357639" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder=" Class ManageFormResponsesController ..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder=" @var Form ..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder=" @var FormResponse ..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder=" AdminFormResponsesController constructor. ..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder=" Get From Responses ..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder=" Get Form Response ..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder=" Delete Form Response ..." />
+            <marker date="1485082357639" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Contact/ContactReply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5948553">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <marker date="1485156338417" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485156338417" expanded="true" signature="-1:-1" placeholder=" Class ContactReply ..." />
+            <marker date="1485156338417" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156338417" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+            <marker date="1485156338417" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\BelongsTo ..." />
+            <marker date="1485156338417" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156338417" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\BelongsTo ..." />
+            <marker date="1485156338417" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasStatusTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.057877813">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder=" Scope a query to only include enabled rows. ..." />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder=" Scope a query to only include disabled rows. ..." />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder=" Scope a query to disable row. ..." />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder=" Scope a query to enable row. ..." />
+            <marker date="1484664785905" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34726688">
+          <caret line="17" column="81" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+          <folding>
+            <marker date="1485156510161" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485156510161" expanded="true" signature="-1:-1" placeholder=" Class Page ..." />
+            <marker date="1485156510161" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156510161" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Helpers/Traits/Model/HasSiteTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.057877813">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <marker date="1485156499049" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156499049" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\BelongsToMany ..." />
+            <marker date="1485156499049" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2017_01_23_071739_create_contacts_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3762058">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <marker date="1485156059920" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485156059920" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156059920" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1485156059920" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156059920" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485156059920" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485156059920" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1485156059920" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Database/Migrations/2017_01_23_072127_create_contact_replies_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17363344">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <marker date="1485156226482" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485156226482" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156226482" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1485156226482" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156226482" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485156226482" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1485156226482" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1485156226482" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Support/Traits/CrudControllerTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5498392">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder=" Class CrudControllerTrait ..." />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder=" @var ..." />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder=" Get Data ..." />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder=" Get Model. ..." />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder=" Remove Data ..." />
+            <marker date="1485157571904" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Contact/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60771704">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <marker date="1485156519121" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485156519121" expanded="true" signature="-1:-1" placeholder=" Class Contact ..." />
+            <marker date="1485156519121" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485156519121" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+            <marker date="1485156519121" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\HasMany ..." />
+            <marker date="1485156519121" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Contact/ManageContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4790997">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <marker date="1485158015198" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485158015198" expanded="true" signature="-1:-1" placeholder=" Class ManageContactController ..." />
+            <marker date="1485158015198" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485158015198" expanded="true" signature="-1:-1" placeholder=" ManageContactController constructor. ..." />
+            <marker date="1485158015198" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485158015198" expanded="true" signature="-1:-1" placeholder=" Send Contact Reply ..." />
+            <marker date="1485158015198" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485158015198" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Contact/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10289389">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <marker date="1485158068191" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1485158068191" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485158068191" expanded="true" signature="-1:-1" placeholder=" @var Contact ..." />
+            <marker date="1485158068191" expanded="true" signature="-1:-1" placeholder=" ContactController constructor. ..." />
+            <marker date="1485158068191" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485158068191" expanded="true" signature="-1:-1" placeholder=" Send Contact Request ..." />
+            <marker date="1485158068191" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactCreateRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57877815">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <folding>
+            <marker date="1485157174334" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485157174334" expanded="true" signature="-1:-1" placeholder=" Get the validation rules that apply to the request. ..." />
+            <marker date="1485157174334" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1485157174334" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactReplyRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7813505">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
       </provider>

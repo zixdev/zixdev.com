@@ -41,7 +41,7 @@ trait CrudControllerTrait
     }
 
     /**
-     * Get resource By Id.
+     * Get Model.
      *
      * @param  int $id
      * @return \Illuminate\Http\Response
