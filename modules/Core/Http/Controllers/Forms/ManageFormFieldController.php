@@ -56,12 +56,12 @@ class ManageFormFieldController extends Controller
      * Create Form Fields
      *
      * @param  \Illuminate\Http\Request $request
-     * @param $slug
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $slug)
+    public function store(Request $request, $id)
     {
-        $form = $this->form->where('slug', $slug)->first();
+        $form = $this->form->find($id);
         $form->fields()->detach();
 
         collect($request->all())->map(function ($field) use ($form) {

@@ -39,12 +39,18 @@ class ManageFormResponsesController
     /**
      * Get From Responses
      *
-     * @param $slug
+     * @param Request $request
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function index($slug)
+    public function index(Request $request, $id)
     {
-        return $this->respondWithData($this->form->where('slug', $slug)->first()->responses()->filtrable());
+        if($request->get('eloquent') == 'trashed')
+        {
+            return \Datatables::of($this->form->find($id)->responses()->onlyTrashed())->make(true);
+        }
+
+        return \Datatables::of($this->form->find($id)->responses()->get())->make(true);
     }
 
     /**
