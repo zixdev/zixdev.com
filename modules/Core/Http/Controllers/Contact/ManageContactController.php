@@ -5,6 +5,7 @@ namespace Zix\Core\Http\Controllers\Contact;
 use Zix\Core\Entities\Contact\Contact;
 use Zix\Core\Events\Contact\ContactReplyEvent;
 use Zix\Core\Http\Requests\Contact\ContactReplyRequest;
+use Zix\Core\Notifications\Contact\SendContactReplyNotificationToUser;
 use Zix\Core\Support\Traits\ApiResponses;
 use Zix\Core\Support\Traits\CrudControllerTrait;
 
@@ -35,11 +36,13 @@ class ManageContactController
      */
     public function store(ContactReplyRequest $request, $id)
     {
-        $contact = $this->model->find($id)->replies()->create(
+        $contact = $this->model->find($id);
+
+        $reply = $contact->replies()->create(
             array_merge($request->input(), ['user_id' => $request->user()->id])
         );
 
-        event(new ContactReplyEvent($contact));
+        event(new ContactReplyEvent($contact, $reply));
 
         return $this->respondDataCreated($contact);
     }

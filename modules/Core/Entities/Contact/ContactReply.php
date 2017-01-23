@@ -14,7 +14,7 @@ class ContactReply extends Model
     /**
      * @var array
      */
-    protected $fillable = ['subject', 'message'];
+    protected $fillable = ['subject', 'message', 'user_id'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo

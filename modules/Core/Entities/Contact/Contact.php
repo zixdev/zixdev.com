@@ -4,6 +4,8 @@ namespace Zix\Core\Entities\Contact;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Notifications\Notifiable;
+use Zix\Core\Helpers\Traits\Model\HasFiltrableTrait;
 use Zix\Core\Helpers\Traits\Model\HasSiteTrait;
 use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
@@ -13,7 +15,7 @@ use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
  */
 class Contact extends Model
 {
-    use SoftDeletes, HasStatusTrait, HasSiteTrait;
+    use SoftDeletes, HasStatusTrait, HasSiteTrait, HasFiltrableTrait, Notifiable;
     /**
      * @var array
      */
