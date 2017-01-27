@@ -5,14 +5,14 @@ return [
     'contact'   => [
         'notify_user'   => true,
         'notify_admin'  => true,
-        'notify_admin_email'    => '',
+        'notify_admin_email'    => env('MAIL_USERNAME'),
 
         /*
          * Email Send From
          */
         'from' => [
-            'email'  => 'dev@zixdev.com',
-            'name' => 'Chraider'
+            'email'  => env('MAIL_USERNAME'),
+            'name' => env('MAIL_USERNAME')
         ]
     ]
 ];

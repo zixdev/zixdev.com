@@ -1,5 +1,7 @@
 <?php namespace Zix\Core\Helpers\Traits\Model;
 
+use Zix\Core\Entities\Site;
+
 trait HasSiteTrait
 {
     /**
