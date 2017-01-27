@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Zix Development',
+    'name' => 'Laravel',
 
     /*
     |--------------------------------------------------------------------------
@@ -164,27 +164,42 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Package Service Providers...
+         */
+        Laravel\Tinker\TinkerServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Laravel\Passport\PassportServiceProvider::class,
-        Laravel\Socialite\SocialiteServiceProvider::class,
-//        Barryvdh\Debugbar\ServiceProvider::class,
-        Yajra\Datatables\DatatablesServiceProvider::class,
+        /*
+         * Development Service Providers...
+         */
+        Barryvdh\Debugbar\ServiceProvider::class,
+//        Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class, // TODO: this have error with share/singleton
 
-        // Spatie Libraries.
+        /*
+         * Spatie Service Providers...
+         */
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
 
+        /*
+         * Zix Service Providers...
+         */
         Zix\Core\Libraries\Modules\ModuleServiceProvider::class,
 
-        // API Documentation.
-        Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
+        /*
+         * Other Service Providers...
+         */
+        Yajra\Datatables\DatatablesServiceProvider::class,
 
     ],
 
@@ -205,6 +220,8 @@ return [
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
+        'Broadcast' => Illuminate\Support\Facades\Broadcast::class,
+        'Bus' => Illuminate\Support\Facades\Bus::class,
         'Cache' => Illuminate\Support\Facades\Cache::class,
         'Config' => Illuminate\Support\Facades\Config::class,
         'Cookie' => Illuminate\Support\Facades\Cookie::class,
@@ -218,6 +235,7 @@ return [
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
+        'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
@@ -231,11 +249,12 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
 
         'Module'    => Zix\Core\Libraries\Modules\ModuleFacade::class,
         'Site'    => Zix\Core\Libraries\Sites\SiteFacade::class,
+
 
     ],
 

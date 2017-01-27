@@ -7,21 +7,16 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
-use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 use Spatie\Permission\Traits\HasRoles;
-use Zix\Core\Entities\UserInfo;
-use Zix\Core\Entities\UserSocial;
-use Zix\Core\Helpers\Traits\Model\HasFiltrableTrait;
-use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
 /**
  * Class User
- * @property mixed roles
  * @package App
  */
-class User extends Authenticatable implements HasMedia
+class User extends Authenticatable
 {
-    use Notifiable, HasApiTokens, HasMediaTrait, HasRoles, HasStatusTrait, SoftDeletes, HasFiltrableTrait;
+    use Notifiable, HasApiTokens, HasMediaTrait, HasRoles, SoftDeletes;
+
 
     /**
      * The attributes that are mass assignable.
@@ -44,22 +39,6 @@ class User extends Authenticatable implements HasMedia
     ];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    public function info()
-    {
-        return $this->hasOne(UserInfo::class);
-    }
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function social()
-    {
-        return $this->hasMany(UserSocial::class);
-    }
-
-    /**
      * Get All this user permissions from all him roles
      * @return static
      */
@@ -67,8 +46,8 @@ class User extends Authenticatable implements HasMedia
     {
         $permissions = collect();
 
-        $this->roles->map(function($role) use ($permissions){
-            $role->permissions->map(function($permission) use ($permissions) {
+        $this->roles->map(function ($role) use ($permissions) {
+            $role->permissions->map(function ($permission) use ($permissions) {
                 $permissions->push($permission->name);
             });
         });

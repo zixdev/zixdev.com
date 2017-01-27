@@ -2,12 +2,12 @@
 
 namespace Zix\Core\Console\Generators;
 
-use Illuminate\Console\AppNamespaceDetectorTrait;
+//use Illuminate\Console\AppNamespaceDetectorTrait;
 use Illuminate\Filesystem\Filesystem;
 
 class Generators
 {
-    use AppNamespaceDetectorTrait;
+//    use AppNamespaceDetectorTrait;
 
     /**
      * The filesystem instance.

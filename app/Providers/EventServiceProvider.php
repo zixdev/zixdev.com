@@ -16,9 +16,6 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\SomeEvent' => [
             'App\Listeners\EventListener',
         ],
-        '\Zix\Core\Events\Contact\ContactReplyEvent' => [
-            '\Zix\Core\Listeners\Contact\NotifyUserAboutContactReply',
-        ]
     ];
 
     /**

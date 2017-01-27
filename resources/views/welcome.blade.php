@@ -5,21 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Zix Development</title>
+        <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Raleway:100,400,300,600' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Raleway';
+                font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
-                padding: 10px;
             }
 
             .full-height {
@@ -38,8 +37,8 @@
 
             .top-right {
                 position: absolute;
-                right: 0;
-                top: 0;
+                right: 10px;
+                top: 18px;
             }
 
             .content {
@@ -69,22 +68,26 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
+                    @if (Auth::check())
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/register') }}">Register</a>
+                    @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Zix Development <br>
-                    <small>API v1</small>
+                    Laravel
                 </div>
 
                 <div class="links">
-                    <a href="{{url('documentation')}}">Documentation</a>
-                    <a href="https://zixdev.com/news">News</a>
-                    <a href="https://zixdev.com/">About Us</a>
-                    <a href="https://zixdev.com/news">Contact Us</a>
+                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>

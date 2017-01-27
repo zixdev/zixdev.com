@@ -35,21 +35,4 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'mailchimp' => [
-        'secret' => '-us14',
-    ],
-    /*
-     * Socialite Keys
-     */
-    'github' => [
-        'client_id'     => '',
-        'client_secret' => '',
-        'redirect'      => 'http://localhost:8000/api/auth/social/callback/github',
-    ],
-
-    'facebook' => [
-        'client_id'     => '',
-        'client_secret' => '',
-        'redirect'      => 'http://localhost:8000/api/auth/social/callback/github',
-    ],
 ];
