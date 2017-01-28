@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\Permission\Traits\HasRoles;
+use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
 /**
  * Class User
@@ -15,7 +16,7 @@ use Spatie\Permission\Traits\HasRoles;
  */
 class User extends Authenticatable
 {
-    use Notifiable, HasApiTokens, HasMediaTrait, HasRoles, SoftDeletes;
+    use Notifiable, HasApiTokens, HasMediaTrait, HasRoles, SoftDeletes, HasStatusTrait;
 
 
     /**

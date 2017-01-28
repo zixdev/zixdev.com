@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => '\User', 'middleware' => ['auth:api']], function ($router) {
+Route::group(['namespace' => '\User', 'middleware' => ['api']], function ($router) {
 
     $router->get('users', [
         'uses' => 'ManageUserController@index',

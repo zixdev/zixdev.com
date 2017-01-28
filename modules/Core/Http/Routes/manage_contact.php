@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => '\Contact', 'middleware' => 'auth:api'], function ($router) {
+Route::group(['namespace' => '\Contact', 'middleware' => 'api'], function ($router) {
 
     $router->get('forms/contact', [
         'uses' => 'ManageContactController@index',

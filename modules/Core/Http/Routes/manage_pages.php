@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => '\Pages', 'middleware' => 'auth:api'], function ($router) {
+Route::group(['namespace' => '\Pages', 'middleware' => 'api'], function ($router) {
 
 
     $router->get('pages', [

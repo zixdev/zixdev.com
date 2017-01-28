@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => '\Site', 'middleware' => ['auth:api']], function ($router) {
+Route::group(['namespace' => '\Site', 'middleware' => ['api']], function ($router) {
     $router->get('sites', [
         'uses' => 'SiteController@index',
         'before' => 'can:view_sites'

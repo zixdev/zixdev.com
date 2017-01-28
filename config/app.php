@@ -11,8 +11,7 @@ return [
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
     */
-
-    'name' => 'Laravel',
+    'name' => 'Zix Development',
 
     /*
     |--------------------------------------------------------------------------
@@ -182,7 +181,7 @@ return [
         /*
          * Development Service Providers...
          */
-        Barryvdh\Debugbar\ServiceProvider::class,
+//        Barryvdh\Debugbar\ServiceProvider::class,
 //        Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class, // TODO: this have error with share/singleton
 
         /*
