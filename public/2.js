@@ -1,11 +1,11 @@
-webpackJsonp([0],{
+webpackJsonp([2],{
 
-/***/ 193:
+/***/ 195:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./+pages/create.vue": 195,
-	"./+pages/index.vue": 196
+	"./+pages/create.vue": 196,
+	"./+pages/index.vue": 197
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -21,32 +21,15 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 193;
+webpackContext.id = 195;
 
 
 /***/ }),
 
-/***/ 194:
+/***/ 196:
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
-};
-
-/***/ }),
-
-/***/ 195:
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(11)(
+var Component = __webpack_require__(13)(
   /* script */
   null,
   /* template */
@@ -64,14 +47,14 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 196:
+/***/ 197:
 /***/ (function(module, exports, __webpack_require__) {
 
-var Component = __webpack_require__(11)(
+var Component = __webpack_require__(13)(
   /* script */
-  __webpack_require__(194),
+  __webpack_require__(198),
   /* template */
-  __webpack_require__(197),
+  __webpack_require__(199),
   /* scopeId */
   null,
   /* cssModules */
@@ -99,7 +82,24 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 197:
+/***/ 198:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    mounted: function mounted() {
+        console.log('Component mounted.');
+    }
+};
+
+/***/ }),
+
+/***/ 199:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

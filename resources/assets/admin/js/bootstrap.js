@@ -1,4 +1,3 @@
-
 window._ = require('lodash');
 
 /**
@@ -18,8 +17,18 @@ require('bootstrap-sass');
  */
 
 window.Vue = require('vue');
-window.VueRouter  = require('vue-router');
+window.VueRouter = require('vue-router');
 Vue.use(VueRouter);
+
+import Vuex from 'vuex';
+import VueEvents from "vue-events";
+import './lang';
+
+/*
+ * Vuex Lib $store
+ */
+Vue.use(Vuex);
+Vue.use(VueEvents);
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -32,13 +41,17 @@ window.axios.defaults.headers.common = {
     'X-Requested-With': 'XMLHttpRequest'
 };
 
+import './inspinia';
+import './zexus';
+
+// import Zix Modules
+import './../../../../modules/Core/Assets/admin/js/core';
+
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
-
-import './inspinia';
 // import Echo from "laravel-echo"
 
 // window.Echo = new Echo({

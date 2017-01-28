@@ -12,14 +12,24 @@
                         </ul>
                     </div>
                     <div class="logo-element">
-                        IN+
+                        ZIX+
                     </div>
                 </li>
-                <li class="active">
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Main view</span></a>
-                </li>
-                <li>
-                    <a href="minor.html"><i class="fa fa-th-large"></i> <span class="nav-label">Minor view</span> </a>
+                <li v-for="route of routes" v-if="can(route.permission)">
+                    <a  v-if="route.children && route.children.length">
+                        <i :class="'fa ' + route.icon"></i>
+                        <span class="nav-label"> {{$t(route.name)}}</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <router-link :to="link(route)" v-else="v-else">
+                        <i :class="'fa ' + route.icon"></i>
+                        <span class="nav-label">{{$t(route.name)}}</span>
+                    </router-link>
+                    <ul class="nav nav-second-level" v-if="route.children && route.children.length">
+                        <router-link v-for="child of route.children" v-if="can(child.permission)" tag="li" :to="child.path">
+                            <router-link :to="child.path">{{$t(child.name)}}</router-link>
+                        </router-link>
+                    </ul>
                 </li>
             </ul>
 
@@ -30,9 +40,43 @@
 <script type="text/babel">
     import Vue from 'vue'
     import Component from 'vue-class-component'
+    import Zexus from './../zexus';
 
     @Component
     export default class Sidebar extends Vue {
+        show = true;
 
+        get routes() {
+            return Zexus.routes.filter(route => route.meta.menu).map(route => {
+                return {
+                    path: route.path,
+                    name: route.name,
+                    permission: route.meta.permission,
+                    icon: route.meta.icon,
+                    children: route.children ? route.children.filter(route => route.meta.menu).map(route => {
+                        return {
+                            path: route.path,
+                            name: route.name,
+                            permission: route.meta.permission,
+                            icon: route.meta.icon
+                        }
+                    }) : null
+                }
+            });
+            return Zexus.routes
+        }
+
+        link(route) {
+            return route.children ? '' : {name: route.name, activeClass: 'active'};
+        }
+
+        can(permission) {
+            return true;
+            return this.$store.state.auth_permissions.includes(permission) ? true : false;
+        }
+
+        mounted() {
+            console.log(Zexus.routes)
+        }
     }
 </script>

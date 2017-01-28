@@ -152,8 +152,8 @@
 
 .nav-header {
   padding: 33px 25px;
-  background-color: $nav-bg;
-  background-image: $nav-profile-pattern;
+  //background-color: $nav-bg;
+  //background-image: $nav-profile-pattern;
 
 }
 
@@ -561,4 +561,8 @@ body.canvas-menu nav.navbar-static-side {
 body.canvas-menu.mini-navbar nav.navbar-static-side {
   display: block;
   width: 220px;
+}
+
+.sidebar-collapse .nav > li > a {
+  color: #FFF;
 }

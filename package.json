@@ -33,6 +33,7 @@
     "metismenu": "^2.6.1",
     "tinymce": "^4.5.2",
     "vue-class-component": "^4.4.0",
+    "vue-events": "^1.0.0",
     "vue-i18n": "^4.10.0",
     "vue-loader": "^10.1.2",
     "vue-multiselect": "^1.1.4",
