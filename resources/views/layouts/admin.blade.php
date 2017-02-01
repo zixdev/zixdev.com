@@ -15,6 +15,10 @@
 
     <!-- Scripts -->
     <script>
+        window.Auth = {!! json_encode([
+            'user'      => \Auth::user(),
+            'permissions' => \Auth::user()->getAllPermissions()
+        ]) !!};
         window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
         ]) !!};

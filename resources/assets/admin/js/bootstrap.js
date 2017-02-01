@@ -43,6 +43,7 @@ window.axios.defaults.headers.common = {
 
 import './inspinia';
 import './zexus';
+import 'datatables.net-bs';
 
 // import Zix Modules
 import './../../../../modules/Core/Assets/admin/js/core';

@@ -17,7 +17,7 @@
 <script type="text/babel">
     export default {
         mounted() {
-            console.log('Component mounted.')
+
         }
     }
 </script>

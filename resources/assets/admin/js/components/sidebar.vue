@@ -5,10 +5,20 @@
                 <li class="nav-header">
                     <div class="dropdown profile-element">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
-                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                            <span class="clear text-capitalize">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">
+                                        {{ user.username }}
+                                    </strong>
+                                </span>
+                                <span class="text-muted text-xs block">
+                                    {{ roles(user) }}
+                                    <b class="caret"></b>
+                                </span>
+                            </span>
+                        </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="/logout">Logout</a></li>
                         </ul>
                     </div>
                     <div class="logo-element">
@@ -45,7 +55,14 @@
     @Component
     export default class Sidebar extends Vue {
         show = true;
-
+        get user() {
+            return Auth.user;
+        }
+        roles(user) {
+            return user.roles.map(role => {
+                return role.name
+            }).toString()
+        }
         get routes() {
             return Zexus.routes.filter(route => route.meta.menu).map(route => {
                 return {
@@ -71,8 +88,7 @@
         }
 
         can(permission) {
-            return true;
-            return this.$store.state.auth_permissions.includes(permission) ? true : false;
+            return Auth.permissions.includes(permission) ? true : false;
         }
 
         mounted() {
