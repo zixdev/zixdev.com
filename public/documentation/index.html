@@ -1,0 +1,2184 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://zixdev.com'>Documentation Powered by Zix Development</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://localhost/documentation/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>Authentication</h1>
+<!-- START_d7b7952e7fdddc07c978c9bdaf757acf -->
+<h2>Register User.</h2>
+<p>When the submit a register form we will be creating new account for him,
+also we will be sending to him and email with link to activate him account.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/register" \
+-H "Accept: application/json" \
+    -d "username"="enim" \
+    -d "email"="westley85@example.org" \
+    -d "password"="enim" \
+    -d "accept_terms"="1" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "username": "enim",
+        "email": "westley85@example.org",
+        "password": "enim",
+        "accept_terms": true
+};
+
+this.$http.post(config.api_url + "api/register", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/register</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>6</code></td>
+</tr>
+<tr>
+<td>accept_terms</td>
+<td>boolean</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_d7b7952e7fdddc07c978c9bdaf757acf -->
+<!-- START_c3fa189a6c95ca36ad6ac4791a873d23 -->
+<h2>Login User.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/login" \
+-H "Accept: application/json" \
+    -d "email"="morissette.frieda@example.com" \
+    -d "password"="repellat" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "email": "morissette.frieda@example.com",
+        "password": "repellat"
+};
+
+this.$http.post(config.api_url + "api/login", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/login</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_c3fa189a6c95ca36ad6ac4791a873d23 -->
+<!-- START_7e6ee60aafd6de54298e0e276a7451fe -->
+<h2>Logout User.</h2>
+<p>When User Logout We Will Log him out and destroy the token.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/logout" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/logout", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "data": true,
+    "status_code": 200
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/logout</code></p>
+<p><code>HEAD api/logout</code></p>
+<!-- END_7e6ee60aafd6de54298e0e276a7451fe -->
+<!-- START_78c4b7d6388c81c68bc37ec872d44f65 -->
+<h2>Send Reset Password Email.</h2>
+<h3>1) Send reset password link:</h3>
+<ul>
+<li>We will send the password reset link to this user.</li>
+<li>Once we have attempted to send the link.</li>
+<li>we will examine the response then see the message we need to show to the user.</li>
+<li>Finally, we'll send out a proper response.</li>
+</ul>
+<h3>2) In case error and the email not found :</h3>
+<ul>
+<li>If an error was returned by the password broker</li>
+<li>We will get this message translated so we can notify a user of the problem.</li>
+<li>We'll we'll send out and error message.</li>
+</ul>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forgot-password" \
+-H "Accept: application/json" \
+    -d "email"="carol.towne@example.net" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "email": "carol.towne@example.net"
+};
+
+this.$http.post(config.api_url + "api/forgot-password", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/forgot-password</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_78c4b7d6388c81c68bc37ec872d44f65 -->
+<!-- START_6d3061d375666b8cf6babe163b36f250 -->
+<h2>Reset User Password.</h2>
+<h3>1) resetting user password:</h3>
+<ul>
+<li>Here we will attempt to reset the user's password.</li>
+<li>If it is successful we will update the password on an actual user model and persist it to the database.</li>
+<li>Otherwise we will parse the error and return the response.</li>
+</ul>
+<h3>2) return success if the password been reset.</h3>
+<ul>
+<li>If the password was successfully reset, we return success response message.</li>
+<li>Clean user tokens (to not allow other applications to log in with the old tokens).</li>
+<li>Create new token for the user and log him in</li>
+<li>Return response with the user token and him details.</li>
+</ul>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/reset-password" \
+-H "Accept: application/json" \
+    -d "email"="mitchell.bryana@example.org" \
+    -d "password"="nulla" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "email": "mitchell.bryana@example.org",
+        "password": "nulla"
+};
+
+this.$http.post(config.api_url + "api/reset-password", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/reset-password</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>6</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_6d3061d375666b8cf6babe163b36f250 -->
+<!-- START_8d78d43a0817865525e3740dbf866578 -->
+<h2>Activate User&#039;s account.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/account/activate" \
+-H "Accept: application/json" \
+    -d "code"="sit" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "code": "sit"
+};
+
+this.$http.post(config.api_url + "api/user/account/activate", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/account/activate</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>60</code> Maximum: <code>60</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_8d78d43a0817865525e3740dbf866578 -->
+<!-- START_d275f853c4ddf9364b8a5869a05adaa0 -->
+<h2>Login With Social Sites</h2>
+<p>(facebook/twitter/github)</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/auth/social/login-with/{type}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/auth/social/login-with/{type}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/social/login-with/{type}</code></p>
+<p><code>HEAD api/auth/social/login-with/{type}</code></p>
+<!-- END_d275f853c4ddf9364b8a5869a05adaa0 -->
+<!-- START_d05cb9fa652b35960690842fb33839a8 -->
+<h2>Login With Social Sites Feedback</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/auth/social/callback/{type}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/auth/social/callback/{type}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/auth/social/callback/{type}</code></p>
+<p><code>HEAD api/auth/social/callback/{type}</code></p>
+<!-- END_d05cb9fa652b35960690842fb33839a8 -->
+<h1>Forms</h1>
+<!-- START_5a3be3b8cd540c7506c74c30c130fb46 -->
+<h2>Submit Form Reply</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/form" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.post(config.api_url + "api/form", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/form</code></p>
+<!-- END_5a3be3b8cd540c7506c74c30c130fb46 -->
+<h1>Manage Forms</h1>
+<!-- START_c49085b6426cbb5312fc081c074013f2 -->
+<h2>Get Data</h2>
+<h3>Required permission (can:view_model)</h3>
+<p>This will return dynamic filtrable data, (paginate, search, orderBy).</p>
+<p>To get the deleted data use query(?eloquent=trashed)</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/forms", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/forms</code></p>
+<p><code>HEAD api/forms</code></p>
+<!-- END_c49085b6426cbb5312fc081c074013f2 -->
+<!-- START_e86c5559f6bc3371a08a5a47ebbdb263 -->
+<h2>Get Form</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/forms/{id}</code></p>
+<p><code>HEAD api/forms/{id}</code></p>
+<!-- END_e86c5559f6bc3371a08a5a47ebbdb263 -->
+<!-- START_326dd9cee4f966dffabfa8a7db01b393 -->
+<h2>Create Forms</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms" \
+-H "Accept: application/json" \
+    -d "title"="dicta" \
+    -d "slug"="dicta" \
+    -d "submit_text"="dicta" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "title": "dicta",
+        "slug": "dicta",
+        "submit_text": "dicta"
+};
+
+this.$http.post(config.api_url + "api/forms", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/forms</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>slug</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>submit_text</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_326dd9cee4f966dffabfa8a7db01b393 -->
+<!-- START_5d307c4febe8068bb64e57c0907c4eb0 -->
+<h2>Update Form</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{id}" \
+-H "Accept: application/json" \
+    -d "title"="tenetur" \
+    -d "slug"="tenetur" \
+    -d "submit_text"="tenetur" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "title": "tenetur",
+        "slug": "tenetur",
+        "submit_text": "tenetur"
+};
+
+this.$http.put(config.api_url + "api/forms/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/forms/{id}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>slug</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>submit_text</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_5d307c4febe8068bb64e57c0907c4eb0 -->
+<!-- START_3a41ea3a035641a017cd2afe6a272550 -->
+<h2>Remove Data</h2>
+<h3>Required permission (can:delete_model)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.delete(config.api_url + "api/forms/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/forms/{id}</code></p>
+<!-- END_3a41ea3a035641a017cd2afe6a272550 -->
+<!-- START_fc63747f73399d87a8744bf1a8eede18 -->
+<h2>Get Form Fields</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{slug}/fields" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{slug}/fields", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/forms/{slug}/fields</code></p>
+<p><code>HEAD api/forms/{slug}/fields</code></p>
+<!-- END_fc63747f73399d87a8744bf1a8eede18 -->
+<!-- START_137e996e03c7187dce199c94ce7abaa1 -->
+<h2>Create Form Fields</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{slug}/fields" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.post(config.api_url + "api/forms/{slug}/fields", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/forms/{slug}/fields</code></p>
+<!-- END_137e996e03c7187dce199c94ce7abaa1 -->
+<!-- START_70e2f1aff34dd9f4379bb4904ef2768c -->
+<h2>Update Form Fields</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{slug}/fields/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.put(config.api_url + "api/forms/{slug}/fields/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/forms/{slug}/fields/{id}</code></p>
+<!-- END_70e2f1aff34dd9f4379bb4904ef2768c -->
+<!-- START_0e6174f2f5d1531551d1fb9dcc9ec8ff -->
+<h2>Get From Responses</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{slug}/responses" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{slug}/responses", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/forms/{slug}/responses</code></p>
+<p><code>HEAD api/forms/{slug}/responses</code></p>
+<!-- END_0e6174f2f5d1531551d1fb9dcc9ec8ff -->
+<!-- START_70c1a1dae47ab64b105ade168bd2b231 -->
+<h2>Get Form Response</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{slug}/responses/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/forms/{slug}/responses/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/forms/{slug}/responses/{id}</code></p>
+<p><code>HEAD api/forms/{slug}/responses/{id}</code></p>
+<!-- END_70c1a1dae47ab64b105ade168bd2b231 -->
+<!-- START_52ae26d1c4c8b66dbd68d2bc45eb6162 -->
+<h2>Delete Form Response</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/forms/{slug}/responses/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.delete(config.api_url + "api/forms/{slug}/responses/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/forms/{slug}/responses/{id}</code></p>
+<!-- END_52ae26d1c4c8b66dbd68d2bc45eb6162 -->
+<h1>Manage Pages</h1>
+<!-- START_c44904d8eb741cc708c2d88a56a69927 -->
+<h2>Get Data</h2>
+<h3>Required permission (can:view_model)</h3>
+<p>This will return dynamic filtrable data, (paginate, search, orderBy).</p>
+<p>To get the deleted data use query(?eloquent=trashed)</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/pages" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/pages", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/pages</code></p>
+<p><code>HEAD api/pages</code></p>
+<!-- END_c44904d8eb741cc708c2d88a56a69927 -->
+<!-- START_5f7f04fadcf4c83473a53e32dcb7248a -->
+<h2>Get Page</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/pages/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/pages/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/pages/{id}</code></p>
+<p><code>HEAD api/pages/{id}</code></p>
+<!-- END_5f7f04fadcf4c83473a53e32dcb7248a -->
+<!-- START_9db908f3cc041bad182795bc2a844789 -->
+<h2>Create Page</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/pages" \
+-H "Accept: application/json" \
+    -d "title"="est" \
+    -d "slug"="est" \
+    -d "sites"="est" \
+    -d "content"="est" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "title": "est",
+        "slug": "est",
+        "sites": "est",
+        "content": "est"
+};
+
+this.$http.post(config.api_url + "api/pages", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/pages</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>slug</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>sites</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>content</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_9db908f3cc041bad182795bc2a844789 -->
+<!-- START_d49ae3294aa1a51c31696f736f2cf22e -->
+<h2>Update Page</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/pages/{id}" \
+-H "Accept: application/json" \
+    -d "title"="atque" \
+    -d "slug"="atque" \
+    -d "sites"="atque" \
+    -d "content"="atque" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "title": "atque",
+        "slug": "atque",
+        "sites": "atque",
+        "content": "atque"
+};
+
+this.$http.put(config.api_url + "api/pages/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/pages/{id}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>slug</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>sites</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>content</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_d49ae3294aa1a51c31696f736f2cf22e -->
+<!-- START_32d51619c4070ff1232268887700befd -->
+<h2>Remove Data</h2>
+<h3>Required permission (can:delete_model)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/pages/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.delete(config.api_url + "api/pages/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/pages/{id}</code></p>
+<!-- END_32d51619c4070ff1232268887700befd -->
+<h1>Manage Sites</h1>
+<!-- START_6bde012eab6506f2b473003076ee19f4 -->
+<h2>Get Data</h2>
+<h3>Required permission (can:view_model)</h3>
+<p>This will return dynamic filtrable data, (paginate, search, orderBy).</p>
+<p>To get the deleted data use query(?eloquent=trashed)</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/sites", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites</code></p>
+<p><code>HEAD api/sites</code></p>
+<!-- END_6bde012eab6506f2b473003076ee19f4 -->
+<!-- START_050561d0692a332850f55e4b6e23c90d -->
+<h2>Get Site</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/sites/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{id}</code></p>
+<p><code>HEAD api/sites/{id}</code></p>
+<!-- END_050561d0692a332850f55e4b6e23c90d -->
+<!-- START_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
+<h2>Create Site</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites" \
+-H "Accept: application/json" \
+    -d "name"="quos" \
+    -d "url"="https://www.thiel.net/cupiditate-consequatur-modi-dolore" \
+    -d "ui"="quos" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "name": "quos",
+        "url": "https:\/\/www.thiel.net\/cupiditate-consequatur-modi-dolore",
+        "ui": "quos"
+};
+
+this.$http.post(config.api_url + "api/sites", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/sites</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td>url</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>ui</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_0ebc8c1e23f5fffe2bde49996df7e6a8 -->
+<!-- START_5c735973cfbd0edc25ddcb9c8ddd8610 -->
+<h2>Update Site</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}" \
+-H "Accept: application/json" \
+    -d "name"="aliquam" \
+    -d "url"="http://brakus.info/" \
+    -d "ui"="aliquam" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "name": "aliquam",
+        "url": "http:\/\/brakus.info\/",
+        "ui": "aliquam"
+};
+
+this.$http.put(config.api_url + "api/sites/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/sites/{id}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>url</td>
+<td>url</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>ui</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_5c735973cfbd0edc25ddcb9c8ddd8610 -->
+<!-- START_00e90caed6de37f0a44ce5288c2ab262 -->
+<h2>Remove Data</h2>
+<h3>Required permission (can:delete_model)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.delete(config.api_url + "api/sites/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/sites/{id}</code></p>
+<!-- END_00e90caed6de37f0a44ce5288c2ab262 -->
+<!-- START_6a64e7bad83e3c6587acfbcbc612b6b9 -->
+<h2>Get Site Themes</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/themes" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/sites/{id}/themes", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{id}/themes</code></p>
+<p><code>HEAD api/sites/{id}/themes</code></p>
+<!-- END_6a64e7bad83e3c6587acfbcbc612b6b9 -->
+<!-- START_5e77becfc6d62cc0d8a81ee744a93100 -->
+<h2>Upload Site Theme</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/themes" \
+-H "Accept: application/json" \
+    -d "ui"="asperiores" \
+    -d "type"="asperiores" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "ui": "asperiores",
+        "type": "asperiores"
+};
+
+this.$http.post(config.api_url + "api/sites/{id}/themes", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/sites/{id}/themes</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ui</td>
+<td>string</td>
+<td>required</td>
+<td>Allowed mime types: <code>zip</code></td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_5e77becfc6d62cc0d8a81ee744a93100 -->
+<!-- START_e7bf23caf9c2a9cd4c40296cb830f376 -->
+<h2>Get Site Configs</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/config" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/sites/{id}/config", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/sites/{id}/config</code></p>
+<p><code>HEAD api/sites/{id}/config</code></p>
+<!-- END_e7bf23caf9c2a9cd4c40296cb830f376 -->
+<!-- START_8f6a297bf8d60f97310a0af655aa3803 -->
+<h2>Update Site Config</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/sites/{id}/config" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.post(config.api_url + "api/sites/{id}/config", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/sites/{id}/config</code></p>
+<!-- END_8f6a297bf8d60f97310a0af655aa3803 -->
+<h1>Manage User Roles</h1>
+<!-- START_0a74816f6409e89e5fc8538015f2b907 -->
+<h2>Get Data</h2>
+<h3>Required permission (can:view_model)</h3>
+<p>This will return dynamic filtrable data, (paginate, search, orderBy).</p>
+<p>To get the deleted data use query(?eloquent=trashed)</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/roles", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/roles</code></p>
+<p><code>HEAD api/roles</code></p>
+<!-- END_0a74816f6409e89e5fc8538015f2b907 -->
+<!-- START_ee0837edbb11701ed30dbeb0ccb0b984 -->
+<h2>Get Role Permissions</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/roles/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/roles/{id}</code></p>
+<p><code>HEAD api/roles/{id}</code></p>
+<!-- END_ee0837edbb11701ed30dbeb0ccb0b984 -->
+<!-- START_a4aa9bc74cd63eb1e389f052680d4a42 -->
+<h2>Get Role For Edit</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles/{id}/edit" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/roles/{id}/edit", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/roles/{id}/edit</code></p>
+<p><code>HEAD api/roles/{id}/edit</code></p>
+<!-- END_a4aa9bc74cd63eb1e389f052680d4a42 -->
+<!-- START_90c780acaefab9740431579512d07101 -->
+<h2>Create Role</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.post(config.api_url + "api/roles", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/roles</code></p>
+<!-- END_90c780acaefab9740431579512d07101 -->
+<!-- START_66a5365d6273a0f12351f1a19e197a06 -->
+<h2>Update Role</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.put(config.api_url + "api/roles/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/roles/{id}</code></p>
+<!-- END_66a5365d6273a0f12351f1a19e197a06 -->
+<!-- START_d7d76016c9a76a1ed7d5d016fb1ba3bc -->
+<h2>Remove Data</h2>
+<h3>Required permission (can:delete_model)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.delete(config.api_url + "api/roles/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/roles/{id}</code></p>
+<!-- END_d7d76016c9a76a1ed7d5d016fb1ba3bc -->
+<!-- START_4a9d5428fe93c48a0f2de64b775ca8a3 -->
+<h2>Get Role Permissions</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles/all/permissions" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/roles/all/permissions", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/roles/all/permissions</code></p>
+<p><code>HEAD api/roles/all/permissions</code></p>
+<!-- END_4a9d5428fe93c48a0f2de64b775ca8a3 -->
+<!-- START_9df85a3a61f6284b75d7a067ff42ff36 -->
+<h2>Update Role Permissions</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/roles/{id}/permissions" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.post(config.api_url + "api/roles/{id}/permissions", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/roles/{id}/permissions</code></p>
+<!-- END_9df85a3a61f6284b75d7a067ff42ff36 -->
+<h1>Manage Users</h1>
+<!-- START_da5727be600e4865c1b632f7745c8e91 -->
+<h2>Get Data</h2>
+<h3>Required permission (can:view_model)</h3>
+<p>This will return dynamic filtrable data, (paginate, search, orderBy).</p>
+<p>To get the deleted data use query(?eloquent=trashed)</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/users", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/users</code></p>
+<p><code>HEAD api/users</code></p>
+<!-- END_da5727be600e4865c1b632f7745c8e91 -->
+<!-- START_5da4a01649c4efd773d0d8417009a943 -->
+<h2>Get User</h2>
+<h3>Required permission (can:view_users)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/users/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/users/{id}</code></p>
+<p><code>HEAD api/users/{id}</code></p>
+<!-- END_5da4a01649c4efd773d0d8417009a943 -->
+<!-- START_69309277951e6001c751ee1232e7ce3a -->
+<h2>Get User Roles</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users/{id}/roles" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/users/{id}/roles", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/users/{id}/roles</code></p>
+<p><code>HEAD api/users/{id}/roles</code></p>
+<!-- END_69309277951e6001c751ee1232e7ce3a -->
+<!-- START_4be73e17c7a5fa529d6cf32df76c05ba -->
+<h2>Update User Roles</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users/{id}/roles" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.post(config.api_url + "api/users/{id}/roles", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/users/{id}/roles</code></p>
+<!-- END_4be73e17c7a5fa529d6cf32df76c05ba -->
+<!-- START_12e37982cc5398c7100e59625ebb5514 -->
+<h2>Create User</h2>
+<h3>Required permission (can:create_users)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users" \
+-H "Accept: application/json" \
+    -d "username"="rem" \
+    -d "email"="claire.schumm@example.net" \
+    -d "password"="rem" \
+    -d "accept_terms"="1" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "username": "rem",
+        "email": "claire.schumm@example.net",
+        "password": "rem",
+        "accept_terms": true
+};
+
+this.$http.post(config.api_url + "api/users", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/users</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>6</code></td>
+</tr>
+<tr>
+<td>accept_terms</td>
+<td>boolean</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_12e37982cc5398c7100e59625ebb5514 -->
+<!-- START_9332edb67641ad6a0c477285396a59e6 -->
+<h2>Update User</h2>
+<h3>Required permission (can:update_users)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users/{id}" \
+-H "Accept: application/json" \
+    -d "username"="sint" \
+    -d "email"="ukoch@example.com" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "username": "sint",
+        "email": "ukoch@example.com"
+};
+
+this.$http.put(config.api_url + "api/users/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>PUT api/users/{id}</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_9332edb67641ad6a0c477285396a59e6 -->
+<!-- START_fceddd82d8c88376fcee403bd01f165a -->
+<h2>Remove Data</h2>
+<h3>Required permission (can:delete_model)</h3>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/users/{id}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.delete(config.api_url + "api/users/{id}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>DELETE api/users/{id}</code></p>
+<!-- END_fceddd82d8c88376fcee403bd01f165a -->
+<h1>Pages</h1>
+<!-- START_99d69b7d4c16f9206069482b2df9bd08 -->
+<h2>Get Page (slug)</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/pages/{slug}" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/pages/{slug}", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/pages/{slug}</code></p>
+<p><code>HEAD api/pages/{slug}</code></p>
+<!-- END_99d69b7d4c16f9206069482b2df9bd08 -->
+<h1>User</h1>
+<!-- START_2ea88ff35aa222f5582e50f39a2b35fd -->
+<h2>User</h2>
+<p>Get the logged in user with him all permissions.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/user", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/user</code></p>
+<p><code>HEAD api/user</code></p>
+<!-- END_2ea88ff35aa222f5582e50f39a2b35fd -->
+<!-- START_f0654d3f2fc63c11f5723f233cc53c83 -->
+<h2>User Update</h2>
+<p>Update the logged in user detail.</p>
+<p>if the user email been changed we will send him a confirmation link to
+activate him new email.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user" \
+-H "Accept: application/json" \
+    -d "username"="ab" \
+    -d "email"="dschoen@example.net" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "username": "ab",
+        "email": "dschoen@example.net"
+};
+
+this.$http.post(config.api_url + "api/user", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>username</td>
+<td>string</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+<tr>
+<td>email</td>
+<td>email</td>
+<td>required</td>
+<td>Maximum: <code>255</code> Minimum: <code>3</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_f0654d3f2fc63c11f5723f233cc53c83 -->
+<!-- START_e24fea9a36c83d9f84bd323b6b9d94db -->
+<h2>User Info</h2>
+<p>Get the logged in user infos.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/info" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/user/info", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/user/info</code></p>
+<p><code>HEAD api/user/info</code></p>
+<!-- END_e24fea9a36c83d9f84bd323b6b9d94db -->
+<!-- START_1cf9d677dadd7b751523d1b871857f9c -->
+<h2>User Info Update</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/info" \
+-H "Accept: application/json" \
+    -d "first_name"="suscipit" \
+    -d "last_name"="suscipit" \
+    -d "phone_number"="suscipit" \
+    -d "mobile_number"="suscipit" \
+    -d "address_line_1"="suscipit" \
+    -d "address_line_2"="suscipit" \
+    -d "subrub"="suscipit" \
+    -d "post_code"="suscipit" \
+    -d "state"="suscipit" \
+    -d "country"="suscipit" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "first_name": "suscipit",
+        "last_name": "suscipit",
+        "phone_number": "suscipit",
+        "mobile_number": "suscipit",
+        "address_line_1": "suscipit",
+        "address_line_2": "suscipit",
+        "subrub": "suscipit",
+        "post_code": "suscipit",
+        "state": "suscipit",
+        "country": "suscipit"
+};
+
+this.$http.post(config.api_url + "api/user/info", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/info</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first_name</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>phone_number</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>mobile_number</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>address_line_1</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>address_line_2</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>subrub</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>post_code</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>state</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+<tr>
+<td>country</td>
+<td>string</td>
+<td>optional</td>
+<td>Minimum: <code>3</code> Maximum: <code>255</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_1cf9d677dadd7b751523d1b871857f9c -->
+<!-- START_e835795e301f9db730fefd2b61c35c22 -->
+<h2>User Avatar Update</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/upload-avatar" \
+-H "Accept: application/json" \
+    -d "avatar"="nisi" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "avatar": "nisi"
+};
+
+this.$http.post(config.api_url + "api/user/upload-avatar", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/upload-avatar</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>avatar</td>
+<td>image</td>
+<td>required</td>
+<td>Must be an image (jpeg, png, bmp, gif, or svg)</td>
+</tr>
+</tbody>
+</table>
+<!-- END_e835795e301f9db730fefd2b61c35c22 -->
+<!-- START_d23a710a00a38fab97a33e30ff4db011 -->
+<h2>User Avatar Change</h2>
+<p>Logged in user can select an image from him Images</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/select-avatar" \
+-H "Accept: application/json" \
+    -d "url"="https://casper.com/sunt-nam-expedita-qui-qui-rerum.html" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "url": "https:\/\/casper.com\/sunt-nam-expedita-qui-qui-rerum.html"
+};
+
+this.$http.post(config.api_url + "api/user/select-avatar", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/select-avatar</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url</td>
+<td>url</td>
+<td>required</td>
+</tr>
+</tbody>
+</table>
+<!-- END_d23a710a00a38fab97a33e30ff4db011 -->
+<!-- START_7768c0075d080d4c4baddbd9853b0378 -->
+<h2>User Images</h2>
+<p>Get all images been uploaded by this logged in user.</p>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/images" \
+-H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">// Vue 2
+
+this.$http.get(config.api_url + "api/user/images", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<blockquote>
+<p>Example response:</p>
+</blockquote>
+<pre><code class="language-json">{
+    "error": "Unauthenticated."
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET api/user/images</code></p>
+<p><code>HEAD api/user/images</code></p>
+<!-- END_7768c0075d080d4c4baddbd9853b0378 -->
+<!-- START_812ceeb9f4b6c86aab342de07a9a88be -->
+<h2>User Password Update</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl "http://localhost/api/user/change-password" \
+-H "Accept: application/json" \
+    -d "current_password"="nihil" \
+    -d "password"="nihil" \
+</code></pre>
+<pre><code class="language-javascript">// Vue 2
+let data = {
+        "current_password": "nihil",
+        "password": "nihil"
+};
+
+this.$http.post(config.api_url + "api/user/change-password", data)
+    .then(response =&gt; {
+        console.info(response.data.tata);
+    })
+    .catch(error =&gt; {
+        console.warn(error);
+    });
+</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST api/user/change-password</code></p>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>current_password</td>
+<td>string</td>
+<td>required</td>
+</tr>
+<tr>
+<td>password</td>
+<td>string</td>
+<td>required</td>
+<td>Minimum: <code>6</code></td>
+</tr>
+</tbody>
+</table>
+<!-- END_812ceeb9f4b6c86aab342de07a9a88be -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>
