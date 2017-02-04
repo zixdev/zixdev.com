@@ -1,0 +1,10 @@
+@import "~toastr/build/toastr.css";
+
+
+
+
+#toast-container > .toast-info, .toast-success, .toast-warning, .toast-error {
+  &:before {
+    content: " " !important;
+  }
+}

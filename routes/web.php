@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return site()->view('core::%s.home');
 });
 
 Auth::routes();
@@ -21,4 +21,9 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('admin', function() {
     return view('layouts.admin');
+});
+//
+Route::get('test', function() {
+    return site()->view('core::%s.layouts.master');
+    return view('core::default.layouts.master');
 });

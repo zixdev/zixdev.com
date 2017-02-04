@@ -21,6 +21,19 @@ export default {
         view: 'View Page',
         delete: 'Delete Page'
     },
+    menu: {
+        index: 'Menus',
+        index_title: 'All Available Menus ',
+        all: 'All Menus',
+        add: 'Add Menus',
+        edit: 'Edit Menu',
+        view: 'View Menu',
+        delete: 'Delete Menu',
+        items: {
+            index: 'Manage Menu Items',
+            edit: ''
+        }
+    },
     accounts: {
         index: 'Accounts',
         users: {
@@ -45,7 +58,13 @@ export default {
         }
     },
     system: {
-        index: 'System',
+        index: 'Advanced',
+        file_manager: {
+            index: 'File Manager'
+        },
+        logs: {
+            index: 'Logs'
+        },
         sites: {
             index: 'Sites',
             index_title: 'All Available Websites',
@@ -99,6 +118,8 @@ export default {
         slug: 'Slug',
         ui: 'Ui',
         url: 'Url',
+        description: 'Description',
+        permission: 'Permission',
         content: 'Content',
         sites: 'Sites',
         version: 'Version',
@@ -139,6 +160,7 @@ export default {
     },
     form: {
         edit: 'Edit',
+        add: 'Add',
         create: 'Create',
         update: 'Update',
         cancel: 'Cancel',

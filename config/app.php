@@ -189,6 +189,7 @@ return [
          */
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
+        Lavary\Menu\ServiceProvider::class,
 
         /*
          * Zix Service Providers...
@@ -199,6 +200,7 @@ return [
          * Other Service Providers...
          */
         Yajra\Datatables\DatatablesServiceProvider::class,
+        Barryvdh\Elfinder\ElfinderServiceProvider::class
 
     ],
 
@@ -253,6 +255,7 @@ return [
 
         'Module'    => Zix\Core\Libraries\Modules\ModuleFacade::class,
         'Site'    => Zix\Core\Libraries\Sites\SiteFacade::class,
+        'Menu' => Lavary\Menu\Facade::class,
 
 
     ],

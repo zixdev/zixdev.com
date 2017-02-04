@@ -20,6 +20,7 @@
     import AppHeader from './components/header.vue';
     import AppSidebar from './components/sidebar.vue';
     import AppFooter from './components/footer.vue';
+    import toastr from "toastr";
 
     @Component({
         components: {
@@ -28,7 +29,19 @@
     })
     export default class App extends Vue  {
         mounted() {
-            console.log('Component mounted.')
+            this.$events.$on('notify', (data) => {
+                this.notify(data);
+            });
+        }
+
+        notify(data) {
+            toastr.options.closeButton = true;
+            toastr.options.escapeHtml = true;
+            toastr.options.progressBar = true;
+
+            toastr.options.rtl = true;
+
+            toastr[data.type](data.message, data.title);
         }
     }
 </script>

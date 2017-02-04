@@ -22,13 +22,18 @@ Vue.use(VueRouter);
 
 import Vuex from 'vuex';
 import VueEvents from "vue-events";
-import './lang';
+import VueResource from 'vue-resource';
+import VueDragAndDropList from 'vue-drag-and-drop-list';
 
+import './lang';
 /*
  * Vuex Lib $store
  */
+
 Vue.use(Vuex);
 Vue.use(VueEvents);
+Vue.use(VueResource);
+Vue.use(VueDragAndDropList);
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -44,6 +49,7 @@ window.axios.defaults.headers.common = {
 import './inspinia';
 import './zexus';
 import 'datatables.net-bs';
+import './../vendor/nestable/jquery.nestable';
 
 // import Zix Modules
 import './../../../../modules/Core/Assets/admin/js/core';
