@@ -1,5 +1,6 @@
 footer.main-footer {
   background-color: $footer-background-color;
+  border-top: $footer-border-top;
   color: $footer-text-color;
   .container {
     padding: 40px 0;
@@ -35,19 +36,21 @@ footer.main-footer {
 }
 
 footer.copyright-footer {
+  border-top: $footer-copyright-border-top;
+  border-bottom: $footer-copyright-border-bottom;
   min-height: 40px;
-  background-color: #000000;
+  background-color: $footer-copyright-background-color;
   p {
     text-align: left;
-    color: #FFF;
+    color: $footer-copyright-text-color;
     padding: 10px 0;
     margin-bottom: 0px;
   }
   a {
-    color: $footer-link-color;
+    color: $footer-copyright-link-color;
     transition: color 0.2s linear 0s, background 0.2s linear 0s;
     &:hover {
-      color: darken($footer-link-color, 10%);
+      color: darken($footer-copyright-link-color, 10%);
       text-decoration: none;
     }
   }

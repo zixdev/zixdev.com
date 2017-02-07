@@ -24,6 +24,5 @@ Route::get('admin', function() {
 })->middleware('auth');
 //
 Route::get('test', function() {
-    return site()->view('core::%s.layouts.master');
-    return view('core::default.layouts.master');
+    return \Auth::user()->getMedia();
 });

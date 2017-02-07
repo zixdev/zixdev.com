@@ -8,8 +8,12 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import '~font-awesome/scss/font-awesome';
+@import '~dropzone/src/dropzone';
 
 
 // Layouts
 
 @import "partials/footer";
+@import "partials/header";
+
+@import "../../../../modules/Core/Assets/default/sass/app";

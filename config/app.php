@@ -255,6 +255,7 @@ return [
 
         'Module'    => Zix\Core\Libraries\Modules\ModuleFacade::class,
         'Site'    => Zix\Core\Libraries\Sites\SiteFacade::class,
+        'Zexus'    => Zix\Core\Libraries\Zexus\ZexusFacade::class,
         'Menu' => Lavary\Menu\Facade::class,
 
 

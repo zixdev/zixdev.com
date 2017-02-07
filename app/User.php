@@ -7,6 +7,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 use Spatie\Permission\Traits\HasRoles;
 use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
 
@@ -14,7 +15,7 @@ use Zix\Core\Helpers\Traits\Model\HasStatusTrait;
  * Class User
  * @package App
  */
-class User extends Authenticatable
+class User extends Authenticatable implements HasMedia
 {
     use Notifiable, HasApiTokens, HasMediaTrait, HasRoles, SoftDeletes, HasStatusTrait;
 

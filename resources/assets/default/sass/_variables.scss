@@ -38,6 +38,14 @@ $panel-default-heading-bg: #fff;
 
 
 // Footer
-$footer-text-color:                   #FFF;
-$footer-link-color:                   #a0a3a4;
-$footer-background-color:             #0c1a1e;
+$footer-text-color:                   #636b6f;
+$footer-link-color:                   darken($footer-text-color, 10%);
+$footer-background-color:             #FFF;
+
+$footer-border-top:                   1px solid #d3e0e9;
+
+$footer-copyright-background-color:   #f5f8fa;
+$footer-copyright-text-color:         $footer-text-color;
+$footer-copyright-link-color:         $footer-text-color;
+$footer-copyright-border-top:         1px solid #d3e0e9;
+$footer-copyright-border-bottom:      1px solid #d3e0e9;
