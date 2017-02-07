@@ -21,7 +21,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('admin', function() {
     return view('layouts.admin');
-});
+})->middleware('auth');
 //
 Route::get('test', function() {
     return site()->view('core::%s.layouts.master');

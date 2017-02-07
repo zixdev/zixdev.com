@@ -2,117 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/elfinder/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/anchor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/arrows-active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/arrows-normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/crop.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/dialogs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/icons-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/icons-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/object.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/progress.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/quicklook-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/quicklook-icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/resize.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/sounds/rm.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/spinner-mini.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce-small.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce-small.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce-small.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/toolbar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/volume_icon_box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/volume_icon_dropbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/volume_icon_ftp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/volume_icon_googledrive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/volume_icon_local.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/volume_icon_onedrive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/img/volume_icon_sql.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/admin/sass/layouts/_toast.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/elfinder/ckeditor4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/proxy/elFinderSupportVer1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.LANG.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.fallback.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/css/elfinder.full.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/elfinder.full.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.jp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/css/elfinder.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/elfinder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/elfinder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/elfinder/elfinder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.pt_BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.ug_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.zh_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/i18n/elfinder.zh_TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/extras/encoding-japanese.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/elfinder/filepicker.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/admin/vendor/nestable/jquery.nestable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/components/list.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/extras/quicklook.googledocs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/standalonepopup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/standalonepopup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/elfinder/standalonepopup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/css/theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/packages/barryvdh/elfinder/js/tiny_mce_popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce-small.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/elfinder/tinymce.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/tinymce.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/elfinder/tinymce4.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_02_04_091710_create_menu_items_table.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/Core/Entities/MenuItems.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/manage.vue" afterPath="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/items.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/default/sass/partials/_footer.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/assets/default/sass/variables.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core" afterPath="$PROJECT_DIR$/modules/Core" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/0.js" afterPath="$PROJECT_DIR$/public/0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_02_03_134401_create_menus_table.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_02_03_134401_create_menus_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/admin/js/App.vue" afterPath="$PROJECT_DIR$/resources/assets/admin/js/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Controllers/Menu/ManageMenuController.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Controllers/Menu/ManageMenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Entities/Menu.php" afterPath="$PROJECT_DIR$/modules/Core/Entities/Menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Providers/MenuServiceProvider.php" afterPath="$PROJECT_DIR$/modules/Core/Providers/MenuServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/admin/sass/admin.scss" afterPath="$PROJECT_DIR$/resources/assets/admin/sass/admin.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/admin/js/bootstrap.js" afterPath="$PROJECT_DIR$/resources/assets/admin/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/admin/js/lang/lang/en.js" afterPath="$PROJECT_DIR$/resources/assets/admin/js/lang/lang/en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Resources/views/default/partials/header.blade.php" afterPath="$PROJECT_DIR$/modules/Core/Resources/views/default/partials/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/index.vue" afterPath="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_menu.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/manage_menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/menu.js" afterPath="$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/default/sass/_variables.scss" afterPath="$PROJECT_DIR$/resources/assets/default/sass/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/default/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/default/sass/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Resources/views/default/partials/footer.blade.php" afterPath="$PROJECT_DIR$/modules/Core/Resources/views/default/partials/footer.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -142,12 +38,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MenuServiceProvider.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Core/Providers/MenuServiceProvider.php">
+      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47826087">
-              <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-              <folding />
+            <state vertical-scroll-proportion="0.3590568">
+              <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,12 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/admin/js/App.vue" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+advanced/file-manager/index.vue" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+advanced/logs/index.vue" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+advanced/sites/index.vue" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+advanced/sites/create.vue" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/advanced.js" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+system/sites/create.vue" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+system/sites/index.vue" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+system/sites/config.vue" />
@@ -187,7 +79,6 @@
         <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+system/logs/index.vue" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/system.js" />
         <option value="$PROJECT_DIR$/modules/Core/Providers/AssetsServiceProvider.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/modules/Core/Entities/Site.php" />
         <option value="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/default-left.blade.php" />
         <option value="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/default-right.blade.php" />
@@ -198,7 +89,6 @@
         <option value="$PROJECT_DIR$/modules/Core/Providers/CoreServiceProvider.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/manage.vue" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/index.js" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Seeders/PermissionsDatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Routes/manage_sites.php" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/create.vue" />
@@ -218,8 +108,16 @@
         <option value="$PROJECT_DIR$/modules/Core/Entities/Menu.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Menu/ManageMenuController.php" />
         <option value="$PROJECT_DIR$/resources/assets/admin/js/lang/lang/en.js" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/items.vue" />
         <option value="$PROJECT_DIR$/modules/Core/Providers/MenuServiceProvider.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/items.vue" />
+        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/forms.js" />
+        <option value="$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/index.js" />
+        <option value="$PROJECT_DIR$/resources/assets/default/sass/variables.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/default/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/default/sass/_variables.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/default/sass/partials/_footer.scss" />
+        <option value="$PROJECT_DIR$/modules/Core/Resources/views/default/partials/footer.blade.php" />
       </list>
     </option>
   </component>
@@ -248,8 +146,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -274,7 +172,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -338,6 +235,66 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zix-api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zix-api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -383,71 +340,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,162 +444,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -800,42 +537,12 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
+              <option name="myItemId" value="+system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="+pages" />
+              <option name="myItemId" value="sites" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -873,45 +580,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="+menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel.zixdev.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zix-api.zixdev.com" />
+              <option name="myItemId" value="+system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="+menu" />
+              <option name="myItemId" value="sites" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -949,7 +622,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="+system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zix-api.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -988,6 +699,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -995,7 +707,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Upwork/zamdot.com/zamdot.com" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Sass" />
     <property name="FullScreen" value="false" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -1077,18 +789,18 @@
     <option name="totallyTimeSpent" value="843000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25737053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27086788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44753087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.446875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1129,42 +841,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Controllers/Logs/LogsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.642015">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+system/logs/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5659164">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/system.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2961418">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3762058">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57877815">
-          <caret line="20" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Providers/AssetsServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28318584">
@@ -1176,13 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34190783">
           <caret line="323" column="9" selection-start-line="323" selection-start-column="9" selection-end-line="323" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14469454">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1249,13 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4347826">
@@ -1267,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34621578">
           <caret line="217" column="20" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,13 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39412674">
           <caret line="13" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3755796">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1310,7 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17391305">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,7 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6086956">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1376,13 +1027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58132046">
           <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82608694">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1400,26 +1044,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/admin/vendor/nestable/jquery.nestable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33279222">
-          <caret line="143" column="16" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/create.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.061191626">
-          <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="134" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+pages/create.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11433172">
           <caret line="214" column="12" selection-start-line="214" selection-start-column="12" selection-end-line="220" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1434,41 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.705314">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <marker date="1486237783058" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1486237783058" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486237783058" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1486237783058" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486237783058" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237783058" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237783058" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1486237783058" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42351046">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1476,10 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4347826">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <marker date="1486238070475" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1486238070475" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1487,38 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42045453">
           <caret line="162" column="17" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
-          <folding>
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;layout&quot;: ' '...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Search'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;login&quot;: 'Login'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Pages'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Menus'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Manage Menu Items'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Accounts'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Users'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index_title&quot;: 'All Available Roles'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index_title&quot;: 'All Permissions'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Advanced'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'File Manager'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Logs'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Sites'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Site Ui'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Site Config'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Forms'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Manage Form Fields'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index&quot;: 'Forms'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;index_title&quot;: 'All Contact Requests'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;id&quot;: 'Id'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;delete&quot;: 'warning'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;delete&quot;: 'Success'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;delete&quot;: 'Your Data Was Successfully Removed'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;edit&quot;: 'Edit'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'Name'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;host&quot;: 'Host'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;title&quot;: 'Meta Title'...}" />
-            <marker date="1486239350829" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: 'Please fill in your name'...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1526,110 +1083,155 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3478261">
           <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-          <folding>
-            <marker date="1486238167752" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder=" ManageMenuController constructor. ..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder=" @param $id ..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder=" Update the specified resource in storage. ..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486238167752" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/items.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47826087">
-          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-          <folding>
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{&quot;new_menu&quot;: false...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: ''...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{&quot;submitting&quot;: false...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: ''...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="/** When form title changes. ...*/" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: ''...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{&quot;type&quot;: 'info'...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1486240550858" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: ''...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Providers/MenuServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47826087">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6505636">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/admin/vendor/nestable/jquery.nestable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6475495">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/create.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49196142">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/items.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37084672">
+          <caret line="244" column="19" selection-start-line="244" selection-start-column="19" selection-end-line="244" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/forms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028154327">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36600626">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+system/sites/config.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+system/sites/components/general.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27272728">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4051447">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/default/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4051447">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/admin/sass/admin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31832796">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/default/sass/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84887457">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23365487">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1486237982971" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/default/sass/partials/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.47588426">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486451548844" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3590568">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
