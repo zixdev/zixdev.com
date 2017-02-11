@@ -1,0 +1,16 @@
+{
+  "name": "Blog",
+  "alias": "blog",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [],
+  "enable": true,
+  "order": 2,
+  "providers": [
+    "Zix\\Blog\\Providers\\BlogServiceProvider"
+  ],
+  "aliases":{},
+  "files": [
+    "helpers.php"
+  ]
+}

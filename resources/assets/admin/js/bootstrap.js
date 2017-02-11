@@ -53,6 +53,7 @@ import './../vendor/nestable/jquery.nestable';
 
 // import Zix Modules
 import './../../../../modules/Core/Assets/admin/js/core';
+import './../../../../modules/Blog/Assets/admin/js/blog';
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

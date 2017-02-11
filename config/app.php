@@ -181,7 +181,7 @@ return [
         /*
          * Development Service Providers...
          */
-//        Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
 //        Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class, // TODO: this have error with share/singleton
 
         /*
@@ -200,7 +200,8 @@ return [
          * Other Service Providers...
          */
         Yajra\Datatables\DatatablesServiceProvider::class,
-        Barryvdh\Elfinder\ElfinderServiceProvider::class
+        Barryvdh\Elfinder\ElfinderServiceProvider::class,
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
 
     ],
 
@@ -257,6 +258,7 @@ return [
         'Site'    => Zix\Core\Libraries\Sites\SiteFacade::class,
         'Zexus'    => Zix\Core\Libraries\Zexus\ZexusFacade::class,
         'Menu' => Lavary\Menu\Facade::class,
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
 
     ],

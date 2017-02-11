@@ -2,6 +2,7 @@ import Dashboard from './Dashboard.vue';
 const Zexus = {
     routes: [
         {
+            order: 1,
             name: 'dashboard',
             path: '/',
             meta: {

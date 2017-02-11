@@ -11,6 +11,8 @@
 |
 */
 
+use Zix\Blog\Entities\BlogCategory;
+
 Route::get('/', function () {
     return site()->view('core::%s.home');
 });
@@ -24,5 +26,5 @@ Route::get('admin', function() {
 })->middleware('auth');
 //
 Route::get('test', function() {
-    return \Auth::user()->getMedia();
+    return BlogCategory::all();
 });

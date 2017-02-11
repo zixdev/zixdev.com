@@ -64,8 +64,9 @@
             }).toString()
         }
         get routes() {
-            return Zexus.routes.filter(route => route.meta.menu).map(route => {
+            let SideBarRoutes = Zexus.routes.filter(route => route.meta.menu).map(route => {
                 return {
+                    order: route.order,
                     path: route.path,
                     name: route.name,
                     permission: route.meta.permission,
@@ -79,8 +80,9 @@
                         }
                     }) : null
                 }
-            });
-            return Zexus.routes
+            })
+
+            return _.orderBy(SideBarRoutes, 'order');
         }
 
         link(route) {
@@ -89,10 +91,6 @@
 
         can(permission) {
             return Auth.permissions.includes(permission) ? true : false;
-        }
-
-        mounted() {
-            console.log(Zexus.routes)
         }
     }
 </script>

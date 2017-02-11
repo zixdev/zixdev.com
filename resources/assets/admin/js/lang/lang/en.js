@@ -21,6 +21,21 @@ export default {
         view: 'View Page',
         delete: 'Delete Page'
     },
+    blogs: {
+        index: 'Blogs',
+        index_title: 'All Available Blogs ',
+        all: 'Blogs',
+        add: 'Add Blogs',
+        edit: 'Edit Blog',
+        view: 'View Blog',
+        delete: 'Delete Blog',
+        categories: {
+            index_title: 'All Available Blog Categories',
+            index: 'Categories',
+            add: 'Add Categories',
+            edit: 'Edit Categories',
+        }
+    },
     menu: {
         index: 'Menus',
         index_title: 'All Available Menus ',
@@ -118,6 +133,8 @@ export default {
         slug: 'Slug',
         ui: 'Ui',
         url: 'Url',
+        parent_category: 'Parent Category',
+        category: 'Category',
         description: 'Description',
         permission: 'Permission',
         content: 'Content',

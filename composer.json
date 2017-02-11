@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "artesaos/seotools": "^0.10.0",
         "barryvdh/laravel-debugbar": "^2.3",
         "barryvdh/laravel-elfinder": "^0.3.9",
         "filp/whoops": "^2.1",

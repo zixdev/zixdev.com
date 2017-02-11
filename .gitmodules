@@ -1,3 +1,6 @@
 [submodule "modules/Core"]
 	path = modules/Core
 	url = git@github.com:zixdev/zix-core.git
+[submodule "modules/Blog"]
+	path = modules/Blog
+	url = git@github.com:zixdev/zix-blog.git
