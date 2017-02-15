@@ -26,5 +26,5 @@ Route::get('admin', function() {
 })->middleware('auth');
 //
 Route::get('test', function() {
-    return BlogCategory::all();
+   return site();
 });

@@ -1,0 +1,37 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '~font-awesome/scss/font-awesome';
+@import '~dropzone/src/dropzone';
+
+@import "../../../../modules/Core/Assets/default/sass/app";
+
+
+// Variables
+@import "variables";
+
+// Partials
+//@import "partials/footer";
+@import "partials/header";
+@import "partials/banner";
+
+
+@import "custom/buttons";
+@import "custom/cards";
+
+
+// Layouts
+@import "layouts/home-about-us";
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #373a3c;
+}

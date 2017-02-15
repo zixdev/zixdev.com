@@ -2,18 +2,9 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 
-// Variables
-@import "variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 @import '~font-awesome/scss/font-awesome';
 @import '~dropzone/src/dropzone';
-
-
-// Layouts
-
-@import "partials/footer";
-@import "partials/header";
-
 @import "../../../../modules/Core/Assets/default/sass/app";

@@ -11,6 +11,9 @@ const { mix } = require('laravel-mix');
  |
  */
 
+mix.js('resources/assets/zixdev/js/app.js', 'public/assets/zixdev/js')
+    .sass('resources/assets/zixdev/sass/app.scss', 'public/assets/zixdev/css');
+
 mix.js('resources/assets/default/js/app.js', 'public/assets/default/js')
     .sass('resources/assets/default/sass/app.scss', 'public/assets/default/css');
 

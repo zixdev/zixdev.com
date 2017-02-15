@@ -1,0 +1,39 @@
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  .navbar {
+    background-color: transparent;
+    &.navbar-inverse {
+      border: none;
+      margin-bottom: 0;
+      .navbar-brand {
+        color: #fff;
+        font-size: 20px;
+      }
+      .navbar-nav > li > a {
+        color: #fff;
+      }
+    }
+  }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+//.navbar-wrapper > .container {
+//  padding-right: 0;
+//  padding-left: 0;
+//}
+//.navbar-wrapper .navbar {
+//  padding-right: 15px;
+//  padding-left: 15px;
+//}
+//.navbar-wrapper .navbar .container {
+//  width: auto;
+//}

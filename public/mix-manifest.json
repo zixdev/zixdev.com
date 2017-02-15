@@ -1,6 +1,8 @@
 {
-  "/assets/default/js/app.js": "/assets/default/js/app.js",
+  "/assets/zixdev/js/app.js": "/assets/zixdev/js/app.js",
+  "/assets/zixdev/css/app.css": "/assets/zixdev/css/app.css",
   "/assets/default/css/app.css": "/assets/default/css/app.css",
   "/assets/admin/css/admin.css": "/assets/admin/css/admin.css",
+  "/assets/default/js/app.js": "/assets/default/js/app.js",
   "/assets/admin/js/app.js": "/assets/admin/js/app.js"
 }
