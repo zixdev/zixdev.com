@@ -5,10 +5,11 @@
 
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap";
 @import '~font-awesome/scss/font-awesome';
 @import '~dropzone/src/dropzone';
-
+//@import 'mdl';
+@import "materialize";
 @import "../../../../modules/Core/Assets/default/sass/app";
 
 
@@ -22,12 +23,15 @@
 
 
 @import "custom/buttons";
-@import "custom/cards";
+//@import "custom/cards";
+//@import "custom/shadow";
+@import "custom/forms";
 
 
 // Layouts
 @import "layouts/home-about-us";
 @import "layouts/home-why-us";
+@import "layouts/home-contact-us";
 
 
 body {

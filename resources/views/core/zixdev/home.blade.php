@@ -10,4 +10,5 @@
 
 @section('after-content')
     @include('core.zixdev.home.why-us')
+    @include('core.zixdev.home.contact-us')
 @stop

@@ -1,4 +1,4 @@
-<div class="l-why_us">
+<div class="l-why_us" id="why-us">
     <div class="container">
 
 
@@ -6,7 +6,7 @@
         <section class="section feature-box">
             <div class="text-center">
                 <!--Section heading-->
-                <h1 class="section-heading">Why Choose Us</h1>
+                <h1 class="section-heading">Why Us</h1>
                 <!--Section sescription-->
                 <p class="section-description lead white-text">
                     We Serve All Industries <br>
