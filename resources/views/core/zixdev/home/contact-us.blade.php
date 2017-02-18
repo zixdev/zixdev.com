@@ -1,6 +1,6 @@
-<zixdev-home-contact-screen inline-template  class="l-contact_us" id="contact-us">
-    <div class="container">
-        <div class="row">
+<zixdev-home-contact-screen inline-template>
+    <div class="container l-contact__us" id="contact-us">
+        <div class="row l-contact__us--heading">
             <div class="col-md-12 text-center">
                 <h2>
                     Contact Us
@@ -82,6 +82,43 @@
 
                 </div>
                 <!--/Form with header-->
+            </div>
+
+            <div class="col-md-7">
+
+                <!--Google map-->
+                <div id="map-container" class="z-depth-1-half map-container" style="height: 400px">
+                    <div style="width:100%;max-width:100%;overflow:hidden;height:100%;color:red;">
+                        <div id="display-google-map" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                    src="https://www.google.com/maps/embed/v1/place?q=sfax+Immeuble+la+perla&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+                        </div>
+                        <a class="google-map-html" rel="nofollow" href="https://www.interserver-coupons.com"
+                           id="enable-map-data">InterserverCoupons</a>
+                    </div>
+                </div>
+
+                <br>
+                <!--Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-5">
+                        <a class="btn-floating btn-small red"><i class="fa fa-map-marker"></i></a>
+                        <p>AV Lakhmi Im Laprla2 Etage 61 </p>
+                        <p>Sfax 3027, Tunisia</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a href="tel:+21622074426" class="btn-floating btn-small red"><i class="fa fa-phone"></i></a>
+                        <p>+216 22 074 426</p>
+                        <p>Mon - Fri, 8:00-14:00</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="mailto:contact@zixdev.com" class="btn-floating btn-small red"><i class="fa fa-envelope"></i></a>
+                        <p>contact@zixdev.com</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
