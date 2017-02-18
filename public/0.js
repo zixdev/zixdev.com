@@ -1647,7 +1647,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _class;
 
-var _vue = __webpack_require__(6);
+var _vue = __webpack_require__(5);
 
 var _vue2 = _interopRequireDefault(_vue);
 

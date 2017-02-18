@@ -72,7 +72,7 @@
                             </div>
 
                             <div class="text-xs-center clearfix">
-                                <button type="submit" class="btn btn-primary waves-effect waves-light" :disabled="form.submitting">
+                                <button type="submit" class="btn btn-primary red waves-effect waves-light" :disabled="form.submitting">
                                     <i v-if="form.submitting" class="fa fa-spinner fa-pulse"></i>
                                     Submit
                                 </button>

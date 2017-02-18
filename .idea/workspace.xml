@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/core/zixdev/partials/footer.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/default/sass/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core" afterPath="$PROJECT_DIR$/modules/Core" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/sass/layouts/_home-contact-us.scss" afterPath="$PROJECT_DIR$/resources/assets/zixdev/sass/layouts/_home-contact-us.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/0.js" afterPath="$PROJECT_DIR$/public/0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss" afterPath="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_footer.scss" afterPath="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_footer.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/default/sass/_variables.scss" afterPath="$PROJECT_DIR$/modules/Core/Assets/default/sass/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/sass/_variables.scss" afterPath="$PROJECT_DIR$/resources/assets/zixdev/sass/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss" afterPath="$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/default/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/default/sass/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php" afterPath="$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php" afterPath="$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/default.blade.php" afterPath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/default.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/core/zixdev/partials/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/core/zixdev/partials/footer.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/master.blade.php" afterPath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/master.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/web/user.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/web/user.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
@@ -36,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/partials/footer.blade.php">
+      <file leaf-file-name="contact-us.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.54911435">
+              <caret line="74" column="80" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -63,11 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Blog/Assets/admin/js/views/+categories/index.vue" />
-        <option value="$PROJECT_DIR$/modules/Blog/Assets/admin/js/views/+categories/create.vue" />
-        <option value="$PROJECT_DIR$/modules/Blog/Http/Controllers/ManageCategoryController.php" />
-        <option value="$PROJECT_DIR$/modules/Blog/Http/Controllers/ManageBlogController.php" />
-        <option value="$PROJECT_DIR$/modules/Blog/Entities/BlogCategory.php" />
         <option value="$PROJECT_DIR$/resources/assets/admin/js/lang/lang/en.js" />
         <option value="$PROJECT_DIR$/modules/Blog/Entities/Blog.php" />
         <option value="$PROJECT_DIR$/modules/Blog/Assets/admin/js/views/+blogs/create.vue" />
@@ -83,14 +88,10 @@
         <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_banner.scss" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_header.scss" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss" />
-        <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/default/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/core/zixdev/partials/home-header.blade.php" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/themes/spark/elements/nav.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/custom/_buttons&#10;.scss" />
-        <option value="$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_banner.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/layouts/_home-about-us.scss" />
         <option value="$PROJECT_DIR$/resources/views/core/zixdev/partials/_home-about-us.blade.php" />
@@ -101,7 +102,6 @@
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/custom/_buttons.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/custom/_cards.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/custom/_shadow.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/mdl.scss" />
         <option value="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/js/app.js" />
@@ -111,9 +111,19 @@
         <option value="$PROJECT_DIR$/resources/assets/zixdev/js/components/index.js" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/materialize.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/custom/_forms.scss" />
-        <option value="$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/layouts/_home-contact-us.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_footer.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/default/sass/app.scss" />
+        <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss" />
+        <option value="$PROJECT_DIR$/modules/Core/Http/Routes/web/user.php" />
+        <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss" />
+        <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/_variables.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/default/sass/_variables.scss" />
+        <option value="$PROJECT_DIR$/resources/views/core/zixdev/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/_variables.scss" />
+        <option value="$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php" />
       </list>
     </option>
   </component>
@@ -169,6 +179,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -371,6 +382,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zixdev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -478,6 +519,54 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -524,6 +613,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,11 +702,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
+              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
+              <option name="myItemId" value="Routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel.zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zixdev.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,7 +788,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -643,15 +818,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -678,22 +849,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -735,7 +890,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -751,11 +905,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/assets/default/sass" />
       <recent name="$PROJECT_DIR$/modules/Core/Assets/default/sass" />
       <recent name="$PROJECT_DIR$/resources/assets/zixdev" />
       <recent name="$PROJECT_DIR$/modules/Blog" />
       <recent name="$PROJECT_DIR$/modules/Blog/Providers" />
-      <recent name="$PROJECT_DIR$/resources/assets/admin/js/modules/core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/core/zixdev/home" />
@@ -829,12 +983,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30996016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31553784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44444445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -848,6 +1001,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -877,69 +1031,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41256368">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26086956">
-          <caret line="6" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/banner.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73913044">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24265842">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/admin/sass/admin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/views/+menu/create.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6956521">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9130435">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9130435">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/default/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13682432">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/partials/_header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -968,20 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4778761">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/essentials.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -989,24 +1066,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3762058">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_banner.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5498392">
           <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7395498">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1108,13 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82636654">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/home/_contact-us.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.94212216">
@@ -1140,9 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25925925">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <marker date="1487165750153" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1150,16 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39130434">
           <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding>
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1486973320110" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1167,45 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding>
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428860110" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1213,80 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
-          <folding>
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487428869578" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1294,14 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1486809503000" expanded="true" signature="-1:-1" placeholder="/** We'll load jQuery and the Bootstrap jQuery plugin which provides support ...*/" />
-            <marker date="1486809503000" expanded="true" signature="-1:-1" placeholder="/** Vue is a modern JavaScript library for building interactive web interfaces ...*/" />
-            <marker date="1486809503000" expanded="true" signature="-1:-1" placeholder="/** We'll load the axios HTTP library which allows us to easily issue requests ...*/" />
-            <marker date="1486809503000" expanded="true" signature="-1:-1" placeholder="{&quot;X-Requested-With&quot;: 'XMLHttpRequest'...}" />
-            <marker date="1486809503000" expanded="true" signature="-1:-1" placeholder="/** Echo exposes an expressive API for subscribing to channels and listening ...*/" />
-            <marker date="1486809503000" expanded="true" signature="-1:-1" placeholder="//..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,10 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.041731067">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding>
-            <marker date="1487167262548" expanded="true" signature="-1:-1" placeholder="/** First we will load all of this project's JavaScript dependencies which ...*/" />
-            <marker date="1487167262548" expanded="true" signature="-1:-1" placeholder="//..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1320,14 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8346213">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <marker date="1487162285992" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487162285992" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487162285992" expanded="true" signature="-1:-1" placeholder="{&quot;submitting&quot;: false...}" />
-            <marker date="1487162285992" expanded="true" signature="-1:-1" placeholder="{&quot;form_name&quot;: 'contact-us'...}" />
-            <marker date="1487162285992" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487162285992" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1335,14 +1245,229 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/layouts/_home-contact-us.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3043478">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3043478">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33230293">
+          <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5217391">
+          <caret line="12" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73913044">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5716586">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39291465">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <marker date="1486987811254" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486987811254" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486987811254" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486987811254" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1486987811254" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Http/Routes/web/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3478261">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <marker date="1487450317360" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450317360" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450317360" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450317360" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450317360" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450317360" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/default/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47826087">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7069243">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487450658633" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/sass/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72624797">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/default/sass/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.626409">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08695652">
+          <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
+          <folding>
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450784753" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/materialize.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3779661">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.39130434">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53301126">
+          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+          <folding>
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487450902057" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65217394">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <marker date="1487448625157" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42673108">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1359,79 +1484,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5426731">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <marker date="1487431565959" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65217394">
-          <caret line="89" column="75" selection-start-line="89" selection-start-column="62" selection-end-line="89" selection-end-column="75" />
-          <folding>
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1487431533286" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/layouts/_home-contact-us.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3043478">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <marker date="1487431736457" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487431736457" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487431736457" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/core/zixdev/partials/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.54911435">
+          <caret line="74" column="80" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
           <folding />
         </state>
       </provider>

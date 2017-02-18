@@ -10,17 +10,14 @@ $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
 // Brands
-$brand-primary: #F44336;
+$brand-primary: #3097D1;
 $brand-info: #8eb4cb;
 $brand-success: #2ab27b;
 $brand-warning: #cbb956;
 $brand-danger: #bf5329;
 
-$primary-color: $brand-primary;
-$secondary-color: color("red", "lighten-1") !default;
-
 // Typography
-$font-family-sans-serif: "Roboto", sans-serif;
+$font-family-sans-serif: "Raleway", sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
 $text-color: #636b6f;
@@ -41,16 +38,16 @@ $panel-default-heading-bg: #fff;
 
 
 // Footer
-$footer-text-color:                   #FFF;
+$footer-text-color:                   #636b6f;
 $footer-link-color:                   darken($footer-text-color, 10%);
-$footer-hover-link-color:             $brand-primary;
-$footer-background-color:             #212121;
+$footer-hover-link-color:             darken($footer-text-color, 10%);
+$footer-background-color:             #FFF;
 
-$footer-border-top:                   2px solid $brand-primary;
+$footer-border-top:                   1px solid #d3e0e9;
 
-$footer-copyright-background-color:   darken($footer-background-color, 10%);
+$footer-copyright-background-color:   #f5f8fa;
 $footer-copyright-text-color:         $footer-text-color;
 $footer-copyright-link-color:         $footer-text-color;
-$footer-copyright-hover-link-color:   $brand-primary;
-$footer-copyright-border-top:         1px solid $footer-background-color;
-$footer-copyright-border-bottom:      1px solid $footer-background-color;
+$footer-copyright-hover-link-color:   $footer-text-color;
+$footer-copyright-border-top:         1px solid #d3e0e9;
+$footer-copyright-border-bottom:      1px solid #d3e0e9;

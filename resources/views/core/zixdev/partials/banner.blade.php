@@ -22,7 +22,7 @@
                         We build API's that can adapt to change and scale as your product grows.
                     </p>
                     <p>
-                        <a class="btn-floating">
+                        <a class="btn-floating btn-large waves-effect waves-light red">
                             <i class="fa fa-angle-down"></i>
                         </a>
                     </p>
