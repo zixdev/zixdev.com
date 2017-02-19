@@ -1,0 +1,14 @@
+.l-our_services {
+  margin-bottom: 40px;
+  .box {
+    width: 100%;
+    .btn-floating {
+      width: 150px;
+      height: 150px;
+    }
+    h2 {
+      color: $primary-color;
+      font-size: 36px;
+    }
+  }
+}

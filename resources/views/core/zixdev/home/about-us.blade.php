@@ -1,263 +1,138 @@
-<section class="l-about_us" id="about-us">
-    <div class="text-center">
+<div class="l-about_us" id="about-us">
+    <div class="container">
 
-        <!--Section heading-->
-        <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">
-            About Us
-        </h1>
-        <!--Section description-->
-        <p class="section-description text-xs-center wow fadeIn" data-wow-delay="0.4s">
-            Zix Development is a full service digital agency focused on growing brands online. <br>
-            From brand strategy to full execution,
-            we create custom responsive websites & apps that result in higher conversions, <br>
-            And digital marketing services to target qualified leads and generate greater brand awareness and loyalty.
-            <br> <br>
-        </p>
+
+        <!--Section: Features v.3-->
+        <section class="section feature-box">
+            <div class="text-center">
+                <!--Section heading-->
+                <h1 class="section-heading">About Us</h1>
+                <!--Section sescription-->
+                <p class="section-description lead white-text">
+                    We Serve All Industries <br>
+                    We stay on top of our industry by being experts in yours.
+                </p>
+            </div>
+
+
+            <!--First row-->
+            <div class="row features-small">
+                <!--Second column-->
+                <div class="col-md-4 center-on-small">
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <i class="fa fa-shopping-cart fa-2x"></i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="feature-title">E-Commerce</h4>
+                            <p>
+                                Raise the bar for your customers with an online experience that exceeds their
+                                expectations and enhances your ROI.
+                            </p>
+                        </div>
+                    </div>
+                    <!--/First row-->
+
+                    <div style="height:50px"></div>
+
+                    <!--Second row-->
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <i class="fa fa-building-o fa-2x"></i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="feature-title">Enterprise</h4>
+                            <p>
+                                Enhance your business with digital solutions designed with both audience needs
+                                and company objectives in mind.
+                            </p>
+                        </div>
+                    </div>
+                    <!--/Second row-->
+
+                    <div style="height:50px"></div>
+
+                    <!--Third row-->
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <i class="fa fa-lightbulb-o fa-2x"></i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="feature-title">Startups</h4>
+                            <p>
+                                Build in a foundational strategy to track your company's monetization goals for
+                                web and mobile that continues to convert.
+                            </p>
+                        </div>
+                    </div>
+                    <!--/Third row-->
+                </div>
+                <!--/Second column-->
+
+                <!--First column-->
+                <div class="col-md-4 m-b-r center-on-small-only">
+                    <img src="http://mdbootstrap.com/images/mockups/header-iphone.png" alt="" class="z-depth-0">
+                </div>
+                <!--/First column-->
+
+                <!--Second column-->
+                <div class="col-md-4 center-on-small">
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <i class="fa fa-graduation-cap fa-2x"></i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="feature-title">Education</h4>
+                            <p>
+                                Match your website to your institution’s goals, whether it's awareness,
+                                enrollment, recruitment, or outreach.
+                            </p>
+                        </div>
+                    </div>
+                    <!--/First row-->
+
+                    <div style="height:50px"></div>
+
+                    <!--Second row-->
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <i class="fa fa-code fa-2x"></i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="feature-title">Technology</h4>
+                            <p>
+                                Put your website to work with cutting edge design, customized content, and
+                                targeted marketing.
+                            </p>
+                        </div>
+                    </div>
+                    <!--/Second row-->
+
+                    <div style="height:50px"></div>
+
+                    <!--Third row-->
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <i class="fa fa-money fa-2x"></i>
+                        </div>
+                        <div class="col-xs-10">
+                            <h4 class="feature-title">Financial</h4>
+                            <p>
+                                We create websites that build trust with customers and credibility with
+                                partners, delivering you measurable results.
+                            </p>
+                        </div>
+                    </div>
+                    <!--/Third row-->
+                </div>
+                <!--/Second column-->
+            </div>
+            <!--/First row-->
+
+        </section>
+        <!--/Section: Features v.3-->
+
     </div>
-
-    <div class="row ">
-        <div class="col-lg-4 col-md-6 wow fadeInUp">
-            <!--Card-->
-            <div class="card">
-                <div class="card-content">
-                    <!--Title-->
-                    <div class="card-block title">
-                        <h4 class="card-title">
-                            Custom Website Design
-                        </h4>
-                    </div>
-                    <!--Card image-->
-                    <div>
-                        <img src="/images/icons/laptop.png"
-                             class="center-block"
-                             alt="Website Design">
-                        {{--<router-link to="/custom-website-design">--}}
-                        {{--<div class="mask waves-effect waves-light"></div>--}}
-                        {{--</router-link>--}}
-                    </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Text-->
-                        <p class="card-text">
-                            We believe in user-centered design and work closely with you and your customers to deliver an experience that is both intuitive and beautiful..
-                        </p>
-                        <hr>
-                        <div class="text-md-center">
-                            <a href="/custom-website-design" class="link-text">
-                                Read more ...
-                            </a>
-                        </div>
-                    </div>
-                    <!--/.Card content-->
-                </div>
-
-            </div>
-            <!--/.Card-->
-        </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp">
-            <!--Card-->
-            <div class="card">
-                <div class="card-content">
-                    <!--Title-->
-                    <div class="card-block title">
-                        <h4 class="card-title">
-                            Social Media Management
-                        </h4>
-                    </div>
-                    <!--Card image-->
-                    <div>
-                        <img src="/images/icons/employee.png"
-                             class="center-block"
-                             alt="Medial Management">
-                        {{--<router-link to="/social-media-management">--}}
-                        {{--<div class="mask waves-effect waves-light"></div>--}}
-                        {{--</router-link>--}}
-                    </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Text-->
-                        <p class="card-text">
-                            We act as an extension of your team as your technical partner, offering the experience and expertise needed to bring your ideas to fruition.
-                        </p>
-                        <hr>
-                        <div class="text-md-center">
-                            <a href="/social-media-management" class="link-text">
-                                Read more ...
-                            </a>
-                        </div>
-                    </div>
-                    <!--/.Card content-->
-                </div>
-
-            </div>
-            <!--/.Card-->
-        </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp">
-            <!--Card-->
-            <div class="card">
-                <div class="card-content">
-                    <!--Title-->
-                    <div class="card-block title">
-                        <h4 class="card-title">
-                            Search Engine Marketing
-                        </h4>
-                    </div>
-                    <!--Card image-->
-                    <div>
-                        <img src="/images/icons/diagram.png"
-                             class="center-block"
-                             alt="Search Engine Marketing">
-                        {{--<router-link to="/search-engine-marketing">--}}
-                        {{--<div class="mask waves-effect waves-light"></div>--}}
-                        {{--</router-link>--}}
-                    </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Text-->
-                        <p class="card-text">
-                            The hardest part about building a product is knowing what to build. We help you figure out which features will deliver business value.
-                        </p>
-                        <hr>
-                        <div class="text-md-center">
-                            <a href="/search-engine-marketing" class="link-text">
-                                Read more ...
-                            </a>
-                        </div>
-                    </div>
-                    <!--/.Card content-->
-                </div>
-
-            </div>
-            <!--/.Card-->
-        </div>
-    </div>
-    <div class="row ">
-        <div class="col-lg-4 col-md-6 wow fadeInUp">
-            <!--Card-->
-            <div class="card">
-                <div class="card-content">
-                    <!--Title-->
-                    <div class="card-block title">
-                        <h4 class="card-title">
-                            Digital Marketing (eCards)
-                        </h4>
-                    </div>
-                    <!--Card image-->
-                    <div>
-                        <img src="/images/icons/website.png"
-                             class="center-block"
-                             alt="Digital Marketing (eCards)">
-                        {{--<router-link to="/digital-merketing-ecards">--}}
-                        {{--<div class="mask waves-effect waves-light"></div>--}}
-                        {{--</router-link>--}}
-                    </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Text-->
-                        <p class="card-text">
-                            We are a team of passionate software artisans. We\'re proud test-driven developers and focus on writing clean, maintainable code.
-                        </p>
-                        <hr>
-                        <div class="text-md-center">
-                            <a href="/digital-merketing-ecards" class="link-text">
-                                Read more ...
-                            </a>
-                        </div>
-                    </div>
-                    <!--/.Card content-->
-                </div>
-
-            </div>
-            <!--/.Card-->
-        </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp">
-            <!--Card-->
-            <div class="card">
-                <div class="card-content">
-                    <!--Title-->
-                    <div class="card-block title">
-                        <h4 class="card-title">
-                            Pay Per Click Management
-                        </h4>
-                    </div>
-                    <!--Card image-->
-                    <div>
-                        <img src="/images/icons/dollar-bill.png"
-                             class="center-block"
-                             alt="Pay Per Click Management">
-                        {{--<router-link to="/pay-per-click-management">--}}
-                        {{--<div class="mask waves-effect waves-light"></div>--}}
-                        {{--</router-link>--}}
-                    </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Text-->
-                        <p class="card-text">
-                            We believe in user-centered design and work closely with you and your customers to deliver an experience that is both intuitive and beautiful..
-                        </p>
-                        <hr>
-                        <div class="text-md-center">
-                            <a href="/pay-per-click-management" class="link-text">
-                                Read more ...
-                            </a>
-                        </div>
-                    </div>
-                    <!--/.Card content-->
-                </div>
-
-            </div>
-            <!--/.Card-->
-        </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp">
-            <!--Card-->
-            <div class="card">
-                <div class="card-content">
-                    <!--Title-->
-                    <div class="card-block title">
-                        <h4 class="card-title">
-                            Technical Support
-                        </h4>
-                    </div>
-                    <!--Card image-->
-                    <div>
-                        <img src="/images/icons/idea.png"
-                             class="center-block"
-                             alt="Technical Support">
-                        {{--<router-link to="/technical-support">--}}
-                        {{--<div class="mask waves-effect waves-light"></div>--}}
-                        {{--</router-link>--}}
-                    </div>
-                    <!--/.Card image-->
-
-                    <!--Card content-->
-                    <div class="card-block">
-                        <!--Text-->
-                        <p class="card-text">
-                            We believe in user-centered design and work closely with you and your customers to deliver an experience that is both intuitive and beautiful..
-                        </p>
-                        <hr>
-                        <div class="text-md-center">
-                            <a href="/technical-support" class="link-text">
-                                Read more ...
-                            </a>
-                        </div>
-                    </div>
-                    <!--/.Card content-->
-                </div>
-
-
-            </div>
-            <!--/.Card-->
-        </div>
-    </div>
-</section>
+</div>

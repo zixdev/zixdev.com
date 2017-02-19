@@ -13,9 +13,9 @@
                     <a class="navbar-brand" href="{{ url('/') }}">Zix Development</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right smooth-scroll">
+                        <li><a href="#our-services">Our Services</a></li>
                         <li><a href="#about-us">About Us</a></li>
-                        <li><a href="#why-us">Why Us</a></li>
                         <li><a href="#contact-us">Contact Us</a></li>
 
                     </ul>

@@ -1,8 +1,10 @@
 .l-about_us {
-  .card {
-    img {
-      margin: 0 auto;
-      width: 180px;
-    }
-  }
+  padding: 50px 0;
+  background: url(/images/background/bg-header-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: #FFF;
 }

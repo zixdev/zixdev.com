@@ -69,30 +69,22 @@
             </div>
 
             <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <h6>Follow Us</h6>
                 <div class="fb-page" data-href="https://www.facebook.com/zixdev" data-tabs="timeline"
                      data-height="300" data-small-header="false"
                      data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                     <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/zixdev">
+                        <blockquote cite="https://www.facebook.com/zixdev" style="border-left-color: #3B5998">
                             <a target="_blank" href="https://www.facebook.com/zixdev">Facebook</a>
                         </blockquote>
                     </div>
                 </div>
-                <div class="fb-page" data-href="https://www.facebook.com/zixdev" data-tabs="timeline"
+                <div class="fb-page" data-href="https://www.linkedin.com/company/zix-development" data-tabs="timeline"
                      data-height="300" data-small-header="false"
                      data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                     <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/zixdev">
-                            <a target="_blank" href="https://www.facebook.com/zixdev">Linkedin</a>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="fb-page" data-href="https://www.facebook.com/zixdev" data-tabs="timeline"
-                     data-height="300" data-small-header="false"
-                     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                    <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/zixdev">
-                            <a target="_blank" href="https://www.facebook.com/zixdev">Github</a>
+                        <blockquote cite="https://www.linkedin.com/company/zix-development" style="border-left-color: #0082CA">
+                            <a target="_blank" href="https://www.linkedin.com/company/zix-development">Linkedin</a>
                         </blockquote>
                     </div>
                 </div>

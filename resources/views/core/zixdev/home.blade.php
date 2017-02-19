@@ -5,10 +5,10 @@
 @stop
 
 @section('content')
-    @include('core.zixdev.home.about-us')
+    @include('core.zixdev.home.our-services')
 @stop
 
 @section('after-content')
-    @include('core.zixdev.home.why-us')
+    @include('core.zixdev.home.about-us')
     @include('core.zixdev.home.contact-us')
 @stop
