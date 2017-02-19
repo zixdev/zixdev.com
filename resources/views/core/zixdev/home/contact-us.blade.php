@@ -34,7 +34,7 @@
                             <div class="input-field">
                                 <i class="material-icons prefix">account_circle</i>
                                 <input type="text" id="form3"
-                                       v-model="contact.full_name"
+                                       v-model="contact.name"
                                        required
                                         >
                                 <label for="form3">Full Name</label>
