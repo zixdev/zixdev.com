@@ -2,7 +2,7 @@
 /.idea
 /node_modules
 /public/storage
-/public/assets
+#/public/assets
 /public/media
 /public/static
 Homestead.yaml

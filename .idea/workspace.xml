@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/web/forms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core" afterPath="$PROJECT_DIR$/modules/Core" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_01_23_071739_create_contacts_table.php" afterPath="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_01_23_071739_create_contacts_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactCreateRequest.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactCreateRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss" afterPath="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_footer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/default/sass/_variables.scss" afterPath="$PROJECT_DIR$/modules/Core/Assets/default/sass/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss" afterPath="$PROJECT_DIR$/modules/Core/Assets/default/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php" afterPath="$PROJECT_DIR$/resources/views/core/zixdev/home/contact-us.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/js/components/home/contact-us.vue" afterPath="$PROJECT_DIR$/resources/assets/zixdev/js/components/home/contact-us.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/default.blade.php" afterPath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/default.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/master.blade.php" afterPath="$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Http/Routes/web/user.php" afterPath="$PROJECT_DIR$/modules/Core/Http/Routes/web/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
@@ -42,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Core/Resources/views/default/layouts/default.blade.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66344607">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.20865533">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -64,12 +53,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/modules/Core" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/modules/Core/Assets/default/js/main.js" />
         <option value="$PROJECT_DIR$/modules/Core/Resources/views/default/partials/banner.blade.php" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/banner.scss" />
         <option value="$PROJECT_DIR$/modules/Core/Assets/default/sass/partials/_banner.scss" />
@@ -120,6 +108,7 @@
         <option value="$PROJECT_DIR$/modules/Core/Http/Requests/Contact/ContactCreateRequest.php" />
         <option value="$PROJECT_DIR$/modules/Core/Database/Migrations/2017_01_23_071739_create_contacts_table.php" />
         <option value="$PROJECT_DIR$/modules/Core/Http/Controllers/Contact/ManageContactController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1001,27 +990,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/admin/js/components/html-editor.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/js/components/user/security/password.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3762058">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/js/core/components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Assets/default/js/components/user/profile/avatar.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1674,6 +1642,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.66344607">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <marker date="1487161278025" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487161278025" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487161278025" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487161278025" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Core/Entities/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08695652">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <marker date="1487160858248" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder=" Class Site ..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder=" @var array ..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\HasMany ..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder=" @param null $name ..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder=" @return \Illuminate\Database\Eloquent\Relations\HasMany ..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder=" @param $view ..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1487160858248" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20865533">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>
