@@ -18,7 +18,7 @@
             <!--First row-->
             <div class="row features-small">
                 <!--Second column-->
-                <div class="col-md-4 center-on-small">
+                <div class="col-md-4 col-sm-6 ">
                     <!--First row-->
                     <div class="row">
                         <div class="col-xs-2">
@@ -71,13 +71,13 @@
                 <!--/Second column-->
 
                 <!--First column-->
-                <div class="col-md-4 m-b-r center-on-small-only">
+                <div class="col-md-4 hidden-sm">
                     <img src="http://mdbootstrap.com/images/mockups/header-iphone.png" alt="" class="z-depth-0">
                 </div>
                 <!--/First column-->
 
                 <!--Second column-->
-                <div class="col-md-4 center-on-small">
+                <div class="col-md-4 col-sm-6">
                     <!--First row-->
                     <div class="row">
                         <div class="col-xs-2">
