@@ -33,7 +33,7 @@
 @import "layouts/home-about-us";
 @import "layouts/home-contact-us";
 
-
+html,body, #zix-app{height:100%;}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;

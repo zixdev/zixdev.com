@@ -1,10 +1,4 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    {{--<ol class="carousel-indicators">--}}
-        {{--<li data-target="#myCarousel" data-slide-to="0" class=""></li>--}}
-        {{--<li data-target="#myCarousel" data-slide-to="1" class=""></li>--}}
-        {{--<li data-target="#myCarousel" data-slide-to="2" class="active"></li>--}}
-    {{--</ol>--}}
+<div id="zix-banner" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <img class="first-slide" src="/images/background/bg-header-1.jpg" alt="First slide">

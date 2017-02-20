@@ -23,4 +23,21 @@
   }
 }
 
-html,body, #zix-app{height:100%;}
+@media(max-width: $screen-phone) {
+  .carousel {
+    min-height: 500px;
+    .item {
+      .carousel-caption {
+        left: 15px;
+        right: 15px;
+        top: 70px;
+        h1 {
+          font-size: 34px;
+          //margin-bottom: 20px;
+          //font-weight: 700;
+          //text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
