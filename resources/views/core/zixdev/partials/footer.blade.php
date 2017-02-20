@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4 col-sm-offset-1">
                 <h2 class="footer-logo">
                     {{ config('app.name') }}
                 </h2>
@@ -31,7 +31,7 @@
                 </p>
 
             </div>
-            <div class="col-md-2 col-sm-6">
+            <div class="col-md-2 col-sm-3">
                 <h6 class="heading7">GENERAL LINKS</h6>
                 <ul class="list-unstyled">
                     <li>
@@ -61,14 +61,14 @@
                     @endif
                 </ul>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-4">
                 <h6 class="heading7">Our Services</h6>
                 @if(Menu::get('footer'))
                     {!! Menu::get('footer')->asUl(['class' => 'list-unstyled']) !!}
                 @endif
             </div>
 
-            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+            <div class="col-md-3 col-sm-11 col-sm-offset-1">
                 <h6>Follow Us</h6>
                 <div class="fb-page" data-href="https://www.facebook.com/zixdev" data-tabs="timeline"
                      data-height="300" data-small-header="false"
