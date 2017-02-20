@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9424a5a-9fe4-4a58-9859-6275fbc7d407" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_banner.scss" afterPath="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_banner.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss" afterPath="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/zixdev/css/app.css" afterPath="$PROJECT_DIR$/public/assets/zixdev/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss" afterPath="$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php" afterPath="$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="laravel.zixdev.com.iws" />
@@ -34,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_banner.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_banner.scss">
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8971061">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.926045">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -108,10 +106,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/js/theme.js" />
         <option value="$PROJECT_DIR$/resources/views/core/zixdev/home/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/core/zixdev/partials/banner.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_banner.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss" />
       </list>
     </option>
   </component>
@@ -1199,24 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5948553">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1487579714952" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6806002">
@@ -1250,6 +1230,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8971061">
           <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1487580054996" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/zixdev/sass/partials/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.926045">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="19" />
           <folding />
         </state>
       </provider>

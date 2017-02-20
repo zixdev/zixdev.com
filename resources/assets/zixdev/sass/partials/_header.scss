@@ -18,18 +18,24 @@
         font-size: 22px;
         font-weight: 400;
       }
+      .navbar-toggle {
+        border-color: transparent;
+      }
       .navbar-nav > li > a {
-        color: #fff;
+        color: #FFF;
         font-weight: 400;
       }
     }
     &.top-nav-collapse {
       background-color: #FFF;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
       &.navbar-inverse {
         .navbar-brand {
           color: $primary-color;
           font-size: 20px;
+        }
+        .navbar-toggle .icon-bar {
+          background-color: $primary-color;
         }
         .navbar-nav > li > a {
           color: #666;
@@ -39,3 +45,14 @@
   }
 }
 
+@media(max-width: $screen-phone) {
+  .navbar-wrapper .navbar.navbar-inverse {
+    .navbar-nav {
+      text-align: center;
+      background-color: #FFF;
+      & > li > a {
+        color: #666;
+      }
+    }
+  }
+}
