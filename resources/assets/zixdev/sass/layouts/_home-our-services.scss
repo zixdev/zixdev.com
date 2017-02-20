@@ -1,5 +1,8 @@
 .l-our_services {
   margin-bottom: 40px;
+  h1, strong {
+    color: $primary-color;
+  }
   .box {
     width: 100%;
     .btn-floating {

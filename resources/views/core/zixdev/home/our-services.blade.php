@@ -68,9 +68,7 @@
         </div>
 
 
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-md-offset-2 wow fadeInUp text-center">
+        <div class="col-lg-4 col-md-6 col-lg-offset-2 wow fadeInUp text-center">
             <div class="box">
                 <a class="btn-floating waves-effect waves-light red">
                     <img src="/images/icons/custom-icon-iphone-white.png"
@@ -84,7 +82,7 @@
                 </p>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp text-center">
+        <div class="col-lg-4 col-md-6 col-md-offset-3 wow fadeInUp text-center">
             <div class="box">
                 <a class="btn-floating waves-effect waves-light red">
                     <img src="/images/icons/custom-icon-clipboard2.png"
