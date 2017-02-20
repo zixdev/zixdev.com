@@ -15,25 +15,27 @@
       margin-bottom: 0;
       .navbar-brand {
         color: #fff;
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: 400;
       }
       .navbar-nav > li > a {
         color: #fff;
+        font-weight: 400;
+      }
+    }
+    &.top-nav-collapse {
+      background-color: #FFF;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+      &.navbar-inverse {
+        .navbar-brand {
+          color: $primary-color;
+          font-size: 20px;
+        }
+        .navbar-nav > li > a {
+          color: #666;
+        }
       }
     }
   }
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* Flip around the padding for proper display in narrow viewports */
-//.navbar-wrapper > .container {
-//  padding-right: 0;
-//  padding-left: 0;
-//}
-//.navbar-wrapper .navbar {
-//  padding-right: 15px;
-//  padding-left: 15px;
-//}
-//.navbar-wrapper .navbar .container {
-//  width: auto;
-//}

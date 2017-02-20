@@ -56696,6 +56696,26 @@ $(function () {
             scrollTop: $(elAttr).offset().top
         }, 700);
     });
+
+    $(window).scroll(function () {
+        if ($(".navbar").offset()) {
+            console.log('hohoho');
+            console.log($(".navbar").offset());
+            if ($(".navbar").offset().top > 50) {
+                $(".scrolling-navbar").addClass("top-nav-collapse");
+            } else {
+                $(".scrolling-navbar").removeClass("top-nav-collapse");
+            }
+        }
+    });
+
+    $document.on('click', 'a.page-scroll', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
